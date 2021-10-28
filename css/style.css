@@ -1,0 +1,16 @@
+
+
+.my-header {
+    min-height: 80px;
+    background-color: #0c2461;
+    
+}
+
+.my-footer {
+    background-color: #ddd;
+    padding: 32px;
+}
+/* 
+.col a {
+    text-decoration: none;
+} */
