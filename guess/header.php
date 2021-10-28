@@ -84,7 +84,7 @@
                         </button>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
                             aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#" style="font-weight:500">Đăng nhập</a></li>
                             <p>Chưa có tài khoản <a href="#">Đăng ký</a> ngay</p>
                         </ul>
                     </div>

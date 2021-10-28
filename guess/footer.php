@@ -1,6 +1,7 @@
 <div class="my-footer">
     <div class="container">
         <div class="row">
+            <div class="col-md-1"></div>
             <div class="col">
                 <h5>Về chúng tôi</h5><br>
                 <div class="container">
