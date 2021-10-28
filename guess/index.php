@@ -1,19 +1,44 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+include('header.php');?>
+    <div class="my-banner" style="overflow: hidden">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="my-banner-content col-md-6 rounded">
+                <h1 class="text-white">Du lịch theo phong cách riêng</h1>
+                <h5 class="text-white"><i>Du lịch trọn vẹn, giá cả phải chăng</i></h5>
+                <div class="my-search">
+                    <div class="input-group mb-3">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                        <input type="text" class="form-control" placeholder="Bạn muốn đi đâu"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn my-btn-search" type="button" id="button-addon2">Tìm Kiếm</button>
+                    </div>
+                </div>
+                Tailor tour - Trải nghiệm theo cách riêng của bạn -
+                <button type="button" class="btn btn-outline-light">Đặt tour riêng</button>
+            </div>
+            <div class="col-md-4 my-hottour text-white">
+                <h3>Tour Cô Tô 3N2D</h3>
+                <h4>Du lịch miền cát trắng</h4>
+                <h4>Giá chỉ từ</h4>
+                <h1>2300000VNĐ</h1>
+            </div>
+        </div>
+    </div>
+    <div class="my-description" style="overflow: hidden">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="far fa-check-circle text-success"></i>
+                Tour chọn lọc <b>chất lượng nhất</b>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="far fa-check-circle text-success"></i>
+                Tour chọn lọc <b>chất lượng nhất</b>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="far fa-check-circle text-success"></i>
+                Tour chọn lọc <b>chất lượng nhất</b>
+            </div>
+        </div>
+    </div>
 
-    
-  </body>
-</html>

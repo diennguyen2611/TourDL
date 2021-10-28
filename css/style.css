@@ -1,0 +1,54 @@
+:root{
+    --my-color: #0c2461; 
+}
+
+.my-banner{
+    height: 500px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.my-btn-search{
+    background-color: var(--my-color);
+    color: white;
+}
+
+.my-btn-search:hover{
+    color: var(--my-color);
+    background-color: white;
+    border: 1px solid var(--my-color);
+}
+
+.my-banner-content{
+    margin-top: 10%;
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: rgba(153, 149, 149, 0.5);
+    padding: 16px;
+    
+}
+
+.my-search{
+    margin: 32px 16px 16px 0;
+}
+
+.my-search input{
+   padding: 8px 0 8px 24px;
+}
+
+.my-description{
+    margin: 16px 0;
+
+}
+
+.my-hottour{
+    margin-top: 15%;
+    
+}
+
+.my-btn-search{
+    background-color: var(--my-color);
+}
+
