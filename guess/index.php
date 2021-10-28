@@ -1,5 +1,6 @@
 <?php
 include('header.php');?>
+<!--  -->
 <div class="my-banner" style="overflow: hidden">
     <div class="row">
         <div class="col-md-1"></div>
@@ -41,131 +42,121 @@ include('header.php');?>
         </div>
     </div>
 </div>
+<!--  -->
 
-<div class="my_map">
-    <div>
-        <h3 class="headline">
-            <span>
-                Trải nghiệm quốc tế
-            </span>
-        </h3>
-    </div>
-    <div class="international">
-        <div class="row huyen_row">
-            <div class="col col-huyen col-third">
-                <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
+
+<!--  -->
+<div class="my_map" style="overflow: hidden">
+    <div class="container">
+        
+            <div class="row huyen_row">
+                <div>
+                    <h3 class="headline">
+                        <span>
+                            Trải nghiệm quốc tế
+                        </span>
+                    </h3>
+                </div>
+                <div class="col col-huyen">
+                    <div class="card" style="width: 22rem;">
                         <img src="../img/CANADA.jpg" class="card-img-top" alt="CANADA">
-                        <div class="huyen-card">
-                            <i class="fas fa-map-marker-alt "></i>
-                            Canada
+                        <div class="card-body">
+                            <h5 class="card-title">Tour Canada</h5>
+                            <p class="card-text">
+                            <div class="row">
+                                <div class="col-md-2 score" style="max-width:50px">9.6</div>
+                                <div class="col-md-4 score-des">Tuyệt vời</div>
+                                <div class="col-md comment"> | 5 đánh giá</div>
+                            </div>
+                            <div class="row ">
+<div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
+                                <div class="col-md-2"><i class="fas fa-plane"></i></div>
+                            </div>
+                            </p>
+                            <a href="#" class="col price">87.900.000</a>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Tour Canada</h5>
-                        <p class="card-text">
-                        <div class="row">
-                            <div class="col-md-2 score">9.6</div>
-                            <div class="col-md-4 score-des">Tuyệt vời</div>
-                            <div class="col-md comment"> | 5 đánh giá</div>
-                        </div>
-                        <div class="row ">
-                            <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
-                            <div class="col-md-2"><i class="fas fa-plane"></i></div>
-                        </div>
-                        </p>
-                        <a href="#" class="col price">87.900.000</a>
+
                     </div>
                 </div>
-            </div>
-            <div class="col col-huyen col-third">
-                <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
+                <div class="col col-huyen">
+                    <div class="card" style="width: 22rem;">
                         <img src="../img/DUC.jpg" class="card-img-top" alt="DUC">
-                        <div class="huyen-card">
-                            <i class="fas fa-map-marker-alt "></i>
-                            Germany
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Tour Germany</h5>
-                        <p class="card-text">
-                        <div class="row">
-                            <div class="col-md-2 score">10</div>
-                            <div class="col-md-4 score-des">Tuyệt vời</div>
-                            <div class="col-md comment"> | 10 đánh giá</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm
+                        <div class="card-body">
+                            <h5 class="card-title">Tour Germany</h5>
+                            <p class="card-text">
+                            <div class="row">
+                                <div class="col-md-2 score" style="max-width:50px">10</div>
+                                <div class="col-md-4 score-des">Tuyệt vời</div>
+                                <div class="col-md comment"> | 10 đánh giá</div>
+
                             </div>
-                            <div class="col-md-2"><i class="fas fa-plane"></i></div>
+                            <div class="row">
+                                <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
+                                <div class="col-md-2"><i class="fas fa-plane"></i></div>
+                            </div>
+                            </p>
+                            <a href="#" class="col price">90.900.000</a>
                         </div>
-                        </p>
-                        <a href="#" class="col price">90.900.000</a>
                     </div>
                 </div>
-            </div>
-            <div class="col col-huyen col-third">
-                <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
+                <div class="col col-huyen">
+                    <div class="card" style="width: 22rem;">
                         <img src="../img/PHAP.jpg" class="card-img-top" alt="PHAP">
-                        <div class="huyen-card">
-                            <i class="fas fa-map-marker-alt "></i>
-                            France
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Tour France</h5>
-                        <p class="card-text">
-                        <div class="row">
-                            <div class="col-md-2 score">10</div>
-                            <div class="col-md-4 score-des">Tuyệt vời</div>
-                            <div class="col-md comment"> | 20 đánh giá</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-10"><i class="far fa-clock"></i>
-                                2 ngày 1 đêm </div>
-                            <div class="col-md-2"><i class="fas fa-plane"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Tour France</h5>
+                            <p class="card-text">
+                            <div class="row">
+                                <div class="col-md-2 score" style="max-width:50px">10</div>
+                                <div class="col-md-4 score-des">Tuyệt vời</div>
+                                <div class="col-md comment"> | 20 đánh giá</div>
+
                             </div>
+                            <div class="row">
+                                <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
+                                <div class="col-md-2"><i class="fas fa-plane"></i></div>
+                            </div>
+                            </p>
+                            <a href="#" class="col price">96.500.000</a>
                         </div>
-                        </p>
-                        <a href="#" class="col price">96.500.000</a>
                     </div>
                 </div>
+
             </div>
-        </div>
-        <div>
-            <h3 class="headline">
-                <span>
-                    Trải nghiệm địa phương
-                </span>
-            </h3>
-        </div>
-        <div class="local">
+            
+        
+        
             <div class="row huyen_row ">
+                <div>
+                    <h3 class="headline">
+                        <span>
+                            Trải nghiệm địa phương
+</span>
+                    </h3>
+                </div>
                 <div class="col col-huyen">
                     <div class="card " style="width: 22rem;">
                         <div class="huyen-img">
-
                             <img src="../img/phanthiet.jpg" class="card-img-top " alt="phanthiet">
-
                             <div class="huyen-card">
+
                                 <i class="fas fa-map-marker-alt "></i>
                                 Phan Thiết
+
                             </div>
                         </div>
+
+
                         <div class="card-body">
-                            <h5 class="card-title">Tour Phan Thiết 3N2D: HCM
-                                - Núi Tà Cú - Hải Đăng Kê Gà - Dinh Thầy
+                            <h5 class="card-title">Tour Phan Thiết 3N2D: HCM - Núi Tà Cú - Hải Đăng Kê Gà - Dinh
+                                Thầy
                                 Thím
                             </h5>
                             <p class="card-text">
                             <div class="row">
-                                <div class="col-md-2 score">10</div>
-                                <div class="col-md-4 score-des">Tuyệt vời
-                                </div>
-                                <div class="col-md comment"> | 1 đánh giá
-                                </div>
+                                <div class="col-md-2 score" style="max-width:50px">10</div>
+                                <div class="col-md-4 score-des">Tuyệt vời</div>
+                                <div class="col-md comment"> | 1 đánh giá</div>
+
                             </div>
                             <div class="row  list_desmap">
                                 <ul>
@@ -181,23 +172,14 @@ include('header.php');?>
                 </div>
                 <div class="col col-huyen">
                     <div class="card" style="width: 22rem;">
-                        <div class="huyen-img">
-                            <img src="../img/culao.jpg" class="card-img-top" alt="culao">
-                            <div class="huyen-card">
-                                <i class="fas fa-map-marker-alt "></i>
-                                Cù Lao Chàm
-                            </div>
-                        </div>
+                        <img src="../img/culao.jpg" class="card-img-top" alt="culao">
                         <div class="card-body">
-                            <h5 class="card-title">Tour Cù Lao Chàm 1N:
-                                Đi Bộ Dưới Đáy Biển Cano</h5>
+                            <h5 class="card-title">Tour Cù Lao Chàm 1N: Đi Bộ Dưới Đáy Biển Cano</h5>
                             <p class="card-text">
                             <div class="row">
-                                <div class="col-md-2 score">10</div>
-                                <div class="col-md-4 score-des">Tuyệt
-                                    vời</div>
-                                <div class="col-md comment"> | 8 đánh
-                                    giá</div>
+                                <div class="col-md-2 score" style="max-width:50px">10</div>
+                                <div class="col-md-4 score-des">Tuyệt vời</div>
+                                <div class="col-md comment"> | 8 đánh giá</div>
                             </div>
                             <div class="row  list_desmap">
                                 <ul>
@@ -205,41 +187,31 @@ include('header.php');?>
                                     <li>Lướt cano trên biển</li>
                                     <li>Cảnh Sắc Lãng Mạn</li>
                                 </ul>
+
                             </div>
                             </p>
-                            <a href="#" class="col col-huyen price">780.000</a>
+<a href="#" class="col col-huyen price">780.000</a>
                         </div>
                     </div>
+
                 </div>
                 <div class="col col-huyen">
                     <div class="card" style="width: 22rem;">
-                        <div class="huyen-img">
-                            <img src="../img/danang.jpg" class="card-img-top" alt="danang">
-                            <div class="huyen-card">
-                                <i class="fas fa-map-marker-alt "></i>
-                                Đà Nẵng
-                            </div>
-                        </div>
+                        <img src="../img/danang.jpg" class="card-img-top" alt="danang">
                         <div class="card-body">
-                            <h5 class="card-title">Tour Cao
-                                Cấp Đà Nẵng 3N2D: Bà Nà -
-                                Sơn Trà - Hội An</h5>
+                            <h5 class="card-title">Tour Cao Cấp Đà Nẵng 3N2D: Bà Nà - Sơn Trà - Hội An</h5>
                             <p class="card-text">
                             <div class="row">
-                                <div class="col-md-2 score">
-                                    9.7</div>
-                                <div class="col-md-4 score-des">
-                                    Rất tốt</div>
-                                <div class="col-md comment">
-                                    | 20 đánh giá</div>
+                                <div class="col-md-2 score" style="max-width:50px">9.7</div>
+                                <div class="col-md-4 score-des">Rất tốt</div>
+                                <div class="col-md comment"> | 20 đánh giá</div>
+
                             </div>
                             <div class="row  list_desmap">
                                 <ul>
-                                    <li>Buffer trưa tại Bà
-                                        Nà</li>
+                                    <li>Buffer trưa tại Bà Nà</li>
                                     <li>Hội An</li>
-                                    <li>Tiêu chuẩn 5 sao
-                                    </li>
+                                    <li>Tiêu chuẩn 5 sao</li>
                                 </ul>
                             </div>
                             </p>
@@ -247,7 +219,8 @@ include('header.php');?>
                         </div>
                     </div>
                 </div>
-                <div class="popular">
+            </div>
+        
             <div class="row huyen_row ">
                 <div>
                     <h3 class="headline">
@@ -263,7 +236,7 @@ include('header.php');?>
                             <h5 class="card-title">Tour Phú Quốc 1N: Vi Vu Cano 5 Đảo - Cáp Treo Hòn Thơm</h5>
                             <p class="card-text">
                             <div class="row">
-                                <div class="col-md-2 score">10</div>
+                                <div class="col-md-2 score" style="max-width:50px">10</div>
                                 <div class="col-md-4 score-des">Tuyệt vời</div>
                                 <div class="col-md comment"> | 1 đánh giá</div>
                             </div>
@@ -277,7 +250,7 @@ include('header.php');?>
                             </div>
                             </p>
                             <a href="#" class="col col-huyen price">1.050.000 </a>
-                        </div>
+</div>
                     </div>
                 </div>
                 <div class="col col-huyen">
@@ -287,7 +260,7 @@ include('header.php');?>
                             <h5 class="card-title">Tour Đà Lạt 1/2N: Chèo SUP Ngắm Hoàng Hôn Hồ Tuyền Lâm</h5>
                             <p class="card-text">
                             <div class="row">
-                                <div class="col-md-2 score">10</div>
+                                <div class="col-md-2 score" style="max-width:50px">10</div>
                                 <div class="col-md-4 score-des">Tuyệt vời</div>
                                 <div class="col-md comment"> | 8 đánh giá</div>
                             </div>
@@ -311,7 +284,7 @@ include('header.php');?>
                             <h5 class="card-title">Tour Nha Trang 1N: Khám Phá Vịnh San Hô 2 - Tắm Bùn Hòn Tằm</h5>
                             <p class="card-text">
                             <div class="row">
-                                <div class="col-md-2 score">8</div>
+                                <div class="col-md-2 score" style="max-width:50px">8</div>
                                 <div class="col-md-4 score-des">Rất tốt</div>
                                 <div class="col-md comment"> | 20 đánh giá</div>
 
@@ -329,7 +302,10 @@ include('header.php');?>
                     </div>
                 </div>
             </div>
+        
+    </div>
 
+</div>
 <!--  -->
 
 <?php

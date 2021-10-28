@@ -1,20 +1,14 @@
-
-.col-huyen{
-    float: left;
-    padding: 0 8px;
-    margin-left: 50px;
-}
-.col-third{
-    width: 33.33333%;
-}
 .my_map{
     font-size: 13px;
     background-color: #ecf0f5;
     width: 100%;
     margin-top: 30px ;
     padding: 64px 0;
-    overflow: hidden;
    
+}
+
+.huyen_row {
+    margin-bottom: 48px;
 }
 .my_map .card-title{
     font-size: 16px;
@@ -44,12 +38,9 @@
     border-bottom: 2px;
     margin-top: 5px;
     border-bottom: 2px solid #003C71;
-    margin-left: 50px;
-    width: 1261px;
+    
 }
-.international, .local{
-    padding: 0 0 30px 0;
-}
+
 .list_desmap{
     margin-top: 10px;
     margin-left: 10px;
@@ -123,6 +114,7 @@
 .my-btn-search{
     background-color: var(--my-color);
 }
+
 
 .my-header {
     min-height: 80px;
