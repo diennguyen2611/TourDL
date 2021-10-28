@@ -127,14 +127,15 @@ include('header.php');?>
                 <div class="card " style="width: 22rem;">
                     <div class="huyen-img">
                         <img src="../img/phanthiet.jpg" class="card-img-top " alt="phanthiet">
-                    </div>
-
-                    <div class="huyen-card">
-                        <span>
+                        <div class="huyen-card">
+                        
                             <i class="fas fa-map-marker-alt "></i>
                             Phan Thiết
-                        </span>
+                        
                     </div>
+                    </div>
+
+                    
                     <div class="card-body">
                         <h5 class="card-title">Tour Phan Thiết 3N2D: HCM - Núi Tà Cú - Hải Đăng Kê Gà - Dinh Thầy Thím
                         </h5>
