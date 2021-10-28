@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
     --my-color: #0c2461; 
 }
@@ -52,3 +53,17 @@
     background-color: var(--my-color);
 }
 
+=======
+
+
+.my-header {
+    min-height: 80px;
+    background-color: #0c2461;
+    
+}
+
+.my-footer {
+    background-color: #ddd;
+    padding: 32px;
+}
+>>>>>>> 5ea6d715c34c245d0825a34c9a20077e188c7169
