@@ -61,7 +61,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="">
                     <div class="card" style="width: 22rem;">
-                        <img src="../img/CANADA.jpg" class="card-img-top" alt="CANADA">
+                    <div class="huyen-img">
+                    <img src="../img/CANADA.jpg" class="card-img-top" alt="CANADA">
+                            <div class="huyen-card">
+                                <i class="fas fa-map-marker-alt "></i>
+                                Canada
+                            </div>
+                        </div>
+                       
                         <div class="card-body">
                             <h5 class="card-title">Tour Canada</h5>
                             <p class="card-text">
@@ -84,7 +91,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="">
                     <div class="card" style="width: 22rem;">
-                        <img src="../img/DUC.jpg" class="card-img-top" alt="DUC">
+                    <div class="huyen-img">
+                    <img src="../img/DUC.jpg" class="card-img-top" alt="DUC">
+                            <div class="huyen-card">
+                                <i class="fas fa-map-marker-alt "></i>
+                                Germany
+                            </div>
+                        </div>
+                       
                         <div class="card-body">
                             <h5 class="card-title">Tour Germany</h5>
                             <p class="card-text">
@@ -107,7 +121,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="">
                     <div class="card" style="width: 22rem;">
-                        <img src="../img/PHAP.jpg" class="card-img-top" alt="PHAP">
+                    <div class="huyen-img">
+                    <img src="../img/PHAP.jpg" class="card-img-top" alt="PHAP">
+                            <div class="huyen-card">
+                                <i class="fas fa-map-marker-alt "></i>
+                                France
+                            </div>
+                        </div>
+                       
                         <div class="card-body">
                             <h5 class="card-title">Tour France</h5>
                             <p class="card-text">
@@ -177,7 +198,13 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="">
                     <div class="card" style="width: 22rem;">
-                        <img src="../img/culao.jpg" class="card-img-top" alt="culao">
+                    <div class="huyen-img">
+                    <img src="../img/culao.jpg" class="card-img-top" alt="culao">
+                            <div class="huyen-card">
+                                <i class="fas fa-map-marker-alt "></i>
+                                Cù Lao Chàm
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Tour Cù Lao Chàm 1N: Đi Bộ Dưới Đáy Biển Cano</h5>
                             <p class="card-text">
@@ -203,7 +230,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="">
                     <div class="card" style="width: 22rem;">
-                        <img src="../img/danang.jpg" class="card-img-top" alt="danang">
+                    <div class="huyen-img">
+                    <img src="../img/danang.jpg" class="card-img-top" alt="danang">
+                            <div class="huyen-card">
+                                <i class="fas fa-map-marker-alt "></i>
+                                Đà Nẵng
+                            </div>
+                        </div>
+                        
                         <div class="card-body">
                             <h5 class="card-title">Tour Cao Cấp Đà Nẵng 3N2D: Bà Nà - Sơn Trà - Hội An</h5>
                             <p class="card-text">
@@ -239,7 +273,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="">
                     <div class="card" style="width: 22rem;">
-                        <img src="../img/phuquoc.jpg" class="card-img-top" alt="phuquoc">
+                    <div class="huyen-img">
+                    <img src="../img/phuquoc.jpg" class="card-img-top" alt="phuquoc">
+                            <div class="huyen-card">
+                                <i class="fas fa-map-marker-alt "></i>
+                                Phú Quốc
+                            </div>
+                        </div>
+                        
                         <div class="card-body">
                             <h5 class="card-title">Tour Phú Quốc 1N: Vi Vu Cano 5 Đảo - Cáp Treo Hòn Thơm</h5>
                             <p class="card-text">
@@ -264,7 +305,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="">
                     <div class="card" style="width: 22rem;">
-                        <img src="../img/dalat.jpg" class="card-img-top" alt="dalat">
+                    <div class="huyen-img">
+                    <img src="../img/dalat.jpg" class="card-img-top" alt="dalat">
+                            <div class="huyen-card">
+                                <i class="fas fa-map-marker-alt "></i>
+                                Đà Lạt
+                            </div>
+                        </div>
+                        
                         <div class="card-body">
                             <h5 class="card-title">Tour Đà Lạt 1/2N: Chèo SUP Ngắm Hoàng Hôn Hồ Tuyền Lâm</h5>
                             <p class="card-text">
@@ -289,7 +337,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="">
                     <div class="card" style="width: 22rem;">
-                        <img src="../img/nhatrang.jpg" class="card-img-top" alt="nhatrang">
+                    <div class="huyen-img">
+                    <img src="../img/nhatrang.jpg" class="card-img-top" alt="nhatrang">
+                            <div class="huyen-card">
+                                <i class="fas fa-map-marker-alt "></i>
+                                Nha Trang
+                            </div>
+                        </div>
+                       
                         <div class="card-body">
                             <h5 class="card-title">Tour Nha Trang 1N: Khám Phá Vịnh San Hô 2 - Tắm Bùn Hòn Tằm</h5>
                             <p class="card-text">
