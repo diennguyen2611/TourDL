@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 .my_map{
     font-size: 13px;
     background-color: #ecf0f5;
@@ -128,4 +127,7 @@
     background-color: #ddd;
     padding: 32px;
 }
->>>>>>> 61d7fcfe72a31c470614711b20079eac0301ee4b
+
+.hover-th:hover {
+    opacity: 0.8;
+}

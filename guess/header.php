@@ -23,15 +23,13 @@
             <div class="row">
                 <div class="col-md-1">
                     <a href="index.php">
-                        <img style="margin-top:12px" src="../img/logo.png" alt="logo" class="rounded-circle"
-                            width="60px">
+                        <img style="margin-top:12px" src="../img/logo.png" alt="logo" class="rounded-circle" width="60px">
                     </a>
                 </div>
 
                 <div class="col-md-5">
                     <nav class="navbar navbar-expand-lg navbar-light my-nav">
                         <div class="container-fluid">
-
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                 aria-label="Toggle navigation">
@@ -39,26 +37,18 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav" style="line-height: 40px">
-                                    <li class="nav-item">
+                                    <li class="nav-item hover-th">
                                         <a class="nav-link active text-white" aria-current="page"
                                             href="index.php">Home</a>
                                     </li>
-
-                                    <li class="nav-item">
+                                    <li class="nav-item hover-th">
                                         <a class="nav-link active text-white" aria-current="page" href="#">Tours</a>
-
                                     </li>
-
-
-                                    <li class="nav-item">
+                                    <li class="nav-item hover-th">
                                         <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
-
                                     </li>
-
-
-
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+                                        <a class="nav-link dropdown-toggle text-white hover-th" href="#" id="navbarDropdown"
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">More
                                         </a>
                                         <ul class="dropdown-menu my-subnav" aria-labelledby="navbarDropdown">
@@ -77,9 +67,9 @@
                     <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">SĐT</h6>
 
                     <div class="dropdown float-end">
-                        <button style="line-height: 40px" class="btn dropdown-toggle text-white" type="button"
-                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i
-                                class="fas fa-user-circle"></i>
+                        <button style="line-height: 40px" class="btn dropdown-toggle text-white hover-th" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle"></i>
                             Tài khoản
                         </button>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
