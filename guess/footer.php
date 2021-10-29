@@ -10,18 +10,6 @@
                 <a class="text-decoration-none text-dark" href="#">
                     <p>PMS - Miễn phí</p>
                 </a>
-
-
-                <!-- <div class="container">
-                    <a style="margin-right: 8px;" href="#"><img
-                            src="https://img.icons8.com/color/48/000000/facebook-new.png" /></a>
-
-                    <a style="margin-right: 8px;" href="#"><img
-                            src="https://img.icons8.com/fluency/48/000000/instagram-new.png" /></a>
-
-                    <a style="margin-right: 8px;" href="#"><img
-                            src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></a>
-                </div> -->
             </div>
             <div class="col">
                 <h5 style="margin-bottom: 24px">Thông Tin Cần Biết</h5>
@@ -66,14 +54,14 @@
                     </div>
 
                     <div class="col-md-2 text-center">
-                        <a class="btn btn-primary" style="padding: 0 8px"href="#" role="button">
+                        <a class="btn btn-primary" style="padding: 0 8px" href="#" role="button">
                             <i class="far fa-thumbs-up"></i>
                             Like
                         </a>
                     </div>
                     <div class="col-md-3 col-huyen" style="margin-right: 10px">
-                    <i class="far fa-envelope"></i>
-                    <a href="#">ql.tourdl@gmail.com</a> 
+                        <i class="far fa-envelope"></i>
+                        <a href="#">ql.tourdl@gmail.com</a>
                     </div>
                 </div>
             </div>
