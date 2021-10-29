@@ -126,7 +126,7 @@
 
 .my-footer {
     background-color: #ddd;
-    padding: 32px;
+    padding: 60px;
 }
 
 .hover-th:hover {
@@ -184,6 +184,10 @@
     background-color: #fff;
     padding: 24px;
 }
-.my-tourSchedule{
+
     
+
+.col a p {
+    margin-bottom: 0.6rem;
+
 }
