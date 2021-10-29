@@ -125,7 +125,7 @@
 
 .my-footer {
     background-color: #ddd;
-    padding: 32px;
+    padding: 60px;
 }
 
 .hover-th:hover {
@@ -139,4 +139,8 @@
 .col-huyen a{
     text-decoration: none;
     color: black;
+}
+
+.col a p {
+    margin-bottom: 0.6rem;
 }

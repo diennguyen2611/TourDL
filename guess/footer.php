@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col">
-                <h5 style="margin-bottom: 24px">Về chúng tôi</h5>
+                <h5 style="margin-bottom: 16px">Về chúng tôi</h5>
                 <a class="text-decoration-none text-dark" href="#">
                     <p>Blog</p>
                 </a>
@@ -12,7 +12,7 @@
                 </a>
             </div>
             <div class="col">
-                <h5 style="margin-bottom: 24px">Thông Tin Cần Biết</h5>
+                <h5 style="margin-bottom: 16px">Thông Tin Cần Biết</h5>
                 <a class="text-decoration-none text-dark" href="#">
                     <p>Điều kiện & Điều khoản</p>
                 </a>
@@ -24,7 +24,7 @@
                 </a>
             </div>
             <div class="col">
-                <h5 style="margin-bottom: 24px">Đối tác & Liên Kết</h5>
+                <h5 style="margin-bottom: 16px">Đối tác & Liên Kết</h5>
                 <a class="text-decoration-none text-dark" href="#">
                     <p>Vietnam Airlines</p>
                 </a>
@@ -34,7 +34,7 @@
 
             </div>
             <div class="col">
-                <h5 style="margin-bottom: 24px">Được chứng nhận</h5>
+                <h5 style="margin-bottom: 16px">Được chứng nhận</h5>
                 <a href="#"><img style="width:50%" src="../img/footer.png" alt=""></a>
             </div>
         </div>
@@ -59,7 +59,7 @@
                             Like
                         </a>
                     </div>
-                    <div class="col-md-3 col-huyen" style="margin-right: 10px">
+                    <div class="col-md-4 col-huyen" style="margin-right: 10px">
                         <i class="far fa-envelope"></i>
                         <a href="#">ql.tourdl@gmail.com</a>
                     </div>
