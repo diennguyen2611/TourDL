@@ -48,20 +48,18 @@
                     Tầng 12, 70-72 Bà Triệu, Quận Hoàn Kiếm, Hà Nội
                 </p>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <b style="color: #1e3799">Like để cập nhật cẩm nang du lịch</b>
-
-                    </div>
-
-                    <div class="col-md-2 text-center">
                         <a class="btn btn-primary" style="padding: 0 8px" href="#" role="button">
                             <i class="far fa-thumbs-up"></i>
                             Like
                         </a>
                     </div>
-                    <div class="col-md-4 col-huyen" style="margin-right: 10px">
-                        <i class="far fa-envelope"></i>
-                        <a href="#">ql.tourdl@gmail.com</a>
+                    <div class="col-md-5 col-huyen" style="margin-right: 10px">
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <a href="#">ql.tourdl@gmail.com</a>
+                        </div>
                     </div>
                 </div>
             </div>

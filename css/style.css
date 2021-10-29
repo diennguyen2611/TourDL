@@ -144,3 +144,13 @@
 .col a p {
     margin-bottom: 0.6rem;
 }
+
+/* CSS: create-tour.php */
+.create-tour {
+    background-image: url("../img/create-tour.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;
+}
+/*  */

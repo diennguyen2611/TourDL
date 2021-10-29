@@ -16,7 +16,7 @@ include('header.php');?>
                 </div>
             </div>
             Tailor tour - Trải nghiệm theo cách riêng của bạn -
-            <button type="button" class="btn btn-outline-light">Đặt tour riêng</button>
+            <a href="../guess/create-tour.php" class="btn btn-outline-light">Đặt tour riêng</a>
         </div>
         <div class="col-md-4 my-hottour text-white">
             <h3>Tour Cô Tô 3N2D</h3>
