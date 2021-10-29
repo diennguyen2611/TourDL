@@ -62,258 +62,264 @@ include('header.php');?>
                 <a href="">
                     <div class="card" style="width: 22rem;">
                         <img src="../img/CANADA.jpg" class="card-img-top" alt="CANADA">
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Canada</h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">9.6</div>
-                                <div class="col-md-4 score-des">Tuyệt vời</div>
-                                <div class="col-md comment"> | 5 đánh giá</div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
-                                <div class="col-md-2"><i class="fas fa-plane"></i></div>
-                            </div>
-                            </p>
-                            <a href="#" class="col price">87.900.000</a>
+                        <div class="huyen-card">
+                            <i class="fas fa-map-marker-alt "></i>
+                            Phan Thiết
                         </div>
+                    
 
-                    </div>
-                </a>
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card" style="width: 22rem;">
-                        <img src="../img/DUC.jpg" class="card-img-top" alt="DUC">
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Germany</h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">10</div>
-                                <div class="col-md-4 score-des">Tuyệt vời</div>
-                                <div class="col-md comment"> | 10 đánh giá</div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
-                                <div class="col-md-2"><i class="fas fa-plane"></i></div>
-                            </div>
-                            </p>
-                            <a href="#" class="col price">90.900.000</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Canada</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-md-2 score" style="max-width:50px">9.6</div>
+                            <div class="col-md-4 score-des">Tuyệt vời</div>
+                            <div class="col-md comment"> | 5 đánh giá</div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card" style="width: 22rem;">
-                        <img src="../img/PHAP.jpg" class="card-img-top" alt="PHAP">
-                        <div class="card-body">
-                            <h5 class="card-title">Tour France</h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">10</div>
-                                <div class="col-md-4 score-des">Tuyệt vời</div>
-                                <div class="col-md comment"> | 20 đánh giá</div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
-                                <div class="col-md-2"><i class="fas fa-plane"></i></div>
-                            </div>
-                            </p>
-                            <a href="#" class="col price">96.500.000</a>
+                        <div class="row ">
+                            <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
+                            <div class="col-md-2"><i class="fas fa-plane"></i></div>
                         </div>
+                        </p>
+                        <a href="#" class="col price">87.900.000</a>
                     </div>
-                </a>
+
             </div>
+            </a>
         </div>
+        <div class="col col-huyen">
+            <a href="">
+                <div class="card" style="width: 22rem;">
+                    <img src="../img/DUC.jpg" class="card-img-top" alt="DUC">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Germany</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-md-2 score" style="max-width:50px">10</div>
+                            <div class="col-md-4 score-des">Tuyệt vời</div>
+                            <div class="col-md comment"> | 10 đánh giá</div>
 
-
-        <div class="row huyen_row ">
-            <div>
-                <h3 class="headline">
-                    <span>
-                        Trải nghiệm địa phương
-                    </span>
-                    <a href=""><span class="float-end">Xem thêm ></span></a>
-                </h3>
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card " style="width: 22rem;">
-                        <div class="huyen-img">
-                            <img src="../img/phanthiet.jpg" class="card-img-top " alt="phanthiet">
-                            <div class="huyen-card">
-                                <i class="fas fa-map-marker-alt "></i>
-                                Phan Thiết
-                            </div>
                         </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Phan Thiết 3N2D: HCM - Núi Tà Cú - Hải Đăng Kê Gà - Dinh
-                                Thầy
-                                Thím
-                            </h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">10</div>
-                                <div class="col-md-4 score-des">Tuyệt vời</div>
-                                <div class="col-md comment"> | 1 đánh giá</div>
-                            </div>
-                            <div class="row  list_desmap">
-                                <ul>
-                                    <li>Lưu Trú Resort 4 Sao</li>
-                                    <li>Dinh Thầy Thím Tâm Linh</li>
-                                    <li>KDL Núi Tà Cú</li>
-                                </ul>
-                            </div>
-                            </p>
-                            <a href="#" class="col price">1.050.000 </a>
+                        <div class="row">
+                            <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
+                            <div class="col-md-2"><i class="fas fa-plane"></i></div>
                         </div>
+                        </p>
+                        <a href="#" class="col price">90.900.000</a>
                     </div>
-                </a>
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card" style="width: 22rem;">
-                        <img src="../img/culao.jpg" class="card-img-top" alt="culao">
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Cù Lao Chàm 1N: Đi Bộ Dưới Đáy Biển Cano</h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">10</div>
-                                <div class="col-md-4 score-des">Tuyệt vời</div>
-                                <div class="col-md comment"> | 8 đánh giá</div>
-                            </div>
-                            <div class="row  list_desmap">
-                                <ul>
-                                    <li>Ngắm san hô</li>
-                                    <li>Lướt cano trên biển</li>
-                                    <li>Cảnh Sắc Lãng Mạn</li>
-                                </ul>
-                            </div>
-                            </p>
-                            <a href="#" class="col col-huyen price">780.000</a>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card" style="width: 22rem;">
-                        <img src="../img/danang.jpg" class="card-img-top" alt="danang">
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Cao Cấp Đà Nẵng 3N2D: Bà Nà - Sơn Trà - Hội An</h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">9.7</div>
-                                <div class="col-md-4 score-des">Rất tốt</div>
-                                <div class="col-md comment"> | 20 đánh giá</div>
-                            </div>
-                            <div class="row  list_desmap">
-                                <ul>
-                                    <li>Buffer trưa tại Bà Nà</li>
-                                    <li>Hội An</li>
-                                    <li>Tiêu chuẩn 5 sao</li>
-                                </ul>
-                            </div>
-                            </p>
-                            <a href="#" class="col price">3.650.000</a>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
+        <div class="col col-huyen">
+            <a href="">
+                <div class="card" style="width: 22rem;">
+                    <img src="../img/PHAP.jpg" class="card-img-top" alt="PHAP">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour France</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-md-2 score" style="max-width:50px">10</div>
+                            <div class="col-md-4 score-des">Tuyệt vời</div>
+                            <div class="col-md comment"> | 20 đánh giá</div>
 
-        <div class="row huyen_row ">
-            <div>
-                <h3 class="headline">
-                    <span>
-                        Các điểm du lịch phổ biến
-                    </span>
-                    <a href=""><span class="float-end">Xem thêm ></span></a>
-                </h3>
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card" style="width: 22rem;">
-                        <img src="../img/phuquoc.jpg" class="card-img-top" alt="phuquoc">
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Phú Quốc 1N: Vi Vu Cano 5 Đảo - Cáp Treo Hòn Thơm</h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">10</div>
-                                <div class="col-md-4 score-des">Tuyệt vời</div>
-                                <div class="col-md comment"> | 1 đánh giá</div>
-                            </div>
-                            <div class="row  list_desmap">
-                                <ul>
-                                    <li>Cano 5 Đảo</li>
-                                    <li>Cap Treo Hòn Thơm</li>
-                                    <li>Tặng Free Bộ Ảnh Chụp Tại Đảo</li>
-                                </ul>
-                            </div>
-                            </p>
-                            <a href="#" class="col col-huyen price">1.050.000 </a>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card" style="width: 22rem;">
-                        <img src="../img/dalat.jpg" class="card-img-top" alt="dalat">
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Đà Lạt 1/2N: Chèo SUP Ngắm Hoàng Hôn Hồ Tuyền Lâm</h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">10</div>
-                                <div class="col-md-4 score-des">Tuyệt vời</div>
-                                <div class="col-md comment"> | 8 đánh giá</div>
-                            </div>
-                            <div class="row  list_desmap">
-                                <ul>
-                                    <li>Ngắm Hoàng Hôn Siêu Đẹp</li>
-                                    <li>Thưởng Thức BBQ Ngon Tuyệt</li>
-                                    <li>Cảnh Sắc Lãng Mạn</li>
-                                </ul>
-                            </div>
-                            </p>
-                            <a href="#" class="col col-huyen price">900.000</a>
+                        <div class="row">
+                            <div class="col-md-10"><i class="far fa-clock"></i> 2 ngày 1 đêm </div>
+                            <div class="col-md-2"><i class="fas fa-plane"></i></div>
                         </div>
+                        </p>
+                        <a href="#" class="col price">96.500.000</a>
                     </div>
-                </a>
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card" style="width: 22rem;">
-                        <img src="../img/nhatrang.jpg" class="card-img-top" alt="nhatrang">
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Nha Trang 1N: Khám Phá Vịnh San Hô 2 - Tắm Bùn Hòn Tằm</h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">8</div>
-                                <div class="col-md-4 score-des">Rất tốt</div>
-                                <div class="col-md comment"> | 20 đánh giá</div>
-                            </div>
-                            <div class="row  list_desmap">
-                                <ul>
-                                    <li>Trải Nghiệm Vịnh San Hô 2</li>
-                                    <li>Tắm Bùn Khoángt</li>
-                                    <li>Thỏa Sức Party Hồ Bơi</li>
-                                </ul>
-                            </div>
-                            </p>
-                            <a href="#" class="col col-huyen price">1.250.000</a>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
-
     </div>
+
+
+    <div class="row huyen_row ">
+        <div>
+            <h3 class="headline">
+                <span>
+                    Trải nghiệm địa phương
+                </span>
+                <a href=""><span class="float-end">Xem thêm ></span></a>
+            </h3>
+        </div>
+        <div class="col col-huyen">
+            <a href="">
+                <div class="card " style="width: 22rem;">
+                    <div class="huyen-img">
+                        <img src="../img/phanthiet.jpg" class="card-img-top " alt="phanthiet">
+                        <div class="huyen-card">
+                            <i class="fas fa-map-marker-alt "></i>
+                            Phan Thiết
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Phan Thiết 3N2D: HCM - Núi Tà Cú - Hải Đăng Kê Gà - Dinh
+                            Thầy
+                            Thím
+                        </h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-md-2 score" style="max-width:50px">10</div>
+                            <div class="col-md-4 score-des">Tuyệt vời</div>
+                            <div class="col-md comment"> | 1 đánh giá</div>
+                        </div>
+                        <div class="row  list_desmap">
+                            <ul>
+                                <li>Lưu Trú Resort 4 Sao</li>
+                                <li>Dinh Thầy Thím Tâm Linh</li>
+                                <li>KDL Núi Tà Cú</li>
+                            </ul>
+                        </div>
+                        </p>
+                        <a href="#" class="col price">1.050.000 </a>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col col-huyen">
+            <a href="">
+                <div class="card" style="width: 22rem;">
+                    <img src="../img/culao.jpg" class="card-img-top" alt="culao">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Cù Lao Chàm 1N: Đi Bộ Dưới Đáy Biển Cano</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-md-2 score" style="max-width:50px">10</div>
+                            <div class="col-md-4 score-des">Tuyệt vời</div>
+                            <div class="col-md comment"> | 8 đánh giá</div>
+                        </div>
+                        <div class="row  list_desmap">
+                            <ul>
+                                <li>Ngắm san hô</li>
+                                <li>Lướt cano trên biển</li>
+                                <li>Cảnh Sắc Lãng Mạn</li>
+                            </ul>
+                        </div>
+                        </p>
+                        <a href="#" class="col col-huyen price">780.000</a>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col col-huyen">
+            <a href="">
+                <div class="card" style="width: 22rem;">
+                    <img src="../img/danang.jpg" class="card-img-top" alt="danang">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Cao Cấp Đà Nẵng 3N2D: Bà Nà - Sơn Trà - Hội An</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-md-2 score" style="max-width:50px">9.7</div>
+                            <div class="col-md-4 score-des">Rất tốt</div>
+                            <div class="col-md comment"> | 20 đánh giá</div>
+                        </div>
+                        <div class="row  list_desmap">
+                            <ul>
+                                <li>Buffer trưa tại Bà Nà</li>
+                                <li>Hội An</li>
+                                <li>Tiêu chuẩn 5 sao</li>
+                            </ul>
+                        </div>
+                        </p>
+                        <a href="#" class="col price">3.650.000</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row huyen_row ">
+        <div>
+            <h3 class="headline">
+                <span>
+                    Các điểm du lịch phổ biến
+                </span>
+                <a href=""><span class="float-end">Xem thêm ></span></a>
+            </h3>
+        </div>
+        <div class="col col-huyen">
+            <a href="">
+                <div class="card" style="width: 22rem;">
+                    <img src="../img/phuquoc.jpg" class="card-img-top" alt="phuquoc">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Phú Quốc 1N: Vi Vu Cano 5 Đảo - Cáp Treo Hòn Thơm</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-md-2 score" style="max-width:50px">10</div>
+                            <div class="col-md-4 score-des">Tuyệt vời</div>
+                            <div class="col-md comment"> | 1 đánh giá</div>
+                        </div>
+                        <div class="row  list_desmap">
+                            <ul>
+                                <li>Cano 5 Đảo</li>
+                                <li>Cap Treo Hòn Thơm</li>
+                                <li>Tặng Free Bộ Ảnh Chụp Tại Đảo</li>
+                            </ul>
+                        </div>
+                        </p>
+                        <a href="#" class="col col-huyen price">1.050.000 </a>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col col-huyen">
+            <a href="">
+                <div class="card" style="width: 22rem;">
+                    <img src="../img/dalat.jpg" class="card-img-top" alt="dalat">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Đà Lạt 1/2N: Chèo SUP Ngắm Hoàng Hôn Hồ Tuyền Lâm</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-md-2 score" style="max-width:50px">10</div>
+                            <div class="col-md-4 score-des">Tuyệt vời</div>
+                            <div class="col-md comment"> | 8 đánh giá</div>
+                        </div>
+                        <div class="row  list_desmap">
+                            <ul>
+                                <li>Ngắm Hoàng Hôn Siêu Đẹp</li>
+                                <li>Thưởng Thức BBQ Ngon Tuyệt</li>
+                                <li>Cảnh Sắc Lãng Mạn</li>
+                            </ul>
+                        </div>
+                        </p>
+                        <a href="#" class="col col-huyen price">900.000</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col col-huyen">
+            <a href="">
+                <div class="card" style="width: 22rem;">
+                    <img src="../img/nhatrang.jpg" class="card-img-top" alt="nhatrang">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Nha Trang 1N: Khám Phá Vịnh San Hô 2 - Tắm Bùn Hòn Tằm</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-md-2 score" style="max-width:50px">8</div>
+                            <div class="col-md-4 score-des">Rất tốt</div>
+                            <div class="col-md comment"> | 20 đánh giá</div>
+                        </div>
+                        <div class="row  list_desmap">
+                            <ul>
+                                <li>Trải Nghiệm Vịnh San Hô 2</li>
+                                <li>Tắm Bùn Khoángt</li>
+                                <li>Thỏa Sức Party Hồ Bơi</li>
+                            </ul>
+                        </div>
+                        </p>
+                        <a href="#" class="col col-huyen price">1.250.000</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
 
 </div>
 <!--  -->
