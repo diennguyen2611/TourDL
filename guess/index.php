@@ -356,7 +356,7 @@ include('header.php');?>
                             <div class="row  list_desmap">
                                 <ul>
                                     <li>Trải Nghiệm Vịnh San Hô 2</li>
-                                    <li>Tắm Bùn Khoángt</li>
+                                    <li>Tắm Bùn Khoáng</li>
                                     <li>Thỏa Sức Party Hồ Bơi</li>
                                 </ul>
                             </div>
