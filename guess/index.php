@@ -1,5 +1,6 @@
 <?php
-include('header.php');?>
+include('header.php');
+?>
 <!--  -->
 <div class="my-banner" style="overflow: hidden">
     <div class="row">
