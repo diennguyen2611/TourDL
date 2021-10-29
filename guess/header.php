@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="col-md-5" style="margin-top:15px">
-                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">SĐT</h6>
+                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">0293454365</h6>
 
                     <div class="dropdown float-end">
                         <button style="line-height: 40px" class="btn dropdown-toggle text-white hover-th" type="button"
