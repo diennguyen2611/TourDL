@@ -43,6 +43,11 @@
     
 }
 
+.headline a {
+    color: rgb(59, 55, 55);
+    font-size: 18px;
+}
+
 .list_desmap{
     margin-top: 10px;
     margin-left: 10px;
@@ -126,25 +131,75 @@
 
 .my-footer {
     background-color: #ddd;
+<<<<<<< HEAD
     padding: 60px;
+=======
+    padding: 64px;
+>>>>>>> Dien
 }
 
 .hover-th:hover {
     opacity: 0.8;
 }
 
+<<<<<<< HEAD
 .headline a{
     color: rgb(59, 55, 55);
     font-size: 18px;
 }
+=======
+>>>>>>> Dien
 .col-huyen a{
     text-decoration: none;
     color: black;
 }
 
 
+<<<<<<< HEAD
     
 
 .col a p {
     margin-bottom: 0.6rem;
+=======
+/*tourdetails.php*/
+.my-tourdetails{
+    padding: 48px;
+    background-color: rgb(222, 229, 233);
+    box-sizing: border-box;
+}
+
+.my-tour{
+    position: relative;
+    height: 440px;
+    margin-top: 24px;
+}
+
+
+.my-tour .bg{
+    background-image: url(https://cdn2.ivivu.com/2021/08/12/10/canada-01-750x390.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+}
+
+.my-tour .my-intro{
+    background-color: rgb(223, 219, 219);
+    position: absolute;
+    bottom: 0;
+    padding: 16px 0;
+    width: 100%;
+}
+
+.my-tour .my-intro span{
+    color: rgb(109, 104, 104);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.my-tourdes{
+    margin: 48px 0;
+    background-color: #fff;
+    padding: 24px;
+>>>>>>> Dien
 }

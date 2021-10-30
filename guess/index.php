@@ -12,7 +12,7 @@ include('header.php');?>
 
                     <input type="text" class="form-control" placeholder="Bạn muốn đi đâu"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn my-btn-search" type="button" id="button-addon2">Tìm Kiếm</button>
+                    <button class="btn my-btn-search btn-lg" type="button" id="button-addon2">Tìm Kiếm</button>
                 </div>
             </div>
             Tailor tour - Trải nghiệm theo cách riêng của bạn -
