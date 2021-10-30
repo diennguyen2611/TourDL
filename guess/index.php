@@ -1,6 +1,5 @@
 <?php
-include('header.php');
-?>
+include('header.php');?>
 <!--  -->
 <div class="my-banner" style="overflow: hidden">
     <div class="row">
@@ -17,7 +16,7 @@ include('header.php');
                 </div>
             </div>
             Tailor tour - Trải nghiệm theo cách riêng của bạn -
-            <button type="button" class="btn btn-outline-light">Đặt tour riêng</button>
+            <a href="create-tour.php" class="btn btn-outline-light">Đặt tour riêng</a>
         </div>
         <div class="col-md-4 my-hottour text-white">
             <h3>Tour Cô Tô 3N2D</h3>
@@ -196,7 +195,7 @@ include('header.php');
                         <h5 class="card-title">Tour Cao Cấp Đà Nẵng 3N2D: Bà Nà - Sơn Trà - Hội An</h5>
                         <p class="card-text">
                         <div class="row">
-                            <div class="col-md-2 score" style="max-width:50px">9.7</div>
+                        <div class="col-md-2 score" style="max-width:50px">9.7</div>
                             <div class="col-md-4 score-des">Rất tốt</div>
                             <div class="col-md comment"> | 20 đánh giá</div>
                         </div>

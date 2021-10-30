@@ -17,7 +17,7 @@ include('header.php');?>
             <div class="row row-white">
                 <div class="col-md-3">
                     <a href="">
-                        <img class="img-moretour" src="../img/cu-lao-xanhjpg.jpg" alt="cu-lao-xanh">
+                        <img class="img-moretour" src="../img/cu-lao-xanh.jpg" alt="cu-lao-xanh">
                     </a>
                 </div>
                 <div class="col-md-5">
@@ -50,6 +50,7 @@ include('header.php');?>
                     <p class="text-gray">Hết chỗ</p>
                 </div>
             </div>
+            <div class="row row-white">
                 <div class="col-md-3">
                     <a href="">
                         <img class="img-moretour" src="../img/cano.jpg" alt="cano">

@@ -146,6 +146,7 @@
     background-color: white;
     position: relative;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .linkdetail{
     color: #003c71;
@@ -170,7 +171,7 @@
 }
 .textgray-moretour{
     color :rgba(129,129,128,0.85);
-    font-size: 13px;
+    font-size: 14px;
 }
 .hover-th:hover {
     opacity: 0.8;
