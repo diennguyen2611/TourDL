@@ -58,7 +58,7 @@
         <div class="row">
             <div class="col-md-6" style="padding: 70px 0; ">
                 <h2 style="color: var(--my-color); margin-bottom: 22px;">
-                    <img src="../img/tailor-content0.png" alt="" style="width: 40px; margin-right: 10px;">
+                    <img src="../img/tailor-title1.png" alt="" style="width: 40px; margin-right: 10px;">
                     Thiết kế lịch trình riêng
                 </h2>
                 <div style="text-align: justify; margin-right: 20px">
@@ -88,7 +88,7 @@
             </div>
             <div class="col-md-6" style="padding: 70px 0; ">
                 <h2 style="color: var(--my-color); margin-bottom: 22px;">
-                    <img src="../img/tailor-content0.png" alt="" style="width: 40px; margin-right: 20px;">
+                    <img src="../img/tailor-title2.jpg" alt="" style="width: 40px; margin-right: 20px;">
                     Trải nghiệm dịch vụ riêng
                 </h2>
                 <div style="text-align: justify;">
@@ -110,7 +110,7 @@
         <div class="row">
             <div class="col-md-6" style="padding: 70px 0; ">
                 <h2 style="color: var(--my-color); margin-bottom: 22px;">
-                    <img src="../img/tailor-content0.png" alt="" style="width: 40px; margin-right: 10px;">
+                    <img src="../img/tailor-title3.jpg" alt="" style="width: 40px; margin-right: 10px;">
                     Thoải mái tận hưởng trọn vẹn kỳ nghỉ
                 </h2>
                 <div style="text-align: justify; margin-right: 20px">
@@ -134,10 +134,11 @@
         <div class="row huyen_row ">
             <div>
                 <h3 class="headline">
-                    <span>
+                    <img src="../img/tailor-title4.jpg" alt="" style="width: 40px; margin-right: 10px;">
+                    <span style="color: var(--my-color);">
                         Lịch trình đang được yêu thích
                     </span>
-                    <a href=""><span class="float-end">Xem thêm ></span></a>
+                    <a href=""><span class="float-end">Xem thêm tours ></span></a>
                 </h3>
             </div>
             <div class="col col-huyen">
@@ -354,7 +355,7 @@
                         <label for="Input-th" class="form-label">Cách bạn trải nghiệm</label>
                         <input type="text" class="form-control" id="Input-th" placeholder="Thời gian, số khách dự kiến, địa điểm yêu thích, loại hình khách sạn...">
                     </div>
-                    <button type="submit" class="btn btn-primary text-center" style="width: 100%; max-height: 60px">Gửi yêu cầu 
+                    <button type="submit" class="btn btn-primary text-center btn-th" style="width: 100%; max-height: 60px">Gửi yêu cầu 
                         <p style="font-size:13px">Chúng tôi sẽ liên hệ lại sau ít phút</p>
                     </button>
                 </form>
