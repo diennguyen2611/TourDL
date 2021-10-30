@@ -132,6 +132,19 @@
     opacity: 0.8;
 }
 
+.headline a{
+    color: rgb(59, 55, 55);
+    font-size: 18px;
+}
+.col-huyen a{
+    text-decoration: none;
+    color: black;
+}
+
+.col a p {
+    margin-bottom: 0.6rem;
+}
+
 /* CSS: create-tour.php */ 
 .create-tour {
     background-image: url("../img/create-tour.jpg"); 
