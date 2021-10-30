@@ -131,36 +131,33 @@
 
 .my-footer {
     background-color: #ddd;
-<<<<<<< HEAD
-    padding: 60px;
-=======
     padding: 64px;
->>>>>>> Dien
 }
 
 .hover-th:hover {
     opacity: 0.8;
 }
 
-<<<<<<< HEAD
+
 .headline a{
     color: rgb(59, 55, 55);
     font-size: 18px;
 }
-=======
->>>>>>> Dien
+
+
 .col-huyen a{
     text-decoration: none;
     color: black;
 }
 
 
-<<<<<<< HEAD
+
     
 
 .col a p {
     margin-bottom: 0.6rem;
-=======
+}
+
 /*tourdetails.php*/
 .my-tourdetails{
     padding: 48px;
@@ -201,5 +198,5 @@
     margin: 48px 0;
     background-color: #fff;
     padding: 24px;
->>>>>>> Dien
+
 }

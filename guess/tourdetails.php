@@ -3,6 +3,7 @@ include('header.php');
 ?>
 
 <div class="my-tourdetails" >
+    <!--title-->
     <div class="row text-uppercase">
         <h1>COMBO TRỌN GÓI HỒI HƯƠNG TỪ CANADA</h1>
     </div>
@@ -73,7 +74,7 @@ include('header.php');
                 chuẩn
                 02 người/ phòng (nếu quý khách có nhu cầu đăng ký phòng đơn sẽ có phụ thu). Tại Khách Sạn, quý khách sẽ
                 được
-                xét nghiệm kiểm tra COVID-19 theo quy định.
+                xét nghiệm kiểm tra COVID-19  theo quy định.
 
                 - Sau khi hoàn thành thời gian cách ly tại khách sạn và kiểm tra sức khỏe theo yêu cầu của Bộ Y Tế, quý
                 khách sẽ được về nơi lưu trú, nhưng sẽ tiếp tục tự cách ly tại nhà thêm 07 hoặc 14 ngày tùy quy định của

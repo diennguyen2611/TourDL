@@ -25,17 +25,12 @@
             </div>
             <div class="col">
                 <h5 style="margin-bottom: 16px">Đối tác & Liên Kết</h5>
-<<<<<<< HEAD
+
                 <a class="text-decoration-none text-dark" href="#">
                     <p>Vietnam Airlines</p>
                 </a>
                 <a class="text-decoration-none text-dark" href="#">
-=======
-                <a class="text-decoration-none text-dark" href="#">
-                    <p>Vietnam Airlines</p>
-                </a>
-                <a class="text-decoration-none text-dark" href="#">
->>>>>>> Dien
+
                     <p>VNExpress</p>
                 </a>
 
@@ -45,10 +40,6 @@
                 <a href="#"><img style="width:50%" src="../img/footer.png" alt=""></a>
             </div>
         </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> Dien
         <div class="row" style="margin-top: 32px">
             <div class="col-md-1"></div>
             <div class="col-md-8">
@@ -73,60 +64,45 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
+       
+                <div class="col-md-3">
+                    <p>Bạn cần trợ giúp? <b>Hãy gọi ngay</b></p>
+                    <div class="col-huyen">
+                        <i class="fas fa-phone-alt text-secondary" style="font-size:13px"></i>
+                        <b>CSKH: </b><a href="#">(028) 3933 8002</a>
+                    </div>
+                    <div class="col-huyen" style="margin-top:5px">
+                        <i class="fas fa-phone-alt text-secondary" style="font-size:13px"></i>
+                        <b>Hotline: </b><a href="#">0906 355 542</a>
+                    </div>
+                    <div class="col-huyen" style="margin-top:5px">
+                        <i class="far fa-clock text-gray-dark" style="font-size:15px"> Từ 8h30 - 18h hằng ngày</i>
+                        <p></p>
+                    </div>
+                  <div class="container">
+                        <a style="margin-right: 8px;" href="#">
+                            <img style="width:15%" src="https://img.icons8.com/color/48/000000/facebook-new.png" /></a>
 
-=======
->>>>>>> Dien
-            <div class="col-md-3">
-                <p>Bạn cần trợ giúp? <b>Hãy gọi ngay</b></p>
-                <div class="col-huyen">
-                    <i class="fas fa-phone-alt text-secondary" style="font-size:13px"></i>
-                    <b>CSKH: </b><a href="#">(028) 3933 8002</a>
-                </div>
-                <div class="col-huyen" style="margin-top:5px">
-                    <i class="fas fa-phone-alt text-secondary" style="font-size:13px"></i>
-                    <b>Hotline: </b><a href="#">0906 355 542</a>
-                </div>
-                <div class="col-huyen" style="margin-top:5px">
-                    <i class="far fa-clock text-gray-dark" style="font-size:15px"> Từ 8h30 - 18h hằng ngày</i>
-                    <p></p>
-                </div>
-<<<<<<< HEAD
+                        <a style="margin-right: 8px;" href="#"><img style="width:15%"
+                                src="https://img.icons8.com/fluency/48/000000/instagram-new.png" /></a>
 
-                <div class="container">
-                    <a style="margin-right: 8px;" href="#">
-                        <img style="width:15%" src="https://img.icons8.com/color/48/000000/facebook-new.png" /></a>
-
-                    <a style="margin-right: 8px;" href="#"><img style="width:15%"
-                            src="https://img.icons8.com/fluency/48/000000/instagram-new.png" /></a>
-
-                    <a style="margin-right: 8px;" href="#"><img style="width:15%"
-                            src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></a>
+                        <a style="margin-right: 8px;" href="#"><img style="width:15%"
+                                src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></a>
 
 
 
                 </div>
-            </div>
         </div>
+    </div>
 
-=======
-                <div class="container">
-                    <a style="margin-right: 8px;" href="#">
-                        <img style="width:15%" src="https://img.icons8.com/color/48/000000/facebook-new.png" /></a>
-                    <a style="margin-right: 8px;" href="#"><img style="width:15%"
-                            src="https://img.icons8.com/fluency/48/000000/instagram-new.png" /></a>
-                    <a style="margin-right: 8px;" href="#"><img style="width:15%"
-                            src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></a>
-                </div>
-            </div>
-        </div>
->>>>>>> Dien
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-        </body>
-<<<<<<< HEAD
 
-=======
->>>>>>> Dien
-        </html>
+   
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+</body>
+
+    </html>

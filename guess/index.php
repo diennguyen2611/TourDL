@@ -12,11 +12,11 @@ include('header.php');?>
 
                     <input type="text" class="form-control" placeholder="Bạn muốn đi đâu"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn my-btn-search btn-lg" type="button" id="button-addon2">Tìm Kiếm</button>
+                    <button class="btn my-btn-search" type="button" id="button-addon2">Tìm Kiếm</button>
                 </div>
             </div>
             Tailor tour - Trải nghiệm theo cách riêng của bạn -
-            <a href="../guess/create-tour.php" class="btn btn-outline-light">Đặt tour riêng</a>
+            <button type="button" class="btn btn-outline-light">Đặt tour riêng</button>
         </div>
         <div class="col-md-4 my-hottour text-white">
             <h3>Tour Cô Tô 3N2D</h3>
