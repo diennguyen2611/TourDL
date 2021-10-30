@@ -16,7 +16,7 @@
     font-size: 16px;
     font-weight: 650;
 }
-.my_map .score{
+.score{
     padding: 3px ,5px;
     border-radius: 6px;
     background: #9fc43a;
@@ -24,7 +24,7 @@
     font-weight: bold;
     margin-left: 10px;
 }
-.my_map .score-des{
+.score-des{
     color: #9fc43a;
     font-weight: bold;
 }
@@ -147,5 +147,4 @@
 
 .col a p {
     margin-bottom: 0.6rem;
-
 }
