@@ -185,7 +185,7 @@
     padding: 24px;
 }
 
-.my-tourdes .des{
+.my-tourdetails .des{
     margin-top: 24px;
 }
 
@@ -241,3 +241,40 @@
     position: sticky;
     top: 0;
 }
+
+.my-tour-connect{
+    padding: 24px 18px;
+    background-color: white;
+  
+}
+
+.my-tourdetails .my-headline{
+    background-color: #DDDDDD;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.my-tourdetails h1{
+    color: var(--my-color);
+}
+
+.my-tour-connect .price{
+    margin: 72px 0 0 0;
+}
+
+.my-tour-connect .card-title{
+    margin-bottom: 24px;
+    color: var(--my-color);
+}
+
+.my-tourdetails a{
+    text-decoration: none;
+        color: var(--my-color);
+}
+
+.my-tour-connect .price{
+    color: #339cff;
+}
+
+
+

@@ -143,7 +143,7 @@ include('header.php');
 
             </div>
         </div>
-        <div class="col-md-5 my-sticky">
+        <div class="col-md-5">
             <form class="my-orderTour">
                 <p><b>Đặt ngay, chỉ 2 phút. Hoặc gọi (028)39338002</b></p>
                 <div class="row mb-3 info">
@@ -189,6 +189,103 @@ include('header.php');
 
         </div>
     </div>
+
+    <div class="my-headline">
+        <h6>
+            <span>
+                Các tour du lịch liên quan
+            </span>
+            <a href="" class="float-end">Xem thêm ></a>
+        </h6>
+    </div>
+    <div class="my-tour-connect">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="">
+                    <div class="card">
+                        <img src="../img/canada.jpg" class="card-img-top" alt="canada">
+                        <div class="card-body">
+                            <h6 class="card-title text-uppercase">Combo trọn gói hồi hương từ Anh</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="card-text">
+                                        <span><i class="far fa-clock"></i></span>
+                                        2 Ngày 1 Đêm
+                                    </p>
+                                </div>
+                                <div class="col-md-6 float-end">
+                                    <i class="fas fa-plane float-end"></i>
+                                </div>
+                            </div>
+                            <div class="price float-end">
+                                <h6>87.900.000<span>
+                                        VNĐ
+                                    </span></h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="">
+                    <div class="card">
+                        <img src="../img/duc.jpg" class="card-img-top" alt="canada">
+                        <div class="card-body">
+                            <h6 class="card-title text-uppercase">COMBO TRỌN GÓI HỒI HƯƠNG TỪ ĐỨC</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="card-text">
+                                        <span><i class="far fa-clock"></i></span>
+                                        2 Ngày 1 Đêm
+                                    </p>
+                                </div>
+                                <div class="col-md-6 float-end">
+                                    <i class="fas fa-plane float-end"></i>
+                                </div>
+                            </div>
+                            <div class="price float-end">
+                                <h6>87.900.000<span>
+                                        VNĐ
+                                    </span></h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="">
+                    <div class="card">
+                        <img src="../img/phap.jpg" class="card-img-top" alt="canada">
+                        <div class="card-body">
+                            <h6 class="card-title text-uppercase">Combo trọn gói hồi hương từ PHÁP</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="card-text">
+                                        <span><i class="far fa-clock"></i></span>
+                                        2 Ngày 1 Đêm
+                                    </p>
+                                </div>
+                                <div class="col-md-6 float-end">
+                                    <i class="fas fa-plane float-end"></i>
+                                </div>
+                            </div>
+                            <div class="price float-end">
+                                <h6>87.900.000<span>
+                                        VNĐ
+                                    </span></h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
 </div>
 
 
