@@ -125,7 +125,7 @@
 
 .my-footer {
     background-color: #ddd;
-    padding: 32px;
+    padding: 60px;
 }
 
 .hover-th:hover {
@@ -140,6 +140,7 @@
     text-decoration: none;
     color: black;
 }
+<<<<<<< HEAD
 .header-moretour{
     text-align: center;
     font-size: 40px;
@@ -187,4 +188,9 @@
 .textgray-moretour{
     color :rgba(129,129,128,0.85);
     font-size: 13px;
+=======
+
+.col a p {
+    margin-bottom: 0.6rem;
+>>>>>>> 03425e00c72c5b73f27a4439210d4a901b0caa93
 }
