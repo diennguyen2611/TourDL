@@ -25,28 +25,28 @@
     <div class="row text-center tailor-service-th">
         <div class="col-md-3 col-th">
             <div class="tailor-item">
-                <img src="../img/tailor-service1.png" alt="" class="img-tailor-th">
+                <img src="../img/tailor-service1.png" alt="" class="img-tailor-th img-fluid">
                 <p>Thiết kế hành trình riêng</p>
 
             </div>
         </div>
         <div class="col-md-3 col-th">
             <div class="tailor-item">
-                <img src="../img/tailor-service2.png" alt="" class="img-tailor-th">
+                <img src="../img/tailor-service2.png" alt="" class="img-tailor-th  img-fluid">
                 <p>Dịch vụ theo nhu cầu</p>
             </div>
         </div>
         <div class="col-md-3 col-th">
             <div class="tailor-item">
 
-                <img src="../img/tailor-service3.png" alt="" class="img-tailor-th">
+                <img src="../img/tailor-service3.png" alt="" class="img-tailor-th  img-fluid">
                 <p>Thời gian linh hoạt</p>
             </div>
         </div>
         <div class="col-md-3 col-th">
             <div class="tailor-item">
 
-                <img src="../img/tailor-service4.jpg" alt="" class="img-tailor-th">
+                <img src="../img/tailor-service4.jpg" alt="" class="img-tailor-th  img-fluid">
                 <p>Có đội ngũ tư vấn riêng</p>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="../img/tailor-content1.jpg" alt="">
+                <img src="../img/tailor-content1.jpg" alt="" class="img-fluid">
             </div>
         </div>
     </div>
@@ -84,7 +84,7 @@
     <div class="container" style="padding: 30px 0 50px">
         <div class="row">
             <div class="col-md-6">
-                <img src="../img/tailor-content2.jpg" alt="">
+                <img src="../img/tailor-content2.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-md-6" style="padding: 70px 0; ">
                 <h2 style="color: var(--my-color); margin-bottom: 22px;">
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="../img/tailor-content3.jpg" alt="">
+                <img src="../img/tailor-content3.jpg" alt="" class="img-fluid">
             </div>
 
         </div>
@@ -184,7 +184,8 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Tour Limousine Phú Yên 3N3D: Điệp Sơn - Cực Đông Tổ Quốc - Cao Nguyên Vân Hòa</h5>
+                            <h5 class="card-title">Tour Limousine Phú Yên 3N3D: Điệp Sơn - Cực Đông Tổ Quốc - Cao Nguyên
+                                Vân Hòa</h5>
                             <p class="card-text">
 
                             <div class="row  list_desmap">
@@ -213,7 +214,8 @@
                         </div>
 
                         <div class="card-body">
-                            <h5 class="card-title">Tour Limousine Tứ Bình 3N3D: Bình Ba - Bình Hưng - Bình Lập - Bình Tiên - Ninh Chữ</h5>
+                            <h5 class="card-title">Tour Limousine Tứ Bình 3N3D: Bình Ba - Bình Hưng - Bình Lập - Bình
+                                Tiên - Ninh Chữ</h5>
                             <p class="card-text">
                             <div class="row  list_desmap">
                                 <ul>
@@ -231,7 +233,7 @@
         </div>
 
         <div class="row huyen_row ">
-            
+
             <div class="col col-huyen">
                 <a href="">
                     <div class="card " style="width: 22rem;">
@@ -271,7 +273,8 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Tour Cao Cấp Phan Thiết 2N1D: TP. HCM - Vương Quốc Chăm Pa - Bàu Sen VIP</h5>
+                            <h5 class="card-title">Tour Cao Cấp Phan Thiết 2N1D: TP. HCM - Vương Quốc Chăm Pa - Bàu Sen
+                                VIP</h5>
                             <p class="card-text">
 
                             <div class="row  list_desmap">
@@ -321,6 +324,44 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="form-send-require">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../img/tuvan.jpg" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-md-6" style="padding-left:20px;">
+                <form>
+                    <h3>Gửi yêu cầu lịch trình</h3>
+                    <p>Hãy để chuyên gia du lịch tư vấn miễn phí cho bạn nhé</p>
+                    <div class="mb-3">
+                        <label for="InputName" class="form-label">Họ Tên</label>
+                        <input type="text" class="form-control" id="InputName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputMobile" class="form-label">Điện Thoại</label>
+                        <input type="text" class="form-control" id="InputMobile">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                    </div>
+     
+                    <div class="mb-3">
+                        <label for="Input-th" class="form-label">Cách bạn trải nghiệm</label>
+                        <input type="text" class="form-control" id="Input-th" placeholder="Thời gian, số khách dự kiến, địa điểm yêu thích, loại hình khách sạn...">
+                    </div>
+                    <button type="submit" class="btn btn-primary text-center" style="width: 100%; max-height: 60px">Gửi yêu cầu 
+                        <p style="font-size:13px">Chúng tôi sẽ liên hệ lại sau ít phút</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 

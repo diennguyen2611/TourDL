@@ -223,4 +223,13 @@
     text-decoration: none;
 }
 
+.form-send-require {
+    padding: 50px;
+    min-height: 300px;
+    background-color: #F8EFBA;
+}
+
+#Input-th {
+    min-height: 70px;
+}
 /*  */
