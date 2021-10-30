@@ -15,7 +15,7 @@
     font-size: 16px;
     font-weight: 650;
 }
-.my_map .score{
+.score{
     padding: 3px ,5px;
     border-radius: 6px;
     background: #9fc43a;
@@ -23,7 +23,7 @@
     font-weight: bold;
     margin-left: 10px;
 }
-.my_map .score-des{
+.score-des{
     color: #9fc43a;
     font-weight: bold;
 }
@@ -183,4 +183,61 @@
     margin: 48px 0;
     background-color: #fff;
     padding: 24px;
+}
+
+.my-tourdes .des{
+    margin-top: 24px;
+}
+
+.my-orderTour{
+    padding: 24px 18px;
+    margin: 24px 24px 0;
+    background-color: #F3E2A9;
+}
+
+.my-orderTour .info{
+    padding: 12px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+.my-orderTour input{
+    border: none;
+}
+
+.my-orderTour select{
+    margin: 0!important;
+    padding: 8px;
+}
+
+.my-orderTour .total{
+    color: #FE9A2E;
+    margin: 0 8px;
+}
+
+.my-orderTour button{
+    background-color:#FE9A2E ;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.my-orderTour .order-btn{
+    padding: 8px;
+}
+
+.my-list-option{  
+    margin: 24px 24px 0;
+}
+.my-relative{
+    position: relative;
+}
+
+.my-sticky{
+    position: sticky;
+    top: 0;
 }
