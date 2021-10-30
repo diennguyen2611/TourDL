@@ -41,7 +41,7 @@ include('header.php');
 
 
 
-            <div class="my-tourSchedule">
+            <div class="my-tourSchedule my-test">
                 <h3>Chương trình tour</h3>
                 Để đảm bảo có thể hồi hương Việt Nam thành công trong thời điểm Covid 19 này, quý khách có nguyện vọng
                 hồi
