@@ -42,6 +42,11 @@
     
 }
 
+.headline a {
+    color: rgb(59, 55, 55);
+    font-size: 18px;
+}
+
 .list_desmap{
     margin-top: 10px;
     margin-left: 10px;
@@ -125,11 +130,16 @@
 
 .my-footer {
     background-color: #ddd;
-    padding: 32px;
+    padding: 64px;
 }
 
 .hover-th:hover {
     opacity: 0.8;
+}
+
+.col-huyen a{
+    text-decoration: none;
+    color: black;
 }
 
 
