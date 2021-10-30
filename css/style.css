@@ -125,7 +125,7 @@
 
 .my-footer {
     background-color: #ddd;
-    padding: 32px;
+    padding: 64px;
 }
 
 .hover-th:hover {
@@ -151,5 +151,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 500px; } 
+    min-height: 500px; 
+} 
+
+.banner-content-th{
+    margin-top: 10%;
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255,1);
+    padding: 16px;
+    
+}
 /*  */
