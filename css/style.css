@@ -15,7 +15,7 @@
     font-size: 16px;
     font-weight: 650;
 }
-.my_map .score{
+.score{
     padding: 3px ,5px;
     border-radius: 6px;
     background: #9fc43a;
@@ -23,7 +23,7 @@
     font-weight: bold;
     margin-left: 10px;
 }
-.my_map .score-des{
+.score-des{
     color: #9fc43a;
     font-weight: bold;
 }
@@ -139,4 +139,52 @@
 .col-huyen a{
     text-decoration: none;
     color: black;
+}
+.header-moretour{
+    text-align: center;
+    font-size: 40px;
+    color: #003c71;
+    margin: 50px 0 30px 0;
+}
+.my_moretour{
+    background-color:#ecf0f5;
+}
+.img-moretour{
+    position: absolute;
+    width: 23%;
+    height: 90%;
+    margin-top: 8px;
+}
+.row-white{
+    background-color: white;
+    position: relative;
+    margin-top: 30px;
+}
+.linkdetail{
+    color: #003c71;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600
+}
+.list_moretour >ul {
+    color: #00abc5;
+    margin: 5px 0 10px 18px;
+}
+.text-gray{
+    color: #a4a4a3;
+    font-size: 30px;
+    text-align: center;
+    margin-right: -55px;
+    margin-top: 55px;
+}
+.text-centermoretour{
+    text-align: right;
+}
+.price-moretour{
+    color: #00c1de;
+    font-size: 30px;
+}
+.textgray-moretour{
+    color :rgba(129,129,128,0.85);
+    font-size: 13px;
 }
