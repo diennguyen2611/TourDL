@@ -198,8 +198,29 @@
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 6px 0 rgb(0 0 0 / 10%);
-    background-color: #F8EFBA;
+    background-color: #feeec7;
     padding: 15px;
+}
+
+.tailor-content-1 {
+    background-color: #ecf0f5;
+    min-height: 300px;
+    
+}
+
+.tailor-content-2 {
+    font-size: 13px;
+    width: 100%;
+    margin-top: 30px ;
+    padding: 64px 0;
+}
+
+.price-th{
+    font-size: 22px;
+    font-weight: bold;
+    float: right ;
+    color: #00C1DE !important;
+    text-decoration: none;
 }
 
 /*  */
