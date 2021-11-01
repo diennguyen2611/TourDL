@@ -16,7 +16,7 @@ include('header.php');?>
         <div class="container">
             <div class="row row-white">
                 <div class="col-md-3">
-                    <a href="">
+                    <a href="tourdetails.php">
                         <img class="img-moretour" src="../img/cu-lao-xanh.jpg" alt="cu-lao-xanh">
                     </a>
                 </div>
