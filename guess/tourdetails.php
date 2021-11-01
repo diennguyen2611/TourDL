@@ -178,7 +178,7 @@ include('header.php');
 
 
                 <div class="mb-3 order-btn">
-                    <button type="submit" class="btn btn-primary">Yêu cầu đặt</button>
+                    <a class="dropdown-item order text-center" href="#order" data-bs-toggle="modal">Yêu cầu đặt</a>
                 </div>
             </form>
 
@@ -199,13 +199,13 @@ include('header.php');
             <span>
                 Các tour du lịch liên quan
             </span>
-            <a href="" class="float-end">Xem thêm ></a>
+            <a href="moretour.php" class="float-end">Xem thêm ></a>
         </h6>
     </div>
     <div class="my-tour-connect">
         <div class="row">
             <div class="col-md-4">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card">
                         <img src="../img/canada.jpg" class="card-img-top" alt="canada">
                         <div class="card-body">
@@ -232,7 +232,7 @@ include('header.php');
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card">
                         <img src="../img/duc.jpg" class="card-img-top" alt="canada">
                         <div class="card-body">
@@ -259,7 +259,7 @@ include('header.php');
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card">
                         <img src="../img/phap.jpg" class="card-img-top" alt="canada">
                         <div class="card-body">
@@ -286,6 +286,54 @@ include('header.php');
                 </a>
             </div>
 
+        </div>
+    </div>
+
+    <!--form đặt -->
+    <!-- Giao diện Tài khoản đặt tour -->
+    <div class="modal fade" id="order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+           
+                <div class="modal-header">
+                    <h5 class="modal-title">Yêu cầu đặt tour</h5>
+                   
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
+                </div>
+                
+                <div class="modal-body">
+                <p class="">Quý khách vui lòng điền thông tin bên dưới</p>
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="hoten" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="hoten" 
+                                name="hoten">
+                        </div>
+                        <div class="mb-3">
+                            <label for="dienthoai" class="form-label">Điện thoại</label>
+                            <input type="text" class="form-control" id="dienthoai" name="dienthoai">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="khac" class="form-label">Yêu cầu khác</label>
+                            <input type="text" class="form-control" id="khac" name="khac">
+
+                        </div>
+                        
+                        <button type="submit" class="btn text-center btn-th" style="width: 100%; max-height: 60px">Gửi yêu cầu 
+                        <p style="font-size:13px">Chúng tôi sẽ liên hệ lại sau ít phút</p>
+                    </button>
+                    </form>
+                </div>
+
+            </div>
         </div>
     </div>
 

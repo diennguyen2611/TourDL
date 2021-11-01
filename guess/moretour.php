@@ -57,7 +57,7 @@ include('header.php');?>
                 </div>
                 <div class="col-md-5">
                     <div class="row">
-                        <a href="" class="linkdetail">
+                        <a href="tourdetails.php" class="linkdetail">
                             Tour Cù Lao Chàm 1N: Đi Bộ Dưới Đáy Biển Cano
                         </a>
                     </div>
@@ -94,7 +94,7 @@ include('header.php');?>
                 </div>
                 <div class="col-md-5">
                     <div class="row">
-                        <a href="" class="linkdetail">
+                        <a href="tourdetails.php" class="linkdetail">
                             Tour Đà Lạt 1N1D: Cắm Trại Cây Thông Cô Đơn
                         </a>
                     </div>
@@ -124,13 +124,13 @@ include('header.php');?>
             </div>
             <div class="row row-white">
                 <div class="col-md-3">
-                    <a href="">
+                    <a href="tourdetails.php">
                         <img class="img-moretour" src="../img/nha-trang.jpg" alt="dalat">
                     </a>
                 </div>
                 <div class="col-md-5">
                     <div class="row">
-                        <a href="" class="linkdetail">
+                        <a href="tourdetails.php" class="linkdetail">
                             Tour Nha Trang 1N: Khám Phá Vịnh San Hô 2 - Tắm Bùn Hòn Tằm
                         </a>
                     </div>
@@ -161,13 +161,13 @@ include('header.php');?>
             </div>
             <div class="row row-white">
                 <div class="col-md-3">
-                    <a href="">
+                    <a href="tourdetails.php">
                         <img class="img-moretour" src="../img/phu-quoc.jpg" alt="dalat">
                     </a>
                 </div>
                 <div class="col-md-5">
                     <div class="row">
-                        <a href="" class="linkdetail">
+                        <a href="tourdetails.php" class="linkdetail">
                             Tour Phú Quốc 1N: Vi Vu Cano 5 Đảo - Cáp Treo Hòn Thơm
                         </a>
                     </div>
@@ -198,13 +198,13 @@ include('header.php');?>
             </div>
             <div class="row row-white">
                 <div class="col-md-3">
-                    <a href="">
+                    <a href="tourdetails.php">
                         <img class="img-moretour" src="../img/hoang-hon.jpg" alt="dalat">
                     </a>
                 </div>
                 <div class="col-md-5">
                     <div class="row">
-                        <a href="" class="linkdetail">
+                        <a href="tourdetails.php" class="linkdetail">
                             Tour Đà Lạt 1/2N: Chèo SUP Ngắm Hoàng Hôn Hồ Tuyền Lâm
                         </a>
                     </div>
@@ -235,13 +235,13 @@ include('header.php');?>
             </div>
             <div class="row row-white">
                 <div class="col-md-3">
-                    <a href="">
+                    <a href="tourdetails.php">
                         <img class="img-moretour img-fluid" src="../img/dalat.jpg" alt="phuquoc">
                     </a>
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <a href="" class="linkdetail">
+                        <a href="tourdetails.php" class="linkdetail">
                             Tour Phú Quốc 1N: Xe Jeep Khám Phá Nam Đảo
                         </a>
                     </div>
@@ -271,13 +271,13 @@ include('header.php');?>
             </div>
             <div class="row row-white">
                 <div class="col-md-3">
-                    <a href="">
+                    <a href="tourdetails.php">
                         <img class="img-moretour" src="../img/chua-phuquoc.jpg" alt="chua-phuquoc">
                     </a>
                 </div>
                 <div class="col-md-5">
                     <div class="row">
-                        <a href="" class="linkdetail">
+                        <a href="tourdetails.php" class="linkdetail">
                             Tour Phú Quốc 1N: xe Jeep Khám Phá Bắc Đảo
                         </a>
                     </div>
