@@ -8,11 +8,7 @@ include('../config/connect.php');?>
             $hotline = $row['Hotline'];
             $contactTime = $row['ContactTime'];
             $location = $row['Location'];
-            $linkfacebook = $row['LinkFaceBook'];
-            $linkinsta = $row['LinkInsta'];
-            $linktwitter = $row['LinkTwitter'];
             $email = $row['Email'];
-            $banner = $row['banner'];
            }}?>
 
 <div class="my-footer" id="footer">
