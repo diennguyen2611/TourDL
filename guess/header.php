@@ -13,7 +13,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>Quản lý tours du lịch</title>
+    <title>Quản lý tour du lịch </title>
 
 </head>
 
@@ -66,7 +66,7 @@
                 </div>
 
                 <div class="col-md-5" style="margin-top:15px">
-                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">SĐT</h6>
+                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">0293454365</h6>
 
                     <div class="dropdown float-end">
                         <button style="line-height: 40px" class="btn dropdown-toggle text-white hover-th" type="button"

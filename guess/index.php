@@ -55,7 +55,7 @@ include('header.php');?>
                     <span>
                         Trải nghiệm quốc tế
                     </span>
-                    <a href=""><span class="float-end">Xem thêm ></span></a>
+                    <a href="moretour.php"><span class="float-end">Xem thêm ></span></a>
                 </h3>
             </div>
             <div class="col col-huyen">
@@ -157,7 +157,7 @@ include('header.php');?>
                     <span>
                         Trải nghiệm địa phương
                     </span>
-                    <a href=""><span class="float-end">Xem thêm ></span></a>
+                    <a href="moretour.php"><span class="float-end">Xem thêm ></span></a>
                 </h3>
             </div>
             <div class="col col-huyen">
@@ -267,7 +267,7 @@ include('header.php');?>
                     <span>
                         Các điểm du lịch phổ biến
                     </span>
-                    <a href=""><span class="float-end">Xem thêm ></span></a>
+                    <a href="moretour.php"><span class="float-end">Xem thêm ></span></a>
                 </h3>
             </div>
             <div class="col col-huyen">
