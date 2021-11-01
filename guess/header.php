@@ -1,3 +1,13 @@
+<?php
+include('../config/connect.php');?>
+<?php 
+    $sql0 = "select * from contact";
+    $result0 = mysqli_query($conn, $sql0);
+    if(mysqli_num_rows($result0)>0){
+        while($row=mysqli_fetch_assoc($result0)){
+            $hotline = $row['Hotline'];
+           }}?>
+           
 <!doctype html>
 <html lang="en">
 
@@ -76,7 +86,7 @@
                 </div>
 
                 <div class="col-md-5" style="margin-top:15px">
-                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">0293454365</h6>
+                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;"><?php echo  $hotline ?></h6>
 
                     <div class="dropdown float-end">
                         <button style="line-height: 40px" class="btn dropdown-toggle text-white hover-th" type="button"
