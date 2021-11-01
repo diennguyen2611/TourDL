@@ -86,13 +86,9 @@ if(mysqli_num_rows($result)>0){
                     while($row=mysqli_fetch_assoc($result2)){ $tourPrice = $row['TourPrice']; }}
                 else echo $sql2;
                 ?>
-            <!--thiếu 2 ngoặc -->
-            <!--  -->
-
-
 
             <div class="col col-huyen">
-                <a href="tourdetails.php">
+                <a href="tourdetails.php?id=<?php echo $tourId ?>">
                     <div class="card" style="width: 22rem;">
                         <div class="huyen-img">
                             <img src="<?php echo $tourImg ?>" class="card-img-top" alt="<?echo $tourName ?>">
@@ -122,8 +118,8 @@ if(mysqli_num_rows($result)>0){
                 </a>
             </div> 
             <?php } } ?>
-           
-        </div>
+
+                 </div>
         <?php }}?>
     </div> 
    
