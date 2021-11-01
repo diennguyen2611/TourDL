@@ -47,10 +47,12 @@
                                             href="index.php">Home</a>
                                     </li>
                                     <li class="nav-item hover-th">
-                                        <a class="nav-link active text-white" aria-current="page" href="moretour.php">Tours</a>
+                                        <a class="nav-link active text-white" aria-current="page"
+                                            href="moretour.php">Tours</a>
                                     </li>
                                     <li class="nav-item hover-th">
-                                        <a class="nav-link active text-white" aria-current="page" href="#footer">Contact</a>
+                                        <a class="nav-link active text-white" aria-current="page"
+                                            href="#footer">Contact</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle text-white hover-th" href="#"
@@ -61,8 +63,8 @@
                                             <li><a class="dropdown-item" href="#">Khách sạn</a></li>
                                             <li><a class="dropdown-item" href="#">Ăn uống</a></li>
 
-                                            <li><a class="dropdown-item" href="#login-guess"
-                                                    data-bs-toggle="modal">Tài khoản đặt tour</a></li>
+                                            <li><a class="dropdown-item" href="#login-guess" data-bs-toggle="modal">Tài
+                                                    khoản đặt tour</a></li>
                                         </ul>
 
 
@@ -84,7 +86,8 @@
                         </button>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
                             aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#login-admin" style="font-weight:500" data-bs-toggle="modal">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#login-admin" style="font-weight:500"
+                                    data-bs-toggle="modal">Đăng nhập</a></li>
                             <p>Chưa có tài khoản <a href="#register" data-bs-toggle="modal">Đăng ký</a> ngay</p>
                         </ul>
                     </div>
@@ -122,5 +125,73 @@
             </div>
         </div>
     </div>
-    <!-- End: Nav -->
+    <!-- -->
 
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+    <!-- Modal login -->
+    <div class="modal fade" id="login-admin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đăng nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email / Số điện thoại</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                name="email" placeholder="Email / Số điện thoại">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Mật khẩu">
+
+                        </div>
+                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <!-- Modal register -->
+    <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đăng ký</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email </label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                name="email" placeholder="Email ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Mật khẩu">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Xác nhận mật khẩu</label>
+                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Xác nhận mật khẩu">
+
+                        </div>
+                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng ký</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -->
