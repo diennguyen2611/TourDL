@@ -138,28 +138,18 @@
     opacity: 0.8;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> Ha
 .headline a{
     color: rgb(59, 55, 55);
     font-size: 18px;
 }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> Ha
 .col-huyen a{
     text-decoration: none;
     color: black;
 }
 
-<<<<<<< HEAD
 
-
-    
 
 .col a p {
     margin-bottom: 0.6rem;
@@ -207,10 +197,7 @@
     padding: 24px;
 
 }
-=======
-.col a p {
-    margin-bottom: 0.6rem;
-}
+
 
 /* CSS: create-tour.php */ 
 .tailor-tour {
@@ -301,4 +288,4 @@
     min-height: 70px;
 }
 /*  */
->>>>>>> Ha
+

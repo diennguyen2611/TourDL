@@ -138,7 +138,7 @@
                     <span style="color: var(--my-color);">
                         Lịch trình đang được yêu thích
                     </span>
-                    <a href=""><span class="float-end">Xem thêm tours ></span></a>
+                    <a href="moretour.php"><span class="float-end">Xem thêm tours ></span></a>
                 </h3>
             </div>
             <div class="col col-huyen">

@@ -12,13 +12,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css">
-<<<<<<< HEAD
+
 
     <title>Quản lý tours du lịch</title>
 
-=======
-    <title>Quản lý tour du lịch </title>
->>>>>>> Ha
+
 </head>
 
 <body>
@@ -124,76 +122,3 @@
             </div>
         </div>
     </div>
-
-    <!-- Giao diện đăng nhập -->
-    <!-- <div class="modal fade" id="login-admin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Đăng nhập bằng</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                    <div class="col-md-4">
-                        <button class="btn btn-primary">Facebook</button>
-                    </div>
-                    <div class="col-md-4">
-                    <button class="btn btn-danger">Google</button>
-                        
-                    </div>
-                    </div>
-                    <div class="col-md-2"></div>
-
-                </div>
-                <div class="modal-body">
-                    <form action="#" method="POST">
-                        <div class="mb-3">
-                            <label for="email-ad" class="form-label">Email</label>
-                            <input type="email-ad" class="form-control" id="email-ad" aria-describedby="emailHelp"
-                                name="email-ad" placeholder="Địa chỉ Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="pass-ad" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="pass-ad" name="pass-ad" placeholder="Mật khẩu">
-
-                        </div>
-                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
-
-
-    <!-- Giao diện đăng kí -->
-    <!-- <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Đăng nhập bằng</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="#" method="POST">
-                        <div class="mb-3">
-                            <label for="email-u" class="form-label">Email</label>
-                            <input type="email-u" class="form-control" id="email-u" aria-describedby="emailHelp"
-                                name="email-u" placeholder="Địa chỉ Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="pass-u" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="pass-u" name="pass-u" placeholder="Mật khẩu">
-
-                        </div>
-                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
