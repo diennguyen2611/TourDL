@@ -12,7 +12,7 @@ include('header.php');?>
 
                     <input type="text" class="form-control" placeholder="Bạn muốn đi đâu"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn my-btn-search" type="button" id="button-addon2">Tìm Kiếm</button>
+                   <a href="" class="btn my-btn-search btn-lg" type="button" id="button-addon2">Tìm Kiếm</a>
                 </div>
             </div>
             Tailor tour - Trải nghiệm theo cách riêng của bạn -
@@ -59,7 +59,7 @@ include('header.php');?>
                 </h3>
             </div>
             <div class="col col-huyen">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
                     <div class="huyen-img">
                     <img src="../img/CANADA.jpg" class="card-img-top" alt="CANADA">
@@ -89,7 +89,7 @@ include('header.php');?>
                 </a>
             </div>
             <div class="col col-huyen">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
                     <div class="huyen-img">
                     <img src="../img/DUC.jpg" class="card-img-top" alt="DUC">
@@ -119,7 +119,7 @@ include('header.php');?>
                 </a>
             </div>
             <div class="col col-huyen">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
                     <div class="huyen-img">
                     <img src="../img/PHAP.jpg" class="card-img-top" alt="PHAP">
@@ -161,7 +161,7 @@ include('header.php');?>
                 </h3>
             </div>
             <div class="col col-huyen">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card " style="width: 22rem;">
                         <div class="huyen-img">
                             <img src="../img/phanthiet.jpg" class="card-img-top " alt="phanthiet">
@@ -196,7 +196,7 @@ include('header.php');?>
                 </a>
             </div>
             <div class="col col-huyen">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
                     <div class="huyen-img">
                     <img src="../img/culao.jpg" class="card-img-top" alt="culao">
@@ -228,7 +228,7 @@ include('header.php');?>
 
             </div>
             <div class="col col-huyen">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
                     <div class="huyen-img">
                     <img src="../img/danang.jpg" class="card-img-top" alt="danang">
@@ -271,7 +271,7 @@ include('header.php');?>
                 </h3>
             </div>
             <div class="col col-huyen">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
                     <div class="huyen-img">
                     <img src="../img/phuquoc.jpg" class="card-img-top" alt="phuquoc">
@@ -303,7 +303,7 @@ include('header.php');?>
                 </a>
             </div>
             <div class="col col-huyen">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
                     <div class="huyen-img">
                     <img src="../img/dalat.jpg" class="card-img-top" alt="dalat">
@@ -335,7 +335,7 @@ include('header.php');?>
                 </a>
             </div>
             <div class="col col-huyen">
-                <a href="">
+                <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
                     <div class="huyen-img">
                     <img src="../img/nhatrang.jpg" class="card-img-top" alt="nhatrang">

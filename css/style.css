@@ -250,8 +250,104 @@
 
 }
 
+<<<<<<< HEAD
 .form-select{
     margin-top: 50px;
     margin-bottom: 150px;
 }
 
+=======
+.my-tourdetails .des{
+    margin-top: 24px;
+}
+
+.my-orderTour{
+    padding: 24px 18px;
+    margin: 24px 24px 0;
+    background-color: #F3E2A9;
+}
+
+.my-orderTour .info{
+    padding: 12px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+.my-orderTour input{
+    border: none;
+}
+
+.my-orderTour select{
+    margin: 0!important;
+    padding: 8px;
+}
+
+.my-orderTour .total{
+    color: #FE9A2E;
+    margin: 0 8px;
+}
+
+.my-orderTour button{
+    background-color:#FE9A2E ;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.my-orderTour .order-btn{
+    padding: 8px;
+}
+
+.my-list-option{  
+    margin: 24px 24px 0;
+}
+.my-relative{
+    position: relative;
+}
+
+.my-sticky{
+    position: sticky;
+    top: 0;
+}
+
+.my-tour-connect{
+    padding: 24px 18px;
+    background-color: white;
+  
+}
+
+.my-tourdetails .my-headline{
+    background-color: #DDDDDD;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.my-tourdetails h1{
+    color: var(--my-color);
+}
+
+.my-tour-connect .price{
+    margin: 72px 0 0 0;
+}
+
+.my-tour-connect .card-title{
+    margin-bottom: 24px;
+    color: var(--my-color);
+}
+
+.my-tourdetails a{
+    text-decoration: none;
+        color: var(--my-color);
+}
+
+.my-tour-connect .price{
+    color: #339cff;
+}
+
+
+
+>>>>>>> 0318bd84e2b9e9dfa9df6c0a994a304ab9a2c586
