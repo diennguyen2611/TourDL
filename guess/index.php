@@ -21,8 +21,8 @@ include('../config/connect.php');?>
                 <div class="input-group mb-3">
 
                     <input type="text" class="form-control" placeholder="Bạn muốn đi đâu"
-                        aria-label="Recipient's username" aria-describedby="button-addon2" id="search-data">
-                    <a href="" class="btn my-btn-search btn-lg" type="button" id="button-addon2">Tìm Kiếm</a>
+                        aria-label="Recipient's username" aria-describedby="btn-search" id="search-data">
+                    <a href="" class="btn my-btn-search btn-lg" type="button" id="btn-search">Tìm Kiếm</a>
                 </div>
             </div>
             Tailor tour - Trải nghiệm theo cách riêng của bạn -
