@@ -63,6 +63,11 @@
     opacity: 0.9;
     bottom: 0;
 }
+
+.my-card-body{
+    height: 200px;
+}
+
 .fa-map-marker-alt{
     color: rgb(236, 158, 13);
     font-size: 13px ;
@@ -74,7 +79,7 @@
 
 .my-banner{
     height: 500px;
-    background-image: url(../img/banner.jpg);
+   
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -255,8 +260,202 @@
     margin-top: 50px;
     margin-bottom: 150px;
 }
+.my-tourdetails .des{
+    margin-top: 24px;
+}
+
+.my-orderTour{
+    padding: 24px 18px;
+    margin: 24px 24px 0;
+    background-color: #F3E2A9;
+}
+
+.my-orderTour .info{
+    padding: 12px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+.my-orderTour input{
+    border: none;
+}
+
+.my-orderTour select{
+    margin: 0!important;
+    padding: 8px;
+}
+
+.my-orderTour .total{
+    color: #FE9A2E;
+    margin: 0 8px;
+}
+
+.my-orderTour .order{
+    border: none;
+    padding: 12px;
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color:#FE9A2E ;
+    color: white;
+}
+
+.my-orderTour .order-btn{
+    padding: 8px;
+}
+
+.my-list-option{  
+    margin: 24px 24px 0;
+}
+.my-relative{
+    position: relative;
+}
+
+.my-sticky{
+    position: sticky;
+    top: 0;
+}
+
+.my-tour-connect{
+    padding: 24px 18px;
+    background-color: white;
+  
+}
+
+.my-tourdetails .my-headline{
+    background-color: #DDDDDD;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.my-tourdetails h1{
+    color: var(--my-color);
+}
+
+.my-tour-connect .price{
+    margin: 72px 0 0 0;
+}
+
+.my-tour-connect .card-title{
+    margin-bottom: 24px;
+    color: var(--my-color);
+}
+
+.my-tourdetails a{
+    text-decoration: none;
+        color: var(--my-color);
+}
+
+.my-tour-connect .price{
+    color: #339cff;
+}
 
 
+
+
+
+/* CSS: create-tour.php */ 
+.tailor-tour {
+    background-image: url("../img/create-tour.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px; 
+} 
+
+.banner-content-th{
+    margin: 2% 0 6% 5%;
+    padding: 16px;
+    max-width: 80%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255,0.9);
+    text-align: justify;
+}
+
+.banner-content-th h3 {
+    color: var(--my-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn-th {
+    background-color: #e67e22;
+    color: #fff;
+    min-width: 40%;
+    border: none
+}
+
+.btn-th:hover {
+    color: #fff;
+    background-color: #e66108;
+}
+
+.img-tailor-th {
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+.tailor-service-th {
+    padding: 40px 0;
+}
+
+.col-th {
+    padding: 10px;
+}
+
+.tailor-item {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 10%);
+    background-color: #feeec7;
+    padding: 15px;
+}
+
+.tailor-content-1 {
+    background-color: #ecf0f5;
+    min-height: 300px;
+    
+}
+
+.tailor-content-2 {
+    font-size: 13px;
+    width: 100%;
+    margin-top: 30px ;
+    padding: 64px 0;
+}
+
+.price-th{
+    font-size: 22px;
+    font-weight: bold;
+    float: right ;
+    color: #00C1DE !important;
+    text-decoration: none;
+}
+
+.form-send-require {
+    padding: 50px;
+    min-height: 300px;
+    background-color: #F8EFBA;
+}
+
+#Input-th {
+    min-height: 70px;
+}
+/*  */
+
+
+.form-select{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> b757ae1c68f36aa1795dac200285b3619f4e231c
 .my-tourdetails .des{
     margin-top: 24px;
 }

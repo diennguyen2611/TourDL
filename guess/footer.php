@@ -1,4 +1,4 @@
-<div class="my-footer">
+<div class="my-footer" id="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-1"></div>
@@ -25,7 +25,6 @@
             </div>
             <div class="col">
                 <h5 style="margin-bottom: 16px">Đối tác & Liên Kết</h5>
-
                 <a class="text-decoration-none text-dark" href="#">
                     <p>Vietnam Airlines</p>
                 </a>
@@ -73,6 +72,7 @@
                 <div class="col-huyen" style="margin-top:5px">
                     <i class="fas fa-phone-alt text-secondary" style="font-size:13px"></i>
                     <b>Hotline: </b><a href="#">0906 355 542</a>
+
                 </div>
                 <div class="col-huyen" style="margin-top:5px">
                     <i class="far fa-clock text-gray-dark" style="font-size:15px"> Từ 8h30 - 18h hằng ngày</i>
