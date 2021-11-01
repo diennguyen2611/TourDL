@@ -57,8 +57,12 @@ include('../config/connect.php');?>
                                             href="index.php">Home</a>
                                     </li>
                                     <li class="nav-item hover-th">
+<<<<<<< HEAD
                                         <a class="nav-link active text-white" aria-current="page"
                                             href="moretour.php">Tours</a>
+=======
+                                        <a class="nav-link active text-white" aria-current="page" href="moretour.php?id=0">Tours</a>
+>>>>>>> Dien
                                     </li>
                                     <li class="nav-item hover-th">
                                         <a class="nav-link active text-white" aria-current="page"

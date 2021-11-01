@@ -7,22 +7,13 @@ include('../config/connect.php');
 <?php
  
  $id = $_GET['id'];
- $sql="";
  $title = "";
- if($id==0){
-     $sql = "select * from `tours`";
-     $title = "Tất cả các tour du lịch hiện có";
- }
 
- else{ 
-     $sql0 = "select GroupName from toursgroup where GroupID=$id";
-     $result0 = mysqli_query($conn, $sql0);
-     if(mysqli_num_rows($result0)>0){
-        
-         while($row=mysqli_fetch_assoc($result0)){
-            $title = $row['GroupName'];}}
-     $sql = "select * from `tours` where GroupID=$id";
-    }?>
+     $sql = "select * from `tours` where TourName like '%$id%'";
+     $title = "Tất cả các tìm kiếm liên quan";
+
+
+?>
 
 <div class="my_moretour" style="overflow: hidden">
     <div class="container">
@@ -102,7 +93,7 @@ include('../config/connect.php');
    
 
  <?php } 
- else echo '<h2>Không có kết quả để hiển thị</h2>'; ?>
+ else echo $sql; ?>
  </div>
  </div>
 <?php
