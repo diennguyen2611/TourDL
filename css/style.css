@@ -138,18 +138,25 @@
     opacity: 0.8;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Ha
 .headline a{
     color: rgb(59, 55, 55);
     font-size: 18px;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> Ha
 .col-huyen a{
     text-decoration: none;
     color: black;
 }
 
+<<<<<<< HEAD
 
 
     
@@ -200,3 +207,98 @@
     padding: 24px;
 
 }
+=======
+.col a p {
+    margin-bottom: 0.6rem;
+}
+
+/* CSS: create-tour.php */ 
+.tailor-tour {
+    background-image: url("../img/create-tour.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px; 
+} 
+
+.banner-content-th{
+    margin: 2% 0 6% 5%;
+    padding: 16px;
+    max-width: 80%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255,0.9);
+    text-align: justify;
+}
+
+.banner-content-th h3 {
+    color: var(--my-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn-th {
+    background-color: #e67e22;
+    color: #fff;
+    min-width: 40%;
+    border: none
+}
+
+.btn-th:hover {
+    color: #fff;
+    background-color: #e66108;
+}
+
+.img-tailor-th {
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+.tailor-service-th {
+    padding: 40px 0;
+}
+
+.col-th {
+    padding: 10px;
+}
+
+.tailor-item {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 10%);
+    background-color: #feeec7;
+    padding: 15px;
+}
+
+.tailor-content-1 {
+    background-color: #ecf0f5;
+    min-height: 300px;
+    
+}
+
+.tailor-content-2 {
+    font-size: 13px;
+    width: 100%;
+    margin-top: 30px ;
+    padding: 64px 0;
+}
+
+.price-th{
+    font-size: 22px;
+    font-weight: bold;
+    float: right ;
+    color: #00C1DE !important;
+    text-decoration: none;
+}
+
+.form-send-require {
+    padding: 50px;
+    min-height: 300px;
+    background-color: #F8EFBA;
+}
+
+#Input-th {
+    min-height: 70px;
+}
+/*  */
+>>>>>>> Ha

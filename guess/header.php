@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css">
+<<<<<<< HEAD
 
     <title>Quản lý tours du lịch</title>
 
+=======
+    <title>Quản lý tour du lịch </title>
+>>>>>>> Ha
 </head>
 
 <body>
@@ -25,7 +29,8 @@
             <div class="row">
                 <div class="col-md-1">
                     <a href="index.php">
-                        <img style="margin-top:12px" src="../img/logo.png" alt="logo" class="rounded-circle" width="60px">
+                        <img style="margin-top:12px" src="../img/logo.png" alt="logo" class="rounded-circle"
+                            width="60px">
                     </a>
                 </div>
 
@@ -50,14 +55,19 @@
                                         <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle text-white hover-th" href="#" id="navbarDropdown"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">More
+                                        <a class="nav-link dropdown-toggle text-white hover-th" href="#"
+                                            id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">More
                                         </a>
                                         <ul class="dropdown-menu my-subnav" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="#">Khách sạn</a></li>
                                             <li><a class="dropdown-item" href="#">Ăn uống</a></li>
-                                            <li><a class="dropdown-item" href="#">Tài khoản đặt tour</a></li>
+
+                                            <li><a class="dropdown-item" href="#login-guess"
+                                                    data-bs-toggle="modal">Tài khoản đặt tour</a></li>
                                         </ul>
+
+
                                     </li>
                                 </ul>
                             </div>
@@ -66,7 +76,7 @@
                 </div>
 
                 <div class="col-md-5" style="margin-top:15px">
-                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">SĐT</h6>
+                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">0293454365</h6>
 
                     <div class="dropdown float-end">
                         <button style="line-height: 40px" class="btn dropdown-toggle text-white hover-th" type="button"
@@ -76,8 +86,8 @@
                         </button>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
                             aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#" style="font-weight:500">Đăng nhập</a></li>
-                            <p>Chưa có tài khoản <a href="#">Đăng ký</a> ngay</p>
+                            <li><a class="dropdown-item" href="#login-admin" style="font-weight:500" data-bs-toggle="modal">Đăng nhập</a></li>
+                            <p>Chưa có tài khoản <a href="#register" data-bs-toggle="modal">Đăng ký</a> ngay</p>
                         </ul>
                     </div>
                 </div>
@@ -85,3 +95,105 @@
         </div>
     </div>
     <!-- End: Nav -->
+
+    <!-- Giao diện Tài khoản đặt tour -->
+    <div class="modal fade" id="login-guess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đăng nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                name="email" placeholder="Địa chỉ Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Mật khẩu">
+
+                        </div>
+                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Giao diện đăng nhập -->
+    <!-- <div class="modal fade" id="login-admin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đăng nhập bằng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary">Facebook</button>
+                    </div>
+                    <div class="col-md-4">
+                    <button class="btn btn-danger">Google</button>
+                        
+                    </div>
+                    </div>
+                    <div class="col-md-2"></div>
+
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="email-ad" class="form-label">Email</label>
+                            <input type="email-ad" class="form-control" id="email-ad" aria-describedby="emailHelp"
+                                name="email-ad" placeholder="Địa chỉ Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass-ad" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="pass-ad" name="pass-ad" placeholder="Mật khẩu">
+
+                        </div>
+                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Giao diện đăng kí -->
+    <!-- <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đăng nhập bằng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="email-u" class="form-label">Email</label>
+                            <input type="email-u" class="form-control" id="email-u" aria-describedby="emailHelp"
+                                name="email-u" placeholder="Địa chỉ Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass-u" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="pass-u" name="pass-u" placeholder="Mật khẩu">
+
+                        </div>
+                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
