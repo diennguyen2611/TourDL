@@ -16,7 +16,7 @@
                 nghiệp của chúng tôi, các bạn đang rất sẵn lòng hỗ trợ.
             </p>
 
-            <a href="#" class="btn btn-th">Liên hệ ngay</a>
+            <a href="#guiyeucau" class="btn btn-th">Liên hệ ngay</a>
         </div>
     </div>
 </div>
@@ -327,7 +327,7 @@
     </div>
 </div>
 
-<div class="form-send-require">
+<div class="form-send-require" id="guiyeucau">
     <div class="container">
         <div class="row">
             <div class="col-md-6">

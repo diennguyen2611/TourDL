@@ -50,7 +50,7 @@
                                         <a class="nav-link active text-white" aria-current="page" href="moretour.php">Tours</a>
                                     </li>
                                     <li class="nav-item hover-th">
-                                        <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
+                                        <a class="nav-link active text-white" aria-current="page" href="#footer">Contact</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle text-white hover-th" href="#"

@@ -1,7 +1,17 @@
 <?php
-include('header.php');?>
+include('header.php');
+include('../config/connect.php');?>
 <!--  -->
-<div class="my-banner" style="overflow: hidden">
+<?php 
+    $sql0 = "select * from contact";
+    $result0 = mysqli_query($conn, $sql0);
+    if(mysqli_num_rows($result0)>0){
+        while($row=mysqli_fetch_assoc($result0)){
+          $banner = $row['banner'];}}
+
+
+?>
+<div class="my-banner" style="overflow: hidden; background-image: url(<?php echo $banner?>);">
     <div class="row">
         <div class="col-md-1"></div>
         <div class="my-banner-content col-md-6 rounded">
@@ -12,17 +22,11 @@ include('header.php');?>
 
                     <input type="text" class="form-control" placeholder="Bạn muốn đi đâu"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
-                   <a href="" class="btn my-btn-search btn-lg" type="button" id="button-addon2">Tìm Kiếm</a>
+                    <a href="" class="btn my-btn-search btn-lg" type="button" id="button-addon2">Tìm Kiếm</a>
                 </div>
             </div>
             Tailor tour - Trải nghiệm theo cách riêng của bạn -
             <a href="tailor-tour.php" class="btn btn-outline-light">Đặt tour riêng</a>
-        </div>
-        <div class="col-md-4 my-hottour text-white">
-            <h3>Tour Cô Tô 3N2D</h3>
-            <h4>Du lịch miền cát trắng</h4>
-            <h4>Giá chỉ từ</h4>
-            <h1>2300000VNĐ</h1>
         </div>
     </div>
 </div>
@@ -43,34 +47,63 @@ include('header.php');?>
     </div>
 </div>
 <!--  -->
-
-
-<!--  -->
 <div class="my_map" style="overflow: hidden">
-    <div class="container">
+<div class="container">
+    <?php 
+
+$sql = "select * from toursgroup";
+
+$result = mysqli_query($conn, $sql);
+
+if(mysqli_num_rows($result)>0){
+    while($row=mysqli_fetch_assoc($result)){
+        $groupID = $row['GroupID'];
+        $groupName = $row['GroupName'];?>
 
         <div class="row huyen_row">
             <div>
                 <h3 class="headline">
                     <span>
-                        Trải nghiệm quốc tế
+                        <?php echo $groupName ?>
                     </span>
                     <a href="moretour.php"><span class="float-end">Xem thêm ></span></a>
                 </h3>
             </div>
+            <?php
+        $sql1 = "SELECT * from `tours` where GroupID=$groupID LIMIT 0,3";
+        $result1 = mysqli_query($conn, $sql1);
+        if(mysqli_num_rows($result1)>0){
+            while($row=mysqli_fetch_assoc($result1)){
+                $tourName = $row['TourName'];
+                $tourLocation = $row['TourLocation'];
+                $tourVehicle = $row['TourVehicle'];
+                $tourImg = $row['TourImg'];
+                $tourId = $row["TourID"];
+                $tourPrice = 0;
+                $sql2 = "select min(TourPrice) as TourPrice from tourdetails where TourID = $tourId";
+                $result2 = mysqli_query($conn, $sql2);
+                if(mysqli_num_rows($result2)>0){
+                    while($row=mysqli_fetch_assoc($result2)){ $tourPrice = $row['TourPrice']; }}
+                else echo $sql2;
+                ?>
+            <!--thiếu 2 ngoặc -->
+            <!--  -->
+
+
+
             <div class="col col-huyen">
                 <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
-                    <img src="../img/CANADA.jpg" class="card-img-top" alt="CANADA">
+                        <div class="huyen-img">
+                            <img src="<?php echo $tourImg ?>" class="card-img-top" alt="<?echo $tourName ?>">
                             <div class="huyen-card">
                                 <i class="fas fa-map-marker-alt "></i>
-                                Canada
+                                <?php echo $tourLocation ?>
                             </div>
                         </div>
-                       
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Canada</h5>
+
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><?php echo $tourName; ?></h5>
                             <p class="card-text">
                             <div class="row">
                                 <div class="col-md-2 score" style="max-width:50px">9.6</div>
@@ -82,23 +115,24 @@ include('header.php');?>
                                 <div class="col-md-2"><i class="fas fa-plane"></i></div>
                             </div>
                             </p>
-                            <a href="#" class="col price">87.900.000</a>
+                            <a href="#" class="col price"><?php echo $tourPrice ?></a>
                         </div>
 
                     </div>
                 </a>
-            </div>
-            <div class="col col-huyen">
+            </div> 
+            <?php } } ?>
+            <!-- <div class="col col-huyen">
                 <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
-                    <img src="../img/DUC.jpg" class="card-img-top" alt="DUC">
+                        <div class="huyen-img">
+                            <img src="../img/DUC.jpg" class="card-img-top" alt="DUC">
                             <div class="huyen-card">
                                 <i class="fas fa-map-marker-alt "></i>
                                 Germany
                             </div>
                         </div>
-                       
+
                         <div class="card-body">
                             <h5 class="card-title">Tour Germany</h5>
                             <p class="card-text">
@@ -121,14 +155,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
-                    <img src="../img/PHAP.jpg" class="card-img-top" alt="PHAP">
+                        <div class="huyen-img">
+                            <img src="../img/PHAP.jpg" class="card-img-top" alt="PHAP">
                             <div class="huyen-card">
                                 <i class="fas fa-map-marker-alt "></i>
                                 France
                             </div>
                         </div>
-                       
+
                         <div class="card-body">
                             <h5 class="card-title">Tour France</h5>
                             <p class="card-text">
@@ -198,8 +232,8 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
-                    <img src="../img/culao.jpg" class="card-img-top" alt="culao">
+                        <div class="huyen-img">
+                            <img src="../img/culao.jpg" class="card-img-top" alt="culao">
                             <div class="huyen-card">
                                 <i class="fas fa-map-marker-alt "></i>
                                 Cù Lao Chàm
@@ -230,14 +264,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
-                    <img src="../img/danang.jpg" class="card-img-top" alt="danang">
+                        <div class="huyen-img">
+                            <img src="../img/danang.jpg" class="card-img-top" alt="danang">
                             <div class="huyen-card">
                                 <i class="fas fa-map-marker-alt "></i>
                                 Đà Nẵng
                             </div>
                         </div>
-                        
+
                         <div class="card-body">
                             <h5 class="card-title">Tour Cao Cấp Đà Nẵng 3N2D: Bà Nà - Sơn Trà - Hội An</h5>
                             <p class="card-text">
@@ -273,14 +307,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
-                    <img src="../img/phuquoc.jpg" class="card-img-top" alt="phuquoc">
+                        <div class="huyen-img">
+                            <img src="../img/phuquoc.jpg" class="card-img-top" alt="phuquoc">
                             <div class="huyen-card">
                                 <i class="fas fa-map-marker-alt "></i>
                                 Phú Quốc
                             </div>
                         </div>
-                        
+
                         <div class="card-body">
                             <h5 class="card-title">Tour Phú Quốc 1N: Vi Vu Cano 5 Đảo - Cáp Treo Hòn Thơm</h5>
                             <p class="card-text">
@@ -305,14 +339,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
-                    <img src="../img/dalat.jpg" class="card-img-top" alt="dalat">
+                        <div class="huyen-img">
+                            <img src="../img/dalat.jpg" class="card-img-top" alt="dalat">
                             <div class="huyen-card">
                                 <i class="fas fa-map-marker-alt "></i>
                                 Đà Lạt
                             </div>
                         </div>
-                        
+
                         <div class="card-body">
                             <h5 class="card-title">Tour Đà Lạt 1/2N: Chèo SUP Ngắm Hoàng Hôn Hồ Tuyền Lâm</h5>
                             <p class="card-text">
@@ -337,14 +371,14 @@ include('header.php');?>
             <div class="col col-huyen">
                 <a href="tourdetails.php">
                     <div class="card" style="width: 22rem;">
-                    <div class="huyen-img">
-                    <img src="../img/nhatrang.jpg" class="card-img-top" alt="nhatrang">
+                        <div class="huyen-img">
+                            <img src="../img/nhatrang.jpg" class="card-img-top" alt="nhatrang">
                             <div class="huyen-card">
                                 <i class="fas fa-map-marker-alt "></i>
                                 Nha Trang
                             </div>
                         </div>
-                       
+
                         <div class="card-body">
                             <h5 class="card-title">Tour Nha Trang 1N: Khám Phá Vịnh San Hô 2 - Tắm Bùn Hòn Tằm</h5>
                             <p class="card-text">
@@ -365,9 +399,11 @@ include('header.php');?>
                         </div>
                     </div>
                 </a>
-            </div>
+            </div>-->
         </div>
-    </div>
+        <?php }}?>
+    </div> 
+   
 </div>
 <!--  -->
 

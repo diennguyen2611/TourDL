@@ -63,6 +63,11 @@
     opacity: 0.9;
     bottom: 0;
 }
+
+.my-card-body{
+    height: 200px;
+}
+
 .fa-map-marker-alt{
     color: rgb(236, 158, 13);
     font-size: 13px ;
@@ -74,7 +79,7 @@
 
 .my-banner{
     height: 500px;
-    background-image: url(../img/banner.jpg);
+   
     background-size: cover;
     background-repeat: no-repeat;
 
