@@ -72,6 +72,7 @@
                 <div class="col-huyen" style="margin-top:5px">
                     <i class="fas fa-phone-alt text-secondary" style="font-size:13px"></i>
                     <b>Hotline: </b><a href="#">0906 355 542</a>
+
                 </div>
                 <div class="col-huyen" style="margin-top:5px">
                     <i class="far fa-clock text-gray-dark" style="font-size:15px"> Từ 8h30 - 18h hằng ngày</i>
@@ -87,9 +88,15 @@
                 </div>
             </div>
         </div>
+
+
+        <script src="../js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
         </body>
+
         </html>
 

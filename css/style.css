@@ -133,7 +133,59 @@
     background-color: #ddd;
     padding: 64px;
 }
-
+.header-moretour{
+    text-align: center;
+    font-size: 40px;
+    color: #003c71;
+    margin: 50px 0 30px 0;
+}
+.my_moretour{
+    background-color:#ecf0f5;
+}
+.img-moretour{
+   width: 100%;
+    height: 90%;
+    margin-top: 8px;
+}
+.row-white{
+    background-color: white;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.linkdetail{
+    color: #003c71;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600
+}
+.col-huyen a{
+    text-decoration: none;
+    color: black;
+}
+.headline a {
+    color: rgb(59, 55, 55);
+    font-size: 18px;
+}
+.list_moretour >ul {
+    color: #00abc5;
+    margin: 5px 0 10px 18px;
+}
+.text-gray{
+    color: #a4a4a3;
+    font-size: 30px;
+}
+.text-centermoretour{
+    text-align: right;
+}
+.price-moretour{
+    color: #00c1de;
+    font-size: 30px;
+}
+.textgray-moretour{
+    color :rgba(129,129,128,0.85);
+    font-size: 14px;
+}
 .hover-th:hover {
     opacity: 0.8;
 }
@@ -198,6 +250,7 @@
 
 }
 
+<<<<<<< HEAD
 
 /* CSS: create-tour.php */ 
 .tailor-tour {
@@ -288,4 +341,104 @@
     min-height: 70px;
 }
 /*  */
+
+
+.form-select{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+
+.my-tourdetails .des{
+    margin-top: 24px;
+}
+
+.my-orderTour{
+    padding: 24px 18px;
+    margin: 24px 24px 0;
+    background-color: #F3E2A9;
+}
+
+.my-orderTour .info{
+    padding: 12px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+.my-orderTour input{
+    border: none;
+}
+
+.my-orderTour select{
+    margin: 0!important;
+    padding: 8px;
+}
+
+.my-orderTour .total{
+    color: #FE9A2E;
+    margin: 0 8px;
+}
+
+.my-orderTour button{
+    background-color:#FE9A2E ;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.my-orderTour .order-btn{
+    padding: 8px;
+}
+
+.my-list-option{  
+    margin: 24px 24px 0;
+}
+.my-relative{
+    position: relative;
+}
+
+.my-sticky{
+    position: sticky;
+    top: 0;
+}
+
+.my-tour-connect{
+    padding: 24px 18px;
+    background-color: white;
+  
+}
+
+.my-tourdetails .my-headline{
+    background-color: #DDDDDD;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.my-tourdetails h1{
+    color: var(--my-color);
+}
+
+.my-tour-connect .price{
+    margin: 72px 0 0 0;
+}
+
+.my-tour-connect .card-title{
+    margin-bottom: 24px;
+    color: var(--my-color);
+}
+
+.my-tourdetails a{
+    text-decoration: none;
+        color: var(--my-color);
+}
+
+.my-tour-connect .price{
+    color: #339cff;
+}
+
+
 
