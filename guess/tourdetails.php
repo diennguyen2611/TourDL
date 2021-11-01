@@ -14,6 +14,7 @@ include('../config/connect.php');
     $result = mysqli_query($conn,$sql);
 
     $groupID = 0;
+    
     if(mysqli_num_rows($result)>0){
         while($row = mysqli_fetch_assoc($result)){
             $tourName=$row['TourName'];
@@ -67,15 +68,17 @@ include('../config/connect.php');
                         <tbody>
 
             <?php 
+           
                 $sql1 = "select * from `tourdetails` where TourID = $tourID";
                 $result1 = mysqli_query($conn,$sql1);
+                
                 if(mysqli_num_rows($result1)>0){
                     while($row=mysqli_fetch_assoc($result1)){
                         $tourSTDay=$row['TourSTDay'];
                         $tourEDay=$row['TourEDay'];
                         $tourPrice=$row['TourPrice'];?>
                             <tr>
-                                <th scope="row"><?php echo $tourSTDay ?></th>
+                                <td scope="row"><?php echo $tourSTDay ?></td>
                                 <td><?php echo $tourEDay?></td>
                                 <td><?php echo $tourPrice?></td>
                             </tr>
@@ -110,26 +113,35 @@ include('../config/connect.php');
 
             </div>
         </div>
+
+    
+        <?php $Hotline ='';
+                $sql2 = "select * from `contact`";
+                $result2 =mysqli_query($conn,$sql2);
+                if(mysqli_num_rows($result2)>0){
+                    while($row=mysqli_fetch_assoc($result2)){
+                        $Hotline=$row['Hotline'];
+                    }
+                }
+                else echo $sql2;
+?>
         <div class="col-md-5">
             <form class="my-orderTour">
-                <p><b>Đặt ngay, chỉ 2 phút. Hoặc gọi (028)39338002</b></p>
+                <p><b>Đặt ngay, chỉ 2 phút. Hoặc gọi <?php echo $Hotline?></b></p>
                 <div class="row mb-3 info">
                     <div class="col-md-7">
                         <p>Chọn ngày khởi hành:</p>
                     </div>
                     <div class="col-md-5">
                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                            <option selected>1/3/2021</option>
-                            <option value="1">3/3/2021</option>
-                            <option value="2">4/6/2021</option>
-                            <option value="3">5/7/2021</option>
+                            <option selected><?php echo $tourSTDay?></option>
                         </select>
                     </div>
 
                 </div>
                 <div class="row mb-3 info">
                     <div class="col-md-7">
-                        <p>Số lượng <span>x87.000.000</span></p>
+                        <p>Số lượng x <span><?php echo $tourPrice?></span></p>
                     </div>
                     <div class="col-md-5">
                         <input type="number" class="form-control" id="quantity" min="1" max="40">
@@ -138,7 +150,7 @@ include('../config/connect.php');
 
 
                 <div class="total mb-3">
-                    <h3 class="text-end" id="total">87.900.000<span>VNĐ</span></p>
+                    <h3 class="text-end" id="total"><?php echo $tourPrice?><span>VNĐ</span></p>
                 </div>
 
 
@@ -161,7 +173,8 @@ include('../config/connect.php');
     <?php }}
 else echo $sql;
  ?>
-    <div class="my-headline">
+
+<div class="my-headline">
         <h6>
             <span>
                 Các tour du lịch liên quan
@@ -169,14 +182,33 @@ else echo $sql;
             <a href="moretour.php?id=<?php echo $groupID;?>"  class="float-end">Xem thêm ></a>
         </h6>
     </div>
+
     <div class="my-tour-connect">
         <div class="row">
+<?php
+        $sql4 = "SELECT * from `tours` where GroupID=$groupID LIMIT 0,3";
+        $result4 = mysqli_query($conn, $sql4);
+        if(mysqli_num_rows($result4)>0){
+            while($row=mysqli_fetch_assoc($result4)){
+                $tourName = $row['TourName'];
+                $tourLocation = $row['TourLocation'];
+                $tourVehicle = $row['TourVehicle'];
+                $tourImg = $row['TourImg'];
+                $tourId = $row["TourID"];
+                $tourPrice = 0;
+                $sql5 = "select min(TourPrice) as TourPrice from tourdetails where TourID = $tourId";
+                $result5 = mysqli_query($conn, $sql5);
+                if(mysqli_num_rows($result5)>0){
+                    while($row=mysqli_fetch_assoc($result5)){ $tourPrice = $row['TourPrice']; }}
+                else echo $sql5;
+                ?>
+
             <div class="col-md-4">
-                <a href="tourdetails.php">
+                <a href="tourdetails.php?id=<?php echo $tourId?>">
                     <div class="card">
-                        <img src="../img/canada.jpg" class="card-img-top" alt="canada">
+                        <img src="<?php echo $tourImg ?>" class="card-img-top" alt="canada">
                         <div class="card-body">
-                            <h6 class="card-title text-uppercase">Combo trọn gói hồi hương từ Anh</h6>
+                            <h6 class="card-title text-uppercase"><?php echo $tourName?></h6>
                             <div class="row">
                                 <div class="col-md-6">
                                     <p class="card-text">
@@ -189,7 +221,7 @@ else echo $sql;
                                 </div>
                             </div>
                             <div class="price float-end">
-                                <h6>87.900.000<span>
+                                <h6><?php echo $tourPrice?><span>
                                         VNĐ
                                     </span></h6>
 
@@ -198,63 +230,15 @@ else echo $sql;
                     </div>
                 </a>
             </div>
-            <div class="col-md-4">
-                <a href="tourdetails.php">
-                    <div class="card">
-                        <img src="../img/duc.jpg" class="card-img-top" alt="canada">
-                        <div class="card-body">
-                            <h6 class="card-title text-uppercase">COMBO TRỌN GÓI HỒI HƯƠNG TỪ ĐỨC</h6>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="card-text">
-                                        <span><i class="far fa-clock"></i></span>
-                                        2 Ngày 1 Đêm
-                                    </p>
-                                </div>
-                                <div class="col-md-6 float-end">
-                                    <i class="fas fa-plane float-end"></i>
-                                </div>
-                            </div>
-                            <div class="price float-end">
-                                <h6>87.900.000<span>
-                                        VNĐ
-                                    </span></h6>
+            
 
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="tourdetails.php">
-                    <div class="card">
-                        <img src="../img/phap.jpg" class="card-img-top" alt="canada">
-                        <div class="card-body">
-                            <h6 class="card-title text-uppercase">Combo trọn gói hồi hương từ PHÁP</h6>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="card-text">
-                                        <span><i class="far fa-clock"></i></span>
-                                        2 Ngày 1 Đêm
-                                    </p>
-                                </div>
-                                <div class="col-md-6 float-end">
-                                    <i class="fas fa-plane float-end"></i>
-                                </div>
-                            </div>
-                            <div class="price float-end">
-                                <h6>87.900.000<span>
-                                        VNĐ
-                                    </span></h6>
+<?php }}
+else echo $sql4;
+?>
 
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
+</div>
     </div>
+
 
     <!--form đặt -->
     <div class="modal fade" id="order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
