@@ -2,18 +2,7 @@
 include('header.php');
 ?>
 
-<<<<<<< HEAD
-<div class="my-tourdetails" >
-    <!--title-->
-    <div class="row text-uppercase">
-        <h1>COMBO TRỌN GÓI HỒI HƯƠNG TỪ CANADA</h1>
-    </div>
-    <div class="col-md-7">
-        <div class="my-tour">
-            <div class="bg">
-            </div>
-            <div class="my-intro">
-=======
+
 <div class="my-tourdetails">
     <div class="row my-relative">
         <h1 class="text-uppercase">COMBO trọn GÓI HỒI HƯƠNG TỪ CANADA</h1>
@@ -22,7 +11,7 @@ include('header.php');
                 <div class="bg">
                 </div>
                 <div class="my-intro">
->>>>>>> Dien
+
 
                     <span class=""><i class="fas fa-map-marker-alt"></i><span>Canada</span></span>
                     <span class=""><i class="far fa-clock"></i><span>2 Ngày 1 Đêm</span></span>
@@ -182,17 +171,11 @@ include('header.php');
                     </div>
                 </div>
 
-<<<<<<< HEAD
-                - Trong quá trình cách ly tại Khách Sạn, quý khách sẽ được phục vụ ăn 03 bữa, nghỉ tại khách sạn tiêu
-                chuẩn
-                02 người/ phòng (nếu quý khách có nhu cầu đăng ký phòng đơn sẽ có phụ thu). Tại Khách Sạn, quý khách sẽ
-                được
-                xét nghiệm kiểm tra COVID-19  theo quy định.
-=======
+
                 <div class="total mb-3">
                     <h3 class="text-end" id="total">87.900.000<span>VNĐ</span></p>
                 </div>
->>>>>>> Dien
+
 
                 <div class="mb-3 order-btn">
                     <button type="submit" class="btn btn-primary">Yêu cầu đặt</button>
