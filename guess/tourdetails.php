@@ -41,7 +41,7 @@ include('../config/connect.php');
                 </div>
             </div>
 
-            <div class="my-tourdes">
+            <div class="my-tourdes"  style="text-align: justify;">
                 <h2>
                     <?php echo $tourName?>
                 </h2>
@@ -52,37 +52,35 @@ include('../config/connect.php');
                 <div class="my-tourSchedule my-test des" id="tourSchedule">
                     <h3>Chương trình tour</h3>
                     <?php echo $tourSchedule?>
-
                 </div>
-
                 <div class="des" id="calendar">
                     <h3>Lịch khởi hành</h3>
                     <table class="table table-striped">
                         <thead>
                             <tr>
+                                <th scope="col">STT</th>
                                 <th scope="col">Ngày khởi hành</th>
                                 <th scope="col">Ngày về</th>
                                 <th scope="col">Giá</th>
                             </tr>
                         </thead>
                         <tbody>
-
             <?php 
            
                 $sql1 = "select * from `tourdetails` where TourID = $tourID";
                 $result1 = mysqli_query($conn,$sql1);
-                
+                $STT = 1;
                 if(mysqli_num_rows($result1)>0){
                     while($row=mysqli_fetch_assoc($result1)){
                         $tourSTDay=$row['TourSTDay'];
                         $tourEDay=$row['TourEDay'];
                         $tourPrice=$row['TourPrice'];?>
                             <tr>
-                                <td scope="row"><?php echo $tourSTDay ?></td>
+                                <th scope="row"><?php echo $STT++ ?></th>
+                                <td><?php echo $tourSTDay?></td>
                                 <td><?php echo $tourEDay?></td>
                                 <td><?php echo $tourPrice?></td>
                             </tr>
-                    
             <?php
                     }
                 }
@@ -92,29 +90,20 @@ include('../config/connect.php');
                     </table>
                 </div>
          
-
                 <div class="des" id="more-service">
                     <h3>Các dịch vụ khác</h3>
                     <p>- Vé máy bay quốc tế một chiều hạng phổ thông, hành lý xách tay và hành lý ký gửi theo chính sách
-                        của từng hãng hàng không.
-
+                        của từng hãng hàng không.<br>
                         - Khách sạn cách ly 08 ngày 07 đêm theo tiêu chuẩn 02 người/phòng (hạng phòng tiêu chuẩn) có bao
-                        gồm ăn sáng và nước suối hàng ngày.
-
-                        - Xe vận chuyển từ sân bay về khách sạn cách ly.
-
-                        - Test Covid-19 trong suốt thời gian cách ly theo quy định của Sở Y Tế.
-
-                        - Ăn uống 3 bữa/ ngày trong các ngày lưu trú tại khách sạn / điểm cách ly
-
+                        gồm ăn sáng và nước suối hàng ngày.<br>
+                        - Xe vận chuyển từ sân bay về khách sạn cách ly.<br>
+                        - Test Covid-19 trong suốt thời gian cách ly theo quy định của Sở Y Tế.<br>
+                        - Ăn uống 3 bữa/ ngày trong các ngày lưu trú tại khách sạn/điểm cách ly<br>
                         - Phí dịch vụ làm hồ sơ nhập cảnh tại Việt Nam.</p>
                 </div>
-
-
             </div>
         </div>
 
-    
         <?php $Hotline ='';
                 $sql2 = "select * from `contact`";
                 $result2 =mysqli_query($conn,$sql2);
@@ -124,7 +113,7 @@ include('../config/connect.php');
                     }
                 }
                 else echo $sql2;
-?>
+        ?>
         <div class="col-md-5">
             <form class="my-orderTour">
                 <p><b>Đặt ngay, chỉ 2 phút. Hoặc gọi <?php echo $Hotline?></b></p>
@@ -147,13 +136,9 @@ include('../config/connect.php');
                         <input type="number" class="form-control" id="quantity" min="1" max="40">
                     </div>
                 </div>
-
-
                 <div class="total mb-3">
                     <h3 class="text-end" id="total"><?php echo $tourPrice?><span>VNĐ</span></p>
                 </div>
-
-
                 <div class="mb-3 order-btn">
                     <a class="dropdown-item order text-center" href="#order" data-bs-toggle="modal">Yêu cầu đặt</a>
                 </div>
@@ -164,10 +149,8 @@ include('../config/connect.php');
                     <a href="#tourSchedule" class="list-group-item list-group-item-action">Chương trình tour</a>
                     <a href="#calendar" class="list-group-item list-group-item-action">Lịch khởi hành</a>
                     <a href="#more-service" class="list-group-item list-group-item-action">Các dịch vụ khác</a>
-
                 </div>
             </div>
-
         </div>
     </div>
     <?php }}
@@ -182,7 +165,6 @@ else echo $sql;
             <a href="moretour.php?id=<?php echo $groupID;?>"  class="float-end">Xem thêm ></a>
         </h6>
     </div>
-
     <div class="my-tour-connect">
         <div class="row">
 <?php
@@ -224,7 +206,6 @@ else echo $sql;
                                 <h6><?php echo $tourPrice?><span>
                                         VNĐ
                                     </span></h6>
-
                             </div>
                         </div>
                     </div>
