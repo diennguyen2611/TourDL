@@ -1,97 +1,56 @@
 <?php
 include('header.php');
+include('../config/connect.php');
 ?>
-
 
 <div class="my-tourdetails">
     <div class="row my-relative">
-        <h1 class="text-uppercase">COMBO trọn GÓI HỒI HƯƠNG TỪ CANADA</h1>
+
+        <?php
+
+    $tourID = $_GET['id'];
+
+    $sql = "select * from `tours` where TourID = $tourID";
+    $result = mysqli_query($conn,$sql);
+
+    $groupID = 0;
+    if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_assoc($result)){
+            $tourName=$row['TourName'];
+            $groupID=$row['GroupID'];
+            $tourLocation = $row['TourLocation'];
+            $tourVehicle = $row['TourVehicle'];
+            $tourDes = $row['TourDes'];
+            $tourSchedule = $row['TourSchedule'];
+            $tourImg = $row['TourImg'];
+         ?>
+
+        <h1 class="text-uppercase"><?php echo $tourName ?></h1>
+
         <div class="col-md-7">
             <div class="my-tour">
-                <div class="bg">
+
+                <div class="bg" style="background-image: url(<?php echo $tourImg?>);">
                 </div>
                 <div class="my-intro">
-
-
-                    <span class=""><i class="fas fa-map-marker-alt"></i><span>Canada</span></span>
+                    <span class=""><i class="fas fa-map-marker-alt"></i><span><?php echo $tourLocation?></span></span>
                     <span class=""><i class="far fa-clock"></i><span>2 Ngày 1 Đêm</span></span>
                     <span class="">Phương tiện: <span><i class="fas fa-plane"></i></span></span>
-                    <span class="float-end">Mã Tour: <span class="text-primary">T001</span></span>
-
-
+                    <span class="float-end">Mã Tour: <span class="text-primary"><?php echo $tourID?></span></span>
                 </div>
             </div>
 
             <div class="my-tourdes">
                 <h2>
-                    COMBO TRỌN GÓI HỒI HƯƠNG TỪ CANADA
+                    <?php echo $tourName?>
                 </h2>
-
                 <p>
-                    Trong tình hình dịch Covid 19 đang rất căng thẳng trên toàn thế giới, nhu cầu được quay trở về Việt
-                    Nam
-                    sinh sống và làm việc trong cộng đồng người Việt Nam ở nước ngoài đang rất cao. Các đối tượng được
-                    ưu
-                    tiên hồi hương trong thời điểm này bao gồm học sinh dưới 18 tuổi, sinh viên đã hoàn thành khóa học
-                    gặp
-                    khó khăn về chỗ ở và việc làm, người lao động hết hạn hợp đồng, mất việc, không còn thu nhập mà nước
-                    sở
-                    tại không đủ điều kiện hỗ trợ, khách du lịch, thương nhân, trí thức mắc kẹt tại nước ngoài do Covid
-                    19,
-                    gặp khó khăn do không có nơi ở, không còn khả năng tài chính.
+                    <?php echo $tourDes?>
                 </p>
-                <p>
-                    Nếu quý khách đang có dự định hoặc cần đăng ký cho người thân trở về Việt Nam tại thời điểm này, hãy
-                    liên hệ với IVIVU.COM để được tư vấn nhanh nhất, hiệu quả nhất.
-                </p>
-
-
 
                 <div class="my-tourSchedule my-test des" id="tourSchedule">
                     <h3>Chương trình tour</h3>
-                    Để đảm bảo có thể hồi hương Việt Nam thành công trong thời điểm Covid 19 này, quý khách có nguyện
-                    vọng
-                    hồi
-                    hương cần chuẩn bị và cung cấp đầy đủ các giấy tờ sau:
-
-                    - Passport Việt Nam còn hạn ít nhất 06 tháng tính đến ngày bay (bản scan có màu).
-
-                    - Giấy chứng nhận tiêm đủ 2 mũi vaccine hoặc giấy xác nhận khỏi bệnh Covid theo đúng quy định.
-
-                    - Kết quả test COVID-19 bằng phương pháp RT-PCR/RT-LAMP.
-
-                    - Bản cam kết phòng chống dịch COVID-19.
-
-                    QUY TRÌNH HỒI HƯƠNG VỀ VIỆT NAM
-
-                    - Thực hiện xét nghiệm Covid tại nước sở tại
-                    theo phương pháp Real-time PRC trong vòng 72 giờ trước giờ bay
-                    (IVIVU sẽ được thông báo về thời điểm chính xác để quý khách đi lấy mẫu xét nghiệm).
-
-                    - Đến ngày bay, quý khách chuẩn bị đầy đủ giấy tờ và di chuyển đến sân bay để thực hiện chuyến bay.
-                    Sau
-                    khi
-                    đáp chuyến bay về đến Việt Nam, quý khách thực hiện khai báo y tế, nhân viên y tế tiến hành kiểm tra
-                    và
-                    xét
-                    nghiệm đồng thời hỗ trợ các thủ tục nhập cảnh, với những hành khách có sức khỏe ổn định sẽ được đưa
-                    về
-                    khách
-                    sạn để tiến hành cách ly.
-
-                    - Trong quá trình cách ly tại Khách Sạn, quý khách sẽ được phục vụ ăn 03 bữa, nghỉ tại khách sạn
-                    tiêu
-                    chuẩn
-                    02 người/ phòng (nếu quý khách có nhu cầu đăng ký phòng đơn sẽ có phụ thu). Tại Khách Sạn, quý khách
-                    sẽ
-                    được
-                    xét nghiệm kiểm tra COVID-19 theo quy định.
-
-                    - Sau khi hoàn thành thời gian cách ly tại khách sạn và kiểm tra sức khỏe theo yêu cầu của Bộ Y Tế,
-                    quý
-                    khách sẽ được về nơi lưu trú, nhưng sẽ tiếp tục tự cách ly tại nhà thêm 07 hoặc 14 ngày tùy quy định
-                    của
-                    từng địa phương
+                    <?php echo $tourSchedule?>
 
                 </div>
 
@@ -102,28 +61,34 @@ include('header.php');
                             <tr>
                                 <th scope="col">Ngày khởi hành</th>
                                 <th scope="col">Ngày về</th>
-                                <th scope="col">Tình trạng</th>
                                 <th scope="col">Giá</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">T4, 10/11/2021</th>
-                                <td>T5, 11/11/2021</td>
-                                <td>Liên hệ</td>
-                                <td>T4, 10/11/2021</td>
-                            </tr>
 
+            <?php 
+                $sql1 = "select * from `tourdetails` where TourID = $tourID";
+                $result1 = mysqli_query($conn,$sql1);
+                if(mysqli_num_rows($result1)>0){
+                    while($row=mysqli_fetch_assoc($result1)){
+                        $tourSTDay=$row['TourSTDay'];
+                        $tourEDay=$row['TourEDay'];
+                        $tourPrice=$row['TourPrice'];?>
                             <tr>
-                                <th scope="row">T4, 10/11/2021</th>
-                                <td>T5, 11/11/2021</td>
-                                <td>Liên hệ</td>
-                                <td>T4, 10/11/2021</td>
+                                <th scope="row"><?php echo $tourSTDay ?></th>
+                                <td><?php echo $tourEDay?></td>
+                                <td><?php echo $tourPrice?></td>
                             </tr>
-
+                    
+            <?php
+                    }
+                }
+                else echo $sql1;
+            ?>
                         </tbody>
                     </table>
                 </div>
+         
 
                 <div class="des" id="more-service">
                     <h3>Các dịch vụ khác</h3>
@@ -193,13 +158,15 @@ include('header.php');
 
         </div>
     </div>
-
+    <?php }}
+else echo $sql;
+ ?>
     <div class="my-headline">
         <h6>
             <span>
                 Các tour du lịch liên quan
             </span>
-            <a href="moretour.php" class="float-end">Xem thêm ></a>
+            <a href="moretour.php?id=<?php echo $groupID;?>"  class="float-end">Xem thêm ></a>
         </h6>
     </div>
     <div class="my-tour-connect">
@@ -290,26 +257,24 @@ include('header.php');
     </div>
 
     <!--form đặt -->
-    <!-- Giao diện Tài khoản đặt tour -->
     <div class="modal fade" id="order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
-           
+
                 <div class="modal-header">
                     <h5 class="modal-title">Yêu cầu đặt tour</h5>
-                   
+
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    
+
                 </div>
-                
+
                 <div class="modal-body">
-                <p class="">Quý khách vui lòng điền thông tin bên dưới</p>
+                    <p class="">Quý khách vui lòng điền thông tin bên dưới</p>
                     <form action="#" method="POST">
                         <div class="mb-3">
                             <label for="hoten" class="form-label">Họ và tên</label>
-                            <input type="text" class="form-control" id="hoten" 
-                                name="hoten">
+                            <input type="text" class="form-control" id="hoten" name="hoten">
                         </div>
                         <div class="mb-3">
                             <label for="dienthoai" class="form-label">Điện thoại</label>
@@ -326,10 +291,11 @@ include('header.php');
                             <input type="text" class="form-control" id="khac" name="khac">
 
                         </div>
-                        
-                        <button type="submit" class="btn text-center btn-th" style="width: 100%; max-height: 60px">Gửi yêu cầu 
-                        <p style="font-size:13px">Chúng tôi sẽ liên hệ lại sau ít phút</p>
-                    </button>
+
+                        <button type="submit" class="btn text-center btn-th" style="width: 100%; max-height: 60px">Gửi
+                            yêu cầu
+                            <p style="font-size:13px">Chúng tôi sẽ liên hệ lại sau ít phút</p>
+                        </button>
                     </form>
                 </div>
 
