@@ -45,24 +45,19 @@ include('../config/connect.php');
                     <td>
                     <?php 
                 if($userStatus==0)
-
                 echo '<p class="text-danger">Chưa kích hoạt</p>';
                 else 
                 echo '<p class="text-success">Đã kích hoạt</p>';
             ?>
-
                 </td>
                 </tr>
          <?php       
          }
     } else echo $sql;
         ?>
-
         </tbody>
     </table>
 </div>
-
-
 
 <?php
 include('footer.php');

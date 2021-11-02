@@ -32,26 +32,36 @@ include('../config/connect.php');
                     $user_adPass=$row['user_adPass'];
                     $user_adEmail=$row['user_adEmail'];
                     $user_adStatus=$row['user_adStatus'];
-        ?>
+            ?>
             <tr>
                 <th scope=rowphp><?php echo $STT++?></th>
                 <td><?php echo $user_adID?></td>
                 <td><?php echo $user_adName?></td>
                 <td><?php echo $user_adPass?></td>
                 <td><?php echo $user_adEmail?></td>
-                <td><?php echo $user_adStatus?></td>
                 <td>
-                    <a href="edit_user_ad.php?user_adID=<?php echo $user_adID; ?>"><button type="button"
-                            class="btn btn-success">Update</button></a>
-                    <a href="del_user_ad.php?user_adID=<?php echo $user_adID; ?>"
-                        onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
-                            class="btn btn-danger">Delete</button></a>
+                    <?php 
+                if($user_adStatus==0)
+                echo '<p class="text-success"></p>';
+                else 
+                echo '<p class="text-danger">Đã xóa</p>';
+            ?>
+                </td>
+                <td>
+                    <?php
+                    if($user_adStatus==0){?>
+                        <a href="edit_user_ad.php?user_adID=<?php echo $user_adID; ?>"><button type="button"
+                                class="btn btn-success">Update</button></a>
+
+                        <a href="del_user_ad.php?user_adID=<?php echo $user_adID; ?>"
+                            onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
+                                class="btn btn-danger">Delete</button></a>
+                    <?php } ?>
 
                 </td>
                 <?php       }
             } else echo $sql;
         ?>
-
         </tbody>
     </table>
 </div>

@@ -23,25 +23,30 @@ if(mysqli_num_rows($result)>0){
     <div class="container">
         <h2 class="my-main my-title-ad">Cập nhật thông tin Admin</h2>
         <form action="process_update_user.php" method="POST">
-            <h5 class="my-title-ad text-danger" for="">user_adID: <?php echo $user_adID; ?></h5>
+            <input type="hidden" class="my-title-ad text-danger" name="user_adID" value="<?php echo $user_adID; ?>"> </input>
+            <h5 class="my-title-ad text-danger">user_adID: <?php echo $user_adID; ?></h5>
             <div class="mb-3">
-                <label for="adName" class="form-label" style="font-weight: bold">Họ và tên</label>
-                <input type="text" class="form-control" name='adName' value="<?php echo $user_adName; ?>">
+                <label for="user_adName" class="form-label" style="font-weight: bold">Họ và tên</label>
+                <input type="text" class="form-control" name='user_adName' value="<?php echo $user_adName; ?>">
             </div>
             <div class="mb-3">
-                <label for="adPass" class="form-label" style="font-weight: bold">Mật khẩu</label>
-                <input type="text" class="form-control" name="adPass" value="<?php echo $user_adPass; ?>">
+                <label for="user_adPass" class="form-label" style="font-weight: bold">Mật khẩu</label>
+                <input type="text" class="form-control" name="user_adPass" value="<?php echo $user_adPass; ?>">
             </div>
             <div class="mb-3">
-                <label for="adEmail" class="form-label" style="font-weight: bold">Email</label>
-                <input type="email" class="form-control" name="adEmail" value="<?php echo $user_adEmail; ?>">
+                <label for="user_adEmail" class="form-label" style="font-weight: bold">Email</label>
+                <input type="email" class="form-control" name="user_adEmail" value="<?php echo $user_adEmail; ?>">
             </div>
             <div class="mb-3">
-                <label for="adStatus" class="form-label" style="font-weight: bold">Trạng thái</label>
-                <input type="text" class="form-control" name="adStatus" value="<?php echo $user_adStatus; ?>">
+                <label for="user_adStatus" class="form-label" style="font-weight: bold">Trạng thái</label>
+                <select type="text" class="form-control" name="user_adStatus">
+                    <option value="<?php echo $user_adStatus?>">0</option>
+                    <option value="<?php echo $user_adStatus?>">1</option>
+                </select>
+                
             </div>
             <div class="mb-3">
-                <button type="submit" class="btn btn-success">Lưu lại</button>
+                <button type="submit" class="btn btn-success" name="luulai">Lưu lại</button>
             </div>
         </form>
     </div>
