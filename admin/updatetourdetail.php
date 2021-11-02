@@ -22,10 +22,10 @@ include('../config/connect.php');
                     $tourstatus = $row['TourStatus'];}
         ?>
             <form action="process_edit_tourdetail.php" method="POST">
-                <div class="mb-3">
-                    <label for="tourid"><b>Mã nhóm</b></label>
-                    <input type="text" class="form-control" id="tourid" value="<?php echo $tourid ?>" name="tourid">
-                </div>
+            <form action="process_edit_tour.php" method="POST">
+            <input type="hidden" class="my-title-ad text-success" name="tourid" value="<?php echo $tourid; ?>"> </input>
+            <h5 class="my-title-ad text-success">Mã tour: <?php  echo $tourid; ?></h5>
+                
                 <div class="mb-3">
                     <label for="tourstday"><b>Ngày bắt đầu </b></label>
                     <input type="date" class="form-control" id="tourstday" value="<?php echo $tourstday?>" name="tourstday">

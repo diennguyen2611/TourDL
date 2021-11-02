@@ -20,10 +20,10 @@ include('../config/connect.php');
                                 $groupstatus = $row['GroupStatus'];}
         ?>
             <form action="process_edit_toursgroup.php" method="POST">
-                <div class="mb-3">
-                    <label for="groupid"><b>Mã nhóm</b></label>
-                    <input type="text" class="form-control" id="groupid" value="<?php echo $groupid ?>" name="groupid">
-                </div>
+            <form action="process_edit_grouptour.php" method="POST">
+            <input type="hidden" class="my-title-ad text-success" name="groupid" value="<?php echo $groupid; ?>"> </input>
+            <h5 class="my-title-ad text-success">Mã nhóm: <?php  echo $groupid; ?></h5>
+                
                 <div class="mb-3">
                     <label for="groupname"><b>Tên nhóm </b></label>
                     <input type="text" class="form-control" id="groupname" value="<?php echo $groupname?>" name="groupname">
