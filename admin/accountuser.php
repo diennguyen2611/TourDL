@@ -42,7 +42,16 @@ include('../config/connect.php');
                     <td><?php echo $userEmail?></td>
                     <td><?php echo $userPhone?></td>
                     <td><?php echo $registration_date?></td>
-                    <td><?php echo $userStatus?></td>
+                    <td>
+                    <?php 
+                if($userStatus==0)
+
+                echo '<p class="text-danger">Chưa kích hoạt</p>';
+                else 
+                echo '<p class="text-success">Đã kích hoạt</p>';
+            ?>
+
+                </td>
                 </tr>
          <?php       
          }
