@@ -7,7 +7,7 @@ include('../config/connect.php');
 
     <h2 class="text-uppercase my-title-ad">Quản lý tours</h2>
     <!-- Button to Add Tour -->
-    <a href="#" class="btn-primary " style="border-radius:4px; padding:8px;text-decoration: none;">Add Tours</a>
+    <a href="addtours.php" class="btn-primary " style="border-radius:4px; padding:8px;text-decoration: none;">Add Tours</a>
     <br /><br />
     <table class="table table-striped">
         <thead>
