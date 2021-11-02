@@ -41,7 +41,7 @@ include('../config/connect.php');
                 </div>
             </div>
 
-            <div class="my-tourdes"  style="text-align: justify;">
+            <div class="my-tourdes" style="text-align: justify;">
                 <h2>
                     <?php echo $tourName?>
                 </h2>
@@ -65,7 +65,7 @@ include('../config/connect.php');
                             </tr>
                         </thead>
                         <tbody>
-            <?php 
+                            <?php 
            
                 $sql1 = "select * from `tourdetails` where TourID = $tourID";
                 $result1 = mysqli_query($conn,$sql1);
@@ -81,7 +81,7 @@ include('../config/connect.php');
                                 <td><?php echo $tourEDay?></td>
                                 <td><?php echo $tourPrice?></td>
                             </tr>
-            <?php
+                            <?php
                     }
                 }
                 else echo $sql1;
@@ -89,18 +89,7 @@ include('../config/connect.php');
                         </tbody>
                     </table>
                 </div>
-         
-                <div class="des" id="more-service">
-                    <h3>Các dịch vụ khác</h3>
-                    <p>- Vé máy bay quốc tế một chiều hạng phổ thông, hành lý xách tay và hành lý ký gửi theo chính sách
-                        của từng hãng hàng không.<br>
-                        - Khách sạn cách ly 08 ngày 07 đêm theo tiêu chuẩn 02 người/phòng (hạng phòng tiêu chuẩn) có bao
-                        gồm ăn sáng và nước suối hàng ngày.<br>
-                        - Xe vận chuyển từ sân bay về khách sạn cách ly.<br>
-                        - Test Covid-19 trong suốt thời gian cách ly theo quy định của Sở Y Tế.<br>
-                        - Ăn uống 3 bữa/ ngày trong các ngày lưu trú tại khách sạn/điểm cách ly<br>
-                        - Phí dịch vụ làm hồ sơ nhập cảnh tại Việt Nam.</p>
-                </div>
+
             </div>
         </div>
 
@@ -151,23 +140,80 @@ include('../config/connect.php');
                     <a href="#more-service" class="list-group-item list-group-item-action">Các dịch vụ khác</a>
                 </div>
             </div>
+
+            <div class="more-ser">
+                <h4>Các dịch vụ liên quan</h4>
+                <div class="hotel">
+                    <?php 
+                        $sql0 = "select * from hotels where TourID = $tourID LIMIT 0,1";
+                        $result0 = mysqli_query($conn, $sql0);
+                        if(mysqli_num_rows($result0)>0){
+                            while($row=mysqli_fetch_assoc($result0)){
+                               $hotelName = $row['hotelName'];
+                               $hotelLocation = $row['hotelLocation'];
+                               $hotelImg = $row['Hotelimg'];
+                               $hotelPhone = $row['hotelPhone'];
+                           ?>
+                    <div class="card my-ser">
+                        <img class="card-img-top" src="<?php echo $hotelImg ?>" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $hotelName ?></h5>
+                            <p class="card-text"><?php $hotelLocation ?></p>
+                            <a href="#" class="btn btn-success">Chi tiết</a>
+                        </div>
+                    </div>
+                    <?php }}
+                    else
+                    echo '';
+
+                    ?>
+                </div>
+
+                <div class="restaurant">
+                    <?php 
+                        $sql0 = "select * from restaurants where TourID = $tourID LIMIT 0,1";
+                        $result0 = mysqli_query($conn, $sql0);
+                        if(mysqli_num_rows($result0)>0){
+                            while($row=mysqli_fetch_assoc($result0)){
+                               $resName = $row['resName'];
+                               $resLocation = $row['resLocation'];
+                               $ResImg = $row['ResImg'];
+                               $resPhone = $row['resPhone'];
+                           ?>
+                    <div class="card my-ser">
+                        <img class="card-img-top" src="<?php echo $ResImg ?>" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $resName ?></h5>
+                            <p class="card-text"><?php $resLocation ?></p>
+                            <a href="#" class="btn btn-success">Chi tiết</a>
+                        </div>
+                    </div>
+                    <?php }}
+                    else
+                    echo '';
+
+                    ?>
+
+                </div>
+
+            </div>
         </div>
     </div>
     <?php }}
 else echo $sql;
  ?>
 
-<div class="my-headline">
+    <div class="my-headline">
         <h6>
             <span>
                 Các tour du lịch liên quan
             </span>
-            <a href="moretour.php?id=<?php echo $groupID;?>"  class="float-end">Xem thêm ></a>
+            <a href="moretour.php?id=<?php echo $groupID;?>" class="float-end">Xem thêm ></a>
         </h6>
     </div>
     <div class="my-tour-connect">
         <div class="row">
-<?php
+            <?php
         $sql4 = "SELECT * from `tours` where GroupID=$groupID LIMIT 0,3";
         $result4 = mysqli_query($conn, $sql4);
         if(mysqli_num_rows($result4)>0){
@@ -211,13 +257,13 @@ else echo $sql;
                     </div>
                 </a>
             </div>
-            
 
-<?php }}
+
+            <?php }}
 else echo $sql4;
 ?>
 
-</div>
+        </div>
     </div>
 
 
