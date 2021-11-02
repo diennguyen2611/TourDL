@@ -63,7 +63,7 @@ include('../config/connect.php');
                         class="btn btn-success">Update</button></a>
                 <a href="deletetour.php?tourid=<?php echo $tourid; ?>"
                     onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
-                        class="btn btn-danger">Xóa</button></a>
+                        class="btn btn-danger">Delete</button></a>
                 
             </td>
         </tr>

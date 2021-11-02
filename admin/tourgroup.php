@@ -7,7 +7,7 @@ include('../config/connect.php');
 
     <h2 class="text-uppercase my-title-ad">Quản lý nhóm tours</h2>
     <!-- Button to Add group Tour -->
-    <a href="#" class="btn-primary " style="border-radius:4px; padding:8px;text-decoration: none;">Add Tours</a>
+    <a href="add_tourgroup.php" class="btn-primary " style="border-radius:4px; padding:8px;text-decoration: none;">Add Tours</a>
     <br /><br />
     <table class="table table-striped">
         <thead>
@@ -44,7 +44,7 @@ include('../config/connect.php');
                         class="btn btn-success">Update </button></a>
                 <a href="deletegrouptour.php?groupid=<?php echo $groupid; ?>"
                     onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
-                        class="btn btn-danger">Xóa</button></a>
+                        class="btn btn-danger">Delete</button></a>
             </td>
         </tr>
         <?php
