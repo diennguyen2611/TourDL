@@ -5,10 +5,32 @@
     box-sizing: border-box;
 }
 
-.my-main{
-   margin-top: 64px;
+.index-body{
+    background-color: rgb(202, 202, 226);
+    padding: 32px;
 }
 
-.my-title-ad{
-    margin-bottom: 48px;
+.my-main{
+   margin-top: 32px;
+}
+
+/* .my-title-ad{
+    margin-bottom: 16px;
+} */
+
+.my-section{
+    margin-bottom: 18px;
+}
+.my-info{
+   
+    background-color: rgb(113, 113, 219);
+    color: white;
+    margin: 0 32px 32px 32px;
+    padding: 32px;
+    border-radius: 10%;
+    
+}
+
+.contact{
+    margin: 72px;
 }
