@@ -4,6 +4,8 @@ include('../config/connect.php');
 ?>
 <div class="container my-main">
     <h2 class="text-uppercase my-title-ad">Quản lý admin</h2>
+    <a href="add_user_ad.php" type="submit" class="btn btn-primary my-title-ad">Thêm admin</a>
+
     <table class="table table-striped">
         <thead>
             <tr>
@@ -39,11 +41,11 @@ include('../config/connect.php');
                 <td><?php echo $user_adEmail?></td>
                 <td><?php echo $user_adStatus?></td>
                 <td>
-                    <a href="edit_user_ad.php?officeid=<?php echo $user_adID; ?>"><button type="button"
-                            class="btn btn-success">Sửa</button></a>
-                    <a href="del_user_ad.php?officeid=<?php echo $user_adID; ?>"
+                    <a href="edit_user_ad.php?user_adID=<?php echo $user_adID; ?>"><button type="button"
+                            class="btn btn-success">Update</button></a>
+                    <a href="del_user_ad.php?user_adID=<?php echo $user_adID; ?>"
                         onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
-                            class="btn btn-danger">Xóa</button></a>
+                            class="btn btn-danger">Delete</button></a>
 
                 </td>
                 <?php       }
