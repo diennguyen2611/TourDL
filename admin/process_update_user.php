@@ -9,7 +9,7 @@ $user_adEmail = $_POST['user_adEmail'];
 $user_adStatus = $_POST['user_adStatus'];
 
 
-$sql = "update `users_ad` set user_adName= '$user_adName', user_adPass = '$user_adPass', user_adEmail = '$user_adEmail'
+$sql = "update `users_ad` set user_adName= '$user_adName', user_adPass = '$user_adPass', user_adEmail = '$user_adEmail', user_adStatus ='$user_adStatus'
  where user_adID=$user_adID";
 
 //  user_adStatus = '$user_adStatus'

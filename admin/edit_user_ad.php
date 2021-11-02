@@ -23,7 +23,7 @@ if(mysqli_num_rows($result)>0){
     <div class="container">
         <h2 class="my-main my-title-ad">Cập nhật thông tin Admin</h2>
         <form action="process_update_user.php" method="POST">
-            <input type="hidden" class="my-title-ad text-danger" name="user_adID" value="<?php echo $user_adID; ?>"> </input>
+            <input type="hidden"  name="user_adID" value="<?php echo $user_adID; ?>"> </input>
             <h5 class="my-title-ad text-danger">AdminID: <?php echo $user_adID; ?></h5>
             <div class="mb-3">
                 <label for="user_adName" class="form-label" style="font-weight: bold">Họ và tên</label>
@@ -40,8 +40,8 @@ if(mysqli_num_rows($result)>0){
             <div class="mb-3">
                 <label for="user_adStatus" class="form-label" style="font-weight: bold">Trạng thái</label>
                 <select type="text" class="form-control" name="user_adStatus">
-                    <option value="<?php echo $user_adStatus?>">0</option>
-                    <option value="<?php echo $user_adStatus?>">1</option>
+                    <option value="0">Chưa kích hoạt</option>
+                    <option value="1">Kích hoạt</option>
                 </select>
                 
             </div>

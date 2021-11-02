@@ -49,7 +49,7 @@ include('../config/connect.php');
                 </td>
                 <td>
                     <a href="edit_user_ad.php?user_adID=<?php echo $user_adID; ?>"><button type="button"
-                        class="btn btn-success">Update</button></a>
+                            class="btn btn-success">Update</button></a>
 
                     <a href="del_user_ad.php?user_adID=<?php echo $user_adID; ?>"
                         onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
