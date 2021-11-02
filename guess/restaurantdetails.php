@@ -49,7 +49,7 @@ include('../config/connect.php');
 
                 <div class="my-tourSchedule my-test des" id="tourSchedule">
                     <h3>Liên hệ</h3>
-                   <div> <?php echo $resPhone?></div>
+                   <div> <h5 class="text-danger"><?php echo $resPhone?></h5></div>
                     <span class=""><i class="fas fa-map-marker-alt"></i><span><?php echo $resLocation?></span></span>
                 </div>
                 <?php 
