@@ -51,7 +51,7 @@ include('../config/connect.php');?>
 <div class="container">
     <?php 
 
-$sql = "select * from toursgroup";
+$sql = "select * from toursgroup where GroupStatus=0";
 
 $result = mysqli_query($conn, $sql);
 
@@ -80,7 +80,7 @@ if(mysqli_num_rows($result)>0){
                 $tourImg = $row['TourImg'];
                 $tourId = $row["TourID"];
                 $tourPrice = 0;
-                $sql2 = "select min(TourPrice) as TourPrice from tourdetails where TourID = $tourId";
+                $sql2 = "select min(TourPrice) as TourPrice from tourdetails where TourID = $tourId and TourStatus=0";
                 $result2 = mysqli_query($conn, $sql2);
                 if(mysqli_num_rows($result2)>0){
                     while($row=mysqli_fetch_assoc($result2)){ $tourPrice = $row['TourPrice']; }}

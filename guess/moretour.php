@@ -10,18 +10,18 @@ include('../config/connect.php');
  $sql="";
  $title = "";
  if($id==0){
-     $sql = "select * from `tours`";
+     $sql = "select * from `tours` where TourStatus=0";
      $title = "Tất cả các tour du lịch hiện có";
  }
 
  else{ 
-     $sql0 = "select GroupName from toursgroup where GroupID=$id";
+     $sql0 = "select GroupName from toursgroup where GroupID=$id and GroupStatus=0";
      $result0 = mysqli_query($conn, $sql0);
      if(mysqli_num_rows($result0)>0){
         
          while($row=mysqli_fetch_assoc($result0)){
             $title = $row['GroupName'];}}
-     $sql = "select * from `tours` where GroupID=$id";
+     $sql = "select * from `tours` where GroupID=$id and TourStatus=0";
     }?>
 
 <div class="my_moretour" style="overflow: hidden">
