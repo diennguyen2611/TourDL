@@ -3,7 +3,7 @@ include('header.php');
 include('../config/connect.php');
 ?>
 <div class="container my-main">
-    <h2 class="text-uppercase my-title-ad">Quản lý yêu cầu đặt tour</h2>
+    <h2 class="text-uppercase my-title-ad">Xử lý yêu cầu</h2>
 
     <table class="table table-striped">
         <thead>
@@ -35,7 +35,7 @@ include('../config/connect.php');
                     $note=$row['note'];
                     $RequestDay=Date($row['RequestDay']);
                     $RequestStatus=$row['RequestStatus'];
-            ?>  
+            ?>
             <tr>
                 <th scope=rowphp><?php echo $STT++?></th>
                 <td><?php echo $RequestID?></td>
@@ -54,12 +54,9 @@ include('../config/connect.php');
             ?>
                 </td>
                 <td>
-                    <a href="process_request.php?RequestID=<?php echo $RequestID; ?>"><button type="button"
-                            class="btn btn-success" style="width:80%">Xử lý ngay</button></a>
-
-                    <a href="skip_request.php?RequestID=<?php echo $RequestID; ?>"
-                        onclick="return confirm('Bạn chắc chắn muốn bỏ qua?')"><button type="button"
-                            class="btn btn-danger" style="width:80%; margin-top:5px;">Bỏ qua</button></a>
+                    <a href="process_request.php?RequestID=<?php echo $RequestID; ?>"
+                        onclick="return confirm('Bạn đã xử lý xong yêu cầu này?')"><button type="button"
+                            class="btn btn-success">Xử lý ngay</button></a>
                 </td>
                 <?php       }
             } else echo $sql;
