@@ -42,22 +42,18 @@ include('../config/connect.php');
                 <td>
                     <?php 
                 if($user_adStatus==0)
-                echo '<p class="text-success"></p>';
+                echo '<p class="text-danger">Chưa kích hoạt</p>';
                 else 
-                echo '<p class="text-danger">Đã xóa</p>';
+                echo '<p class="text-success">Đã kích hoạt</p>';
             ?>
                 </td>
                 <td>
-                    <?php
-                    if($user_adStatus==0){?>
-                        <a href="edit_user_ad.php?user_adID=<?php echo $user_adID; ?>"><button type="button"
-                                class="btn btn-success">Update</button></a>
+                    <a href="edit_user_ad.php?user_adID=<?php echo $user_adID; ?>"><button type="button"
+                        class="btn btn-success">Update</button></a>
 
-                        <a href="del_user_ad.php?user_adID=<?php echo $user_adID; ?>"
-                            onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
-                                class="btn btn-danger">Delete</button></a>
-                    <?php } ?>
-
+                    <a href="del_user_ad.php?user_adID=<?php echo $user_adID; ?>"
+                        onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
+                            class="btn btn-danger">Delete</button></a>
                 </td>
                 <?php       }
             } else echo $sql;

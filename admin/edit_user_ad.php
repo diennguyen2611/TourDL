@@ -24,7 +24,7 @@ if(mysqli_num_rows($result)>0){
         <h2 class="my-main my-title-ad">Cập nhật thông tin Admin</h2>
         <form action="process_update_user.php" method="POST">
             <input type="hidden" class="my-title-ad text-danger" name="user_adID" value="<?php echo $user_adID; ?>"> </input>
-            <h5 class="my-title-ad text-danger">user_adID: <?php echo $user_adID; ?></h5>
+            <h5 class="my-title-ad text-danger">AdminID: <?php echo $user_adID; ?></h5>
             <div class="mb-3">
                 <label for="user_adName" class="form-label" style="font-weight: bold">Họ và tên</label>
                 <input type="text" class="form-control" name='user_adName' value="<?php echo $user_adName; ?>">
