@@ -29,21 +29,25 @@ include('../config/connect.php');
                 while($row=mysqli_fetch_assoc($result)){
                     $RequestID=$row['RequestID'];
                     $name=$row['name'];
+                    $email=$row['email'];
                     $phone=$row['phone'];
+
                     $note=$row['note'];
-                    $RequestDay=$row['RequestDay'];
+                    $RequestDay=Date($row['RequestDay']);
                     $RequestStatus=$row['RequestStatus'];
-            ?>
+            ?>  
             <tr>
                 <th scope=rowphp><?php echo $STT++?></th>
                 <td><?php echo $RequestID?></td>
                 <td><?php echo $name?></td>
+                <td><?php echo $email?></td>
+
                 <td><?php echo $phone?></td>
                 <td><?php echo $note?></td>
                 <td><?php echo $RequestDay?></td>
                 <td>
                     <?php 
-                if($user_adStatus==0)
+                if($RequestStatus==0)
                 echo '<p class="text-danger">Chưa xử lý</p>';
                 else 
                 echo '<p class="text-success">Đã xử lý</p>';
@@ -51,11 +55,11 @@ include('../config/connect.php');
                 </td>
                 <td>
                     <a href="process_request.php?RequestID=<?php echo $RequestID; ?>"><button type="button"
-                            class="btn btn-success">Xử lý ngay</button></a>
+                            class="btn btn-success" style="width:80%">Xử lý ngay</button></a>
 
                     <a href="skip_request.php?RequestID=<?php echo $RequestID; ?>"
                         onclick="return confirm('Bạn chắc chắn muốn bỏ qua?')"><button type="button"
-                            class="btn btn-danger">Bỏ qua</button></a>
+                            class="btn btn-danger" style="width:80%; margin-top:5px;">Bỏ qua</button></a>
                 </td>
                 <?php       }
             } else echo $sql;
