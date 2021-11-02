@@ -5,7 +5,7 @@ include('../config/connect.php');
 ?>
 <div class="container my-main">
 
-    <h2 class="text-uppercase my-title-ad">Quản lý  nhóm tours</h2>
+    <h2 class="text-uppercase my-title-ad">Quản lý nhóm tours</h2>
     <!-- Button to Add group Tour -->
     <a href="#" class="btn-primary " style="border-radius:4px; padding:8px;text-decoration: none;">Add Tours</a>
     <br /><br />
@@ -16,7 +16,7 @@ include('../config/connect.php');
                 <th>GroupID</th>
                 <th>GroupName</th>
                 <th>GroupStatus</th>
-                <th >Action</th>
+                <th>Action</th>
 
             </tr>
         </thead>
@@ -33,27 +33,28 @@ include('../config/connect.php');
                                 $groupname = $row['GroupName'];
                                 $groupstatus = $row['GroupStatus'];
                                 ?>
-     
-            <tr>
-                <th scope="row"><?php echo $sn++; ?></th>
-                <td><?php echo $groupid; ?></td>
-                <td><?php echo  $groupname; ?></td>
-                <td><?php echo $groupstatus; ?></td>
-                <td>
-                    <a href="updategrouptour.php?groupid=<?php echo $groupid; ?>"><button type="button"
+
+        <tr>
+            <th scope="row"><?php echo $sn++; ?></th>
+            <td><?php echo $groupid; ?></td>
+            <td><?php echo  $groupname; ?></td>
+            <td><?php echo $groupstatus; ?></td>
+            <td>
+                <a href="updategrouptour.php?groupid=<?php echo $groupid; ?>"><button type="button"
                         class="btn btn-success">Update </button></a>
-                    <a href="deletegrouptour.php?groupid=<?php echo $groupid; ?>"><button type="button"
-                        class="btn btn-danger">Delete </button></a>
-                </td>
-            </tr>     
-            <?php
+                <a href="deletegrouptour.php?groupid=<?php echo $groupid; ?>"
+                    onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
+                        class="btn btn-danger">Xóa</button></a>
+            </td>
+        </tr>
+        <?php
                         }
                     }
                     else{
                         echo $sql;
                     }
                 ?>
-    </table> 
+    </table>
     <!--  -->
 </div>
 <?php
