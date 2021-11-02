@@ -149,6 +149,7 @@ include('../config/connect.php');
                         $result0 = mysqli_query($conn, $sql0);
                         if(mysqli_num_rows($result0)>0){
                             while($row=mysqli_fetch_assoc($result0)){
+                                $hotelID = $row['hotelID'];
                                $hotelName = $row['hotelName'];
                                $hotelLocation = $row['hotelLocation'];
                                $hotelImg = $row['Hotelimg'];
@@ -158,8 +159,8 @@ include('../config/connect.php');
                         <img class="card-img-top" src="<?php echo $hotelImg ?>" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $hotelName ?></h5>
-                            <p class="card-text"><?php $hotelLocation ?></p>
-                            <a href="#" class="btn btn-success">Chi tiết</a>
+                            <p class="card-text"><i class="fas fa-map-marker-alt"></i><?php echo $hotelLocation ?></p>
+                            <a href="hoteldetails.php?id=<?php echo $hotelID; ?>" class="btn btn-success">Chi tiết</a>
                         </div>
                     </div>
                     <?php }}
@@ -175,6 +176,7 @@ include('../config/connect.php');
                         $result0 = mysqli_query($conn, $sql0);
                         if(mysqli_num_rows($result0)>0){
                             while($row=mysqli_fetch_assoc($result0)){
+                                $resID = $row['resID'];
                                $resName = $row['resName'];
                                $resLocation = $row['resLocation'];
                                $ResImg = $row['ResImg'];
@@ -184,8 +186,8 @@ include('../config/connect.php');
                         <img class="card-img-top" src="<?php echo $ResImg ?>" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $resName ?></h5>
-                            <p class="card-text"><?php $resLocation ?></p>
-                            <a href="#" class="btn btn-success">Chi tiết</a>
+                            <p class="card-text"><i class="fas fa-map-marker-alt"></i><?php echo $resLocation ?></p>
+                            <a href="restaurantdetails.php?id=<?php echo $resID ?>" class="btn btn-success">Chi tiết</a>
                         </div>
                     </div>
                     <?php }}
