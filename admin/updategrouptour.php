@@ -29,9 +29,11 @@ include('../config/connect.php');
                     <input type="text" class="form-control" id="groupname" value="<?php echo $groupname?>" name="groupname">
                 </div>
                 <div class="mb-3">
-                    <label for="groupstatus"><b>Trạng thái tour</b></label>
-                    <input type="text" class="form-control" id="groupstatus" value="<?php echo $groupstatus?>"  name="groupstatus">
-                </div>
+                <label for="groupstatus" class="form-label" style="font-weight: bold">Trạng thái tour</label>
+                <select type="text" class="form-control" name="groupstatus">
+                    <option value="0">Đã hủy</option>
+                    <option value="1"></option>
+                </select>
 
                 <hr>
 
