@@ -11,11 +11,12 @@ include('../config/connect.php');
             <h2 class="text-uppercase my-title-ad">Thay đổi thông tin chi tiết tour</h2>
 
             <?php 
-            $sql = "Select * from tours";
+            $tourid = $_GET['tourid']; 
+          
+            $sql = "Select * from tours where TourID=$tourid ";
             $result = mysqli_query($conn, $sql);
             if(mysqli_num_rows($result)>0){ 
                 while($row=mysqli_fetch_assoc($result)){
-                    $tourid = $row['TourID'];
                                 $tourname = $row['TourName'];
                                 $tourlocation = $row['TourLocation'];
                                 $tourvehicle = $row['TourVehicle'];
@@ -53,19 +54,19 @@ include('../config/connect.php');
                     
                 </div>
                 <div class="mb-3">
+                <label for="tourschedule"><b>Lịch trình tour</b></label>
+                </div>
+                <div class="mb-3">
+                    
+                    <textarea style="width: 100%" rows="10" placeholder="<?php echo $tourschedule?>" name="tourschedule"></textarea>
+                    
+                </div>
+                <div class="mb-3">
                     <label for="tourimg"><b>Ảnh tour </b></label>
-                    <img src="<?php echo $tourimg ?>" alt="<?echo $tourName ?>"width="100%" name="tourimg">
+                    <input type="text" class="form-control" id="tourimg" value="<?php echo $tourimg ?>" name="tourimg">
+            
                 </div>
-                <div class="mb-3">
-                    <label for="tourlocation"><b>Địa điểm </b></label>
-                    <input type="text" class="form-control" id="tourlocation" value="<?php echo $tourlocation?>"
-                        name="tourlocation">
-                </div>
-                <div class="mb-3">
-                    <label for="tourvehicle"><b>Phương tiện</b></label>
-                    <input type="text" class="form-control" id="tourvehicle" value="<?php echo $tourvehicle?>"
-                        name="tourvehicle">
-                </div>
+                
                 <div class="mb-3">
                     <label for="tourstatus"><b>Trạng thái tour</b></label>
                     <input type="text" class="form-control" id="tourstatus" value="<?php echo $tourstatus?>"  name="tourstatus">

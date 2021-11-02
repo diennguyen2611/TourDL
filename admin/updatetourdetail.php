@@ -11,25 +11,24 @@ include('../config/connect.php');
             <h2 class="text-uppercase my-title-ad">Thay đổi thông tin chi tiết tour</h2>
 
             <?php 
-            $sql = "Select * from tourdetails";
+
+$tourid = $_GET['tourid']; 
+$tourstday = $_GET['tourstday'];
+            $sql = "Select * from tourdetails where TourID=$tourid and TourSTDay='$tourstday'";
             $result = mysqli_query($conn, $sql);
             if(mysqli_num_rows($result)>0){ 
                 while($row=mysqli_fetch_assoc($result)){
-                    $tourid = $row['TourID'];
-                    $tourstday = $row['TourSTDay'];
                     $toureday = $row['TourEDay'];
                     $tourprice = $row['TourPrice'];
                     $tourstatus = $row['TourStatus'];}
         ?>
             <form action="process_edit_tourdetail.php" method="POST">
-            <form action="process_edit_tour.php" method="POST">
-            <input type="hidden" class="my-title-ad text-success" name="tourid" value="<?php echo $tourid; ?>"> </input>
-            <h5 class="my-title-ad text-success">Mã tour: <?php  echo $tourid; ?></h5>
+            <input type="hidden"  name="tourid" value="<?php echo $tourid; ?>"> </input>
+            <h5 class=" text-success">Mã tour: <?php  echo $tourid; ?></h5>
+
+            <input type="hidden"  name="tourstday" value="<?php echo $tourstday; ?>"> </input>
+            <h5 class=" my-title-ad text-success">Ngày bắt đầu: <?php  echo $tourstday; ?></h5>
                 
-                <div class="mb-3">
-                    <label for="tourstday"><b>Ngày bắt đầu </b></label>
-                    <input type="date" class="form-control" id="tourstday" value="<?php echo $tourstday?>" name="tourstday">
-                </div>
                 <div class="mb-3">
                     <label for="toureday"><b>Ngày kết thúc </b></label>
                     <input type="date" class="form-control" id="toureday" value="<?php echo $toureday?>" name="toureday">
