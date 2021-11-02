@@ -63,7 +63,7 @@ include('../config/connect.php');
 
             <div class="row row-white">
                 <div class="col-md-3">
-                    <a href="tourdetails.php">
+                    <a href="tourdetails.php?id=<?php echo $tourId; ?>">
                         <img class="img-moretour" src="<?php echo $tourImg  ?>" alt=" <?php echo $tourName ?>">
                     </a>
                 </div>
