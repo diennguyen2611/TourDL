@@ -12,8 +12,8 @@ if(isset($_POST['submit'])){
     $tourstatus = $_POST['tourstatus'];
     $groupid = $_POST['groupid'];                             
  
-$sql = "update `tours` set TourLocation=N'$tourlocation ', TourVehicle=N'$tourvehicle',
-TourDes=N'$tourdes', TourSchedule=N'$tourschedule' , TourImg='$tourimg' , TourStatus=$tourstatus,
+$sql = "update `tours` set TourLocation='$tourlocation ', TourVehicle='$tourvehicle',
+TourDes='$tourdes', TourSchedule='$tourschedule' , TourImg='$tourimg' , TourStatus=$tourstatus,
 GroupID=$groupid where TourID='$tourid'";
 
 

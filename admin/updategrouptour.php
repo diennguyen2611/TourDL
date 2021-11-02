@@ -11,13 +11,13 @@ include('../config/connect.php');
             <h2 class="text-uppercase my-title-ad">Thay đổi thông tin nhóm tour</h2>
 
             <?php 
-            $sql = "Select * from toursgroup";
+            $groupid = $_GET['groupid']; 
+            $sql = "Select * from toursgroup where GroupID=$groupid ";
             $result = mysqli_query($conn, $sql);
             if(mysqli_num_rows($result)>0){ 
                 while($row=mysqli_fetch_assoc($result)){
-                                $groupid = $row['GroupID'];
-                                $groupname = $row['GroupName'];
-                                $groupstatus = $row['GroupStatus'];}
+                    $groupname = $row['GroupName'];
+                    $groupstatus = $row['GroupStatus'];}
         ?>
             <form action="process_edit_toursgroup.php" method="POST">
             <form action="process_edit_grouptour.php" method="POST">

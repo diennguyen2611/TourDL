@@ -38,9 +38,11 @@ $tourstday = $_GET['tourstday'];
                     <input type="text" class="form-control" id="tourprice" value="<?php echo $tourprice?>"  name="tourprice">
                 </div>
                 <div class="mb-3">
-                    <label for="tourstatus"><b>Trạng thái tour</b></label>
-                    <input type="text" class="form-control" id="tourstatus" value="<?php echo $tourstatus?>"  name="tourstatus">
-                </div>
+                <label for="tourstatus" class="form-label" style="font-weight: bold">Trạng thái tour</label>
+                <select type="text" class="form-control" name="tourstatus">
+                    <option value="0">Chưa hoàn thành</option>
+                    <option value="1">Hoàn thành</option>
+                </select>
 
                 <hr>
 

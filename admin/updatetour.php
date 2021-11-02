@@ -50,7 +50,7 @@ include('../config/connect.php');
                 </div>
                 <div class="mb-3">
                     
-                    <textarea style="width: 100%" rows="10" placeholder="<?php echo $tourdes?>" name="tourdes"></textarea>
+                    <textarea style="width: 100%" rows="10"  name="tourdes"><?php echo $tourdes?></textarea>
                     
                 </div>
                 <div class="mb-3">
@@ -58,7 +58,7 @@ include('../config/connect.php');
                 </div>
                 <div class="mb-3">
                     
-                    <textarea style="width: 100%" rows="10" placeholder="<?php echo $tourschedule?>" name="tourschedule"></textarea>
+                    <textarea style="width: 100%" rows="10" name="tourschedule"><?php echo  $tourschedule?></textarea>
                     
                 </div>
                 <div class="mb-3">
@@ -68,9 +68,15 @@ include('../config/connect.php');
                 </div>
                 
                 <div class="mb-3">
-                    <label for="tourstatus"><b>Trạng thái tour</b></label>
-                    <input type="text" class="form-control" id="tourstatus" value="<?php echo $tourstatus?>"  name="tourstatus">
-                </div>
+                <label for="tourstatus" class="form-label" style="font-weight: bold">Trạng thái tour</label>
+                <select type="text" class="form-control" name="tourstatus">
+                    <option value="0">Chưa hoàn thành</option>
+                    <option value="1">Hoàn thành</option>
+                </select>
+                
+            </div>
+
+               
                 <div class="mb-3">
                     <label for="groupid"><b>Mã nhóm</b></label>
                     <input type="text" class="form-control" id="groupid" value="<?php echo $groupid ?>" name="groupid">
