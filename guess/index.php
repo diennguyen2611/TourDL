@@ -70,7 +70,12 @@ if(mysqli_num_rows($result)>0){
                 </h3>
             </div>
             <?php
+<<<<<<< HEAD
         $sql1 = "SELECT * from `tours` where TourStatus=0 and GroupID=$groupID LIMIT 0,3";
+=======
+
+        $sql1 = "SELECT * from `tours` where GroupID=$groupID and TourStatus=0 LIMIT 0,3";
+>>>>>>> 5d131bccfb954eaec1c8d78136a3fc61ffcc9f25
         $result1 = mysqli_query($conn, $sql1);
         if(mysqli_num_rows($result1)>0){
             while($row=mysqli_fetch_assoc($result1)){
