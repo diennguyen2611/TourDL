@@ -1,4 +1,9 @@
 <?php
+session_start(); //dịch vụ bảo vệ
+if(!isset($_SESSION['success'])){
+    header("Location:login.php");
+}
+
 include('../config/connect.php');?>
 <?php 
     $sql0 = "select * from contact";
@@ -118,14 +123,17 @@ include('../config/connect.php');?>
                     <div class="dropdown float-end">
                         <button style="line-height: 40px" class="btn dropdown-toggle text-white hover-th" type="button"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user-circle"></i>
-                            Tài khoản
+                            <i class="fas fa-user-circle"></i><?php 
+                                if(isset($_SESSION['success'])){
+                                    echo $_SESSION['success'];
+                                }
+                                else echo 'Tài khoản';
+                            ?>
                         </button>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
                             aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#login-admin" style="font-weight:500"
-                                    data-bs-toggle="modal">Đăng xuất</a></li>
-                            <li><a class="dropdown-item" href="#login-admin" style="font-weight:500"
+                            <li><a class="dropdown-item" href="logout.php" style="font-weight:500">Đăng xuất</a></li>
+                            <li><a class="dropdown-item" href="edit_pass.php" style="font-weight:500"
                                     data-bs-toggle="modal">Đổi mật khẩu</a></li>
 
                         </ul>
