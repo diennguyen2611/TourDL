@@ -67,7 +67,7 @@ include('../config/connect.php');
                         <tbody>
                             <?php 
            
-                $sql1 = "select * from `tourdetails` where TourID = $tourID";
+                $sql1 = "select * from `tourdetails` where TourID = $tourID and TourStatus=0";
                 $result1 = mysqli_query($conn,$sql1);
                 $STT = 1;
                 if(mysqli_num_rows($result1)>0){
