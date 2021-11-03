@@ -111,7 +111,7 @@ include('../config/connect.php');?>
                             aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="logout.php" style="font-weight:500"
                                     >Đăng xuất</a></li>
-                            <li><a class="dropdown-item" href="#" style="font-weight:500" >Quản lý
+                            <li><a class="dropdown-item" href="manageAccount.php" style="font-weight:500" >Quản lý
                                     tài khoản</a></li>
                         </ul> <?php
 
@@ -141,35 +141,7 @@ include('../config/connect.php');?>
   Launch demo modal
 </button> -->
 
-    <!-- Modal login -->
-    <div class="modal fade" id="login-admin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Đăng nhập</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="process_login.php" method="POST">
-                        <div class="mb-3">
-                            <label for="userEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
-                                name="userEmail" placeholder="Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="userPass" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="userPass" name="userPass"
-                                placeholder="Mật khẩu">
-
-                        </div>
-                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
+ 
     <!-- -->
     <!-- Modal register -->
     <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -205,6 +177,10 @@ include('../config/connect.php');?>
 
                         </div>
                         <button type="submit" class="btn btn-th" name="register" style="width: 100%;">Đăng ký</button>
+                        <div class="mb-3">
+                            <hr>
+                           <p class="text-center">Bạn đã có tài khoản?<a class="text-danger" href="login.php">Đăng nhập</a></p>
+                        </div>
                     </form>
                 </div>
 

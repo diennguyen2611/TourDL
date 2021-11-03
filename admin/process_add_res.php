@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     $resImg = $_POST['resimg'];
     $tourID= $_POST['tourid'];
 
-    $sql = "insert into `restaurants`(resName, resDes, resLocation, resPhone, ResImg, TourID) Values
+    $sql = "insert into `users_request`(name, email, phone, note, ResImg, TourID) Values
             ('$resName','$resDes', '$resLocation', '$resPhone', '$resImg', $tourID)";
 
     $result=mysqli_query($conn, $sql);

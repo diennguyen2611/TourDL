@@ -555,3 +555,17 @@
     color: #339cff;
 }
 
+/*tìm kiếm*/
+.search-form{
+    width: 100%;
+}
+
+.my-textarea{
+    width: 100%;
+}
+
+.my-status-title{
+    margin: 32px 0;
+}
+
+

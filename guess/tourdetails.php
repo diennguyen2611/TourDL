@@ -119,17 +119,23 @@ include('../config/connect.php');
                 </div>
                 <div class="row mb-3 info">
                     <div class="col-md-7">
-                        <p>Số lượng x <span><?php echo $tourPrice?></span></p>
+                        <p>Số lượng x <span id="price"><?php echo $tourPrice?></span></p>
                     </div>
                     <div class="col-md-5">
                         <input type="number" class="form-control" id="quantity" min="1" max="40">
                     </div>
                 </div>
                 <div class="total mb-3">
-                    <h3 class="text-end" id="total"><?php echo $tourPrice?><span>VNĐ</span></p>
+                    <h3 class="text-end" id="total"></h3>
                 </div>
                 <div class="mb-3 order-btn">
-                    <a class="dropdown-item order text-center" href="#order" data-bs-toggle="modal">Yêu cầu đặt</a>
+                    <?php 
+                    $formRequest='#';
+                    if(isset($_SESSION['login'])){
+                   $formRequest = '#order';}
+                   else $formRequest = '#register';?>
+
+                    <a class="dropdown-item order text-center" href="<?php echo $formRequest; ?>" data-bs-toggle="modal">Yêu cầu đặt</a>
                 </div>
             </form>
 

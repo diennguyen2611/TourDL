@@ -19,10 +19,14 @@ include('../config/connect.php');?>
             <h5 class="text-white"><i>Du lịch trọn vẹn, giá cả phải chăng</i></h5>
             <div class="my-search">
                 <div class="input-group mb-3">
-
-                    <input type="text" class="form-control" placeholder="Bạn muốn đi đâu"
-                        aria-label="Recipient's username" aria-describedby="btn-search" id="search-data">
-                    <a href="" class="btn my-btn-search btn-lg" type="button" id="btn-search">Tìm Kiếm</a>
+                    <form action="search.php" method="Post" class="search-form" onsubmit = "return validateForm()"> <!--onsubmit kiểm tra dl ng dùng nhập vào from nếu đúg gửi đi-->
+                        <div class="mb-3 search-form">
+                            <input type="text" class="form-control" name='search-dt' placeholder="Bạn muốn đi đâu?" id="dataCheck">
+                        </div>
+                        <div class="mb-3 search-form">
+                            <button type="submit" class="btn btn-warning float-end text-white" name="search-btn" id="btnSearch">Tìm Kiếm</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             Tailor tour - Trải nghiệm theo cách riêng của bạn -
@@ -48,8 +52,8 @@ include('../config/connect.php');?>
 </div>
 <!--  -->
 <div class="my_map" style="overflow: hidden">
-<div class="container">
-    <?php 
+    <div class="container">
+        <?php 
 
 $sql = "select * from toursgroup where GroupStatus=0";
 
@@ -118,13 +122,13 @@ if(mysqli_num_rows($result)>0){
 
                     </div>
                 </a>
-            </div> 
+            </div>
             <?php } } ?>
 
-                 </div>
+        </div>
         <?php }}?>
-    </div> 
-   
+    </div>
+
 </div>
 <!--  -->
 

@@ -335,27 +335,27 @@
             </div>
 
             <div class="col-md-6" style="padding-left:20px;">
-                <form>
+                <form action="sendRequest.php" method="Post" onsubmit = "return validateForm()">
                     <h3>Gửi yêu cầu lịch trình</h3>
                     <p>Hãy để chuyên gia du lịch tư vấn miễn phí cho bạn nhé</p>
                     <div class="mb-3">
                         <label for="InputName" class="form-label">Họ Tên</label>
-                        <input type="text" class="form-control" id="InputName">
+                        <input type="text" class="form-control" id="InputName" name="name">
                     </div>
                     <div class="mb-3">
                         <label for="InputMobile" class="form-label">Điện Thoại</label>
-                        <input type="text" class="form-control" id="InputMobile">
+                        <input type="text" class="form-control" id="InputMobile" name="mobile">
                     </div>
                     <div class="mb-3">
                         <label for="InputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" name='email'>
                     </div>
      
                     <div class="mb-3">
-                        <label for="Input-th" class="form-label">Cách bạn trải nghiệm</label>
-                        <input type="text" class="form-control" id="Input-th" placeholder="Thời gian, số khách dự kiến, địa điểm yêu thích, loại hình khách sạn...">
+                       <div> <label for="Input-th" class="form-label">Cách bạn trải nghiệm</label></div>
+                        <textarea id="InputRequest" class="my-textarea" rows="10" name="request" placeholder="Thời gian, số khách dự kiến, địa điểm yêu thích, loại hình khách sạn..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary text-center btn-th" style="width: 100%; max-height: 60px">Gửi yêu cầu 
+                    <button type="submit"  id="sendBtn" name="sendRequest" class="btn btn-primary text-center btn-th" style="width: 100%; max-height: 60px">Gửi yêu cầu 
                         <p style="font-size:13px">Chúng tôi sẽ liên hệ lại sau ít phút</p>
                     </button>
                 </form>
