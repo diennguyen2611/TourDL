@@ -6,11 +6,13 @@ include('../config/connect.php');
 
 <?php
  
- $id = $_GET['id'];
+ if(isset($_POST['search-btn'])){
+ $id = $_POST['search-dt'];
  $title = "";
 
-     $sql = "select * from `tours` where TourName like '%$id%'";
-     $title = "Tất cả các tìm kiếm liên quan";
+     $sql = "select * from `tours`, `toursgroup` where `tours`.GroupID=`tours`.GroupID and 
+        TourName like '%$id%' or TourLocation like '%$id%' or TourDes like '%$id%' or GroupName like '%$id%'";
+     $title = 'Tất cả các tìm kiếm liên quan cho từ khóa '.$id;
 
 
 ?>
@@ -93,7 +95,7 @@ include('../config/connect.php');
    
 
  <?php } 
- else echo $sql; ?>
+ else echo '<p>Không có kết quả nào được tìm thấy</p>';} ?>
  </div>
  </div>
 <?php
