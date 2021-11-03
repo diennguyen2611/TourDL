@@ -3,7 +3,7 @@
 <main>
     <div class="container">
         <h2>Thêm nhóm tour</h2>
-        <form action="process_add_tour.php" method="POST">
+        <form action="process_add_tourgroup.php" method="POST">
             
             <div class="mb-3">
                 <label for="groupname" class="form-label">Tên nhóm</label>
