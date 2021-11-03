@@ -18,7 +18,7 @@
             $passTrue = $row['userPass'];
             }
 
-            if(password_verify($pass, $passTrue)){
+            if(password_verify($userPass, $passTrue)){
                 $_SESSION['login'] = $userName;
             }
             else{

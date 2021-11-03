@@ -101,9 +101,18 @@ include('../config/connect.php');?>
                             <?php 
                                 if(isset($_SESSION['login'])){
                                     echo $_SESSION['login'];
-                                }
-                                else echo 'Tài khoản';
-                            ?>
+                                  ?> 
+                                  </button>
+                        <ul style="max-width: 300px" class="dropdown-menu text-center"
+                            aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="logout.php" style="font-weight:500"
+                                    data-bs-toggle="modal">Đăng xuất</a></li>
+                        </ul> <?php
+
+                        }
+                        else { echo 'Tài khoản';
+
+                        ?>
                         </button>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
                             aria-labelledby="dropdownMenuButton1">
@@ -111,6 +120,11 @@ include('../config/connect.php');?>
                                     data-bs-toggle="modal">Đăng nhập</a></li>
                             <p>Chưa có tài khoản <a href="#register" data-bs-toggle="modal">Đăng ký</a> ngay</p>
                         </ul>
+                        <?php } ?>
+
+
+    
+
                     </div>
                 </div>
             </div>
@@ -130,13 +144,14 @@ include('../config/connect.php');?>
                 <div class="modal-body">
                     <form action="process_login.php" method="POST">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                name="email" placeholder="Địa chỉ Email">
+                            <label for="userEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
+                                name="userEmail" placeholder="Địa chỉ Email">
                         </div>
                         <div class="mb-3">
-                            <label for="pass" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Mật khẩu">
+                            <label for="userPass" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="userPass" name="userPass"
+                                placeholder="Mật khẩu">
 
                         </div>
                         <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
@@ -165,13 +180,14 @@ include('../config/connect.php');?>
                 <div class="modal-body">
                     <form action="process_login.php" method="POST">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email / Số điện thoại</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                name="email" placeholder="Email / Số điện thoại">
+                            <label for="userEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
+                                name="userEmail" placeholder="Email">
                         </div>
                         <div class="mb-3">
-                            <label for="pass" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Mật khẩu">
+                            <label for="userPass" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="userPass" name="userPass"
+                                placeholder="Mật khẩu">
 
                         </div>
                         <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
@@ -193,10 +209,9 @@ include('../config/connect.php');?>
                 </div>
                 <div class="modal-body">
                     <form action="process_register.php" method="POST">
-                    <div class="mb-3">
+                        <div class="mb-3">
                             <label for="userName" class="form-label">Họ tên </label>
-                            <input type="text" class="form-control" id="userName" 
-                                name="userName" placeholder="Họ tên ">
+                            <input type="text" class="form-control" id="userName" name="userName" placeholder="Họ tên ">
                         </div>
 
                         <div class="mb-3">
@@ -206,7 +221,8 @@ include('../config/connect.php');?>
                         </div>
                         <div class="mb-3">
                             <label for="userPass1" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="userPass1" name="userPass1" placeholder="Mật khẩu">
+                            <input type="password" class="form-control" id="userPass1" name="userPass1"
+                                placeholder="Mật khẩu">
 
                         </div>
                         <div class="mb-3">
@@ -215,7 +231,7 @@ include('../config/connect.php');?>
                                 placeholder="Xác nhận mật khẩu">
 
                         </div>
-                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng ký</button>
+                        <button type="submit" class="btn btn-th" name="register" style="width: 100%;">Đăng ký</button>
                     </form>
                 </div>
 

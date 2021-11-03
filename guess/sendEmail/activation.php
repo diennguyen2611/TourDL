@@ -1,5 +1,5 @@
 <?php
-include('../config/connect.php');
+include('../../config/connect.php');
     // URL kích hoạt có dạng phương thức GET
     $userEmail = $_GET['userEmail'];
     $userCode  = $_GET['userCode'];
@@ -10,10 +10,10 @@ include('../config/connect.php');
 
     // 3. XỬ lý kết quả
     if(mysqli_num_rows($result) > 0){
-        $sql = "UPDATE users SET userStatus = 1 WHERE userEmail = '$userEmail'";
-        $result = mysqli_query($conn,$sql);
+        $sql1 = "UPDATE users SET userStatus = 1 WHERE userEmail = '$userEmail'";
+        $result1 = mysqli_query($conn,$sql1);
 
-        if($result > 0){
+        if($result1 > 0){
             echo 'Tài khoản đã được kích hoạt';
         }
     }else{

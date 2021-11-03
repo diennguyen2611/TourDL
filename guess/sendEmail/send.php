@@ -8,7 +8,7 @@
     require 'phpmailer/PHPMailer.php';
     require 'phpmailer/SMTP.php';
     // Đóng gói đoạn xử lý gửi Email vào Function
-    function sendEmail($recipient,$code){
+    function sendEmail($recipient,$userCode){
         // 2. Tạo ra đối tượng PHPMailer
         $mail = new PHPMailer(true); //Biến $mail đang là 1 object
 
@@ -37,7 +37,7 @@
             $mail->Subject = '[localhost] Kích hoạt tài khoản';
             // Nội dung Email
            
-            $mail->Body = 'Nhấp vào đây để kích hoạt: <a href="http://localhost/project13/activation.php?email='.$recipient.'&code='.$code.'">Nhấp vào đây</a>';
+            $mail->Body = 'Nhấp vào đây để kích hoạt: <a href="http://localhost/TourDL/guess/sendEmail/activation.php?userEmail='.$recipient.'&userCode='.$userCode.'">Nhấp vào đây</a>';
             // Tệp tên đính kèm Email gửi đi
             // $mail->addAttachment('pdf/Giay_bao_mat_sau.pdf'); // Nếu bạn muốn đính kèm tệp tin gửi đi
 

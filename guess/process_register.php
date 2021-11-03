@@ -1,7 +1,8 @@
 <?php
 include('../config/connect.php');
+include('sendEmail/send.php');
 
-if(isset($_POST['login'])){
+if(isset($_POST['register'])){
 $userName = $_POST['userName'];
 $userPass1 = $_POST['userPass1'];
 $userPass2 = $_POST['userPass2'];
