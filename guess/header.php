@@ -110,7 +110,7 @@ include('../config/connect.php');?>
                             aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="logout.php" style="font-weight:500"
                                     >Đăng xuất</a></li>
-                            <li><a class="dropdown-item" href="#" style="font-weight:500" >Quản lý
+                            <li><a class="dropdown-item" href="manageAccount.php" style="font-weight:500" >Quản lý
                                     tài khoản</a></li>
                         </ul> <?php
 
@@ -133,6 +133,16 @@ include('../config/connect.php');?>
     <!-- End: Nav -->
 
     
+<<<<<<< HEAD
+=======
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+ 
+>>>>>>> 1a3f1854b4b06d2f9b6a9fbf073490b7bc813da6
     <!-- -->
     <!-- Modal register -->
     <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -172,6 +182,10 @@ include('../config/connect.php');?>
 
                         </div>
                         <button type="submit" class="btn btn-th" name="register" style="width: 100%;">Đăng ký</button>
+                        <div class="mb-3">
+                            <hr>
+                           <p class="text-center">Bạn đã có tài khoản?<a class="text-danger" href="login.php">Đăng nhập</a></p>
+                        </div>
                     </form>
                 </div>
 

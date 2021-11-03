@@ -26,10 +26,10 @@ include('../config/connect.php');?>
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link rel="stylesheet" href="../css/style.css">
-  
-        <link rel="stylesheet" href="../css/admin.css">
-  
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/admin.css">
+
     <title>Quản lý tours du lịch</title>
 
 
@@ -70,7 +70,8 @@ include('../config/connect.php');?>
                                         </a>
                                         <ul class="dropdown-menu my-subnav" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="tours.php">Các Tour</a></li>
-                                            <li><a class="dropdown-item" href="tourdetail.php">Chi tiết lịch trình</a></li>
+                                            <li><a class="dropdown-item" href="tourdetail.php">Chi tiết lịch trình</a>
+                                            </li>
 
                                             <li><a class="dropdown-item" href="tourgroup.php">Nhóm Tour</a>
                                             </li>
@@ -92,8 +93,10 @@ include('../config/connect.php');?>
                                             aria-expanded="false">Quản lý người dùng
                                         </a>
                                         <ul class="dropdown-menu my-subnav" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="accountuser.php">Tài khoản người dùng</a></li>
-                                            <li><a class="dropdown-item" href="accountadmin.php">Tài khoản admin</a></li>
+                                            <li><a class="dropdown-item" href="accountuser.php">Tài khoản người dùng</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="accountadmin.php">Tài khoản admin</a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -103,7 +106,8 @@ include('../config/connect.php');?>
                                         </a>
                                         <ul class="dropdown-menu my-subnav" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="tourorder.php">Đơn đặt</a></li>
-                                            <li><a class="dropdown-item" href="tourrequest.php">Yêu cầu đặt riêng</a></li>
+                                            <li><a class="dropdown-item" href="tourrequest.php">Yêu cầu đặt riêng</a>
+                                            </li>
 
                                         </ul>
                                     </li>
@@ -133,7 +137,7 @@ include('../config/connect.php');?>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
                             aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="logout.php" style="font-weight:500">Đăng xuất</a></li>
-                            <li><a class="dropdown-item" href="edit_pass.php" style="font-weight:500"
+                            <li><a class="dropdown-item" href="#edit-pass" style="font-weight:500"
                                     data-bs-toggle="modal">Đổi mật khẩu</a></li>
 
                         </ul>
@@ -143,6 +147,46 @@ include('../config/connect.php');?>
         </div>
     </div>
     <!-- End: Nav -->
+    <div class="modal fade" id="edit-pass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thay đổi pasword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="process_edit_pass.php" method="POST">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Tên đăng nhập</label>
+                            <input readonly type="text" class="form-control" name="username"
+                                value="<?php echo $_SESSION['success']?>">
 
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Mật khẩu cũ</label>
+                            <input readonly type="text" class="form-control" name="pass"
+                                value="">
 
-   
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Mật khẩu mới</label>
+                            <input type="text" class="form-control" name="Pass1">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Xác nhận mật khẩu </label>
+                            <input type="text" class="form-control" name="Pass2">
+
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-th" name="luulai" style="width: 100%;">Lưu lại</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+</div>
+        

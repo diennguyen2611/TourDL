@@ -18,8 +18,9 @@ include('../config/connect.php');
  
             if(password_verify($adpass, $passTrue)){
                 header("Location:index.php");
-                $_SESSION['success'] = $user_adname;
-                $_SESSION['pass'] = $adpass;
+            
+                $_SESSION['success'] = $ademail;
+              
             }
             else{              
            header("Location:login.php");

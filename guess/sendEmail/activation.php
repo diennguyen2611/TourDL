@@ -18,6 +18,7 @@ include('../../config/connect.php');
             header('location: http://localhost/TourDL/guess/index.php');
         }
     }else{
+        echo $sql;
        echo 'Không thể kích hoạt.';
     }
 ?>

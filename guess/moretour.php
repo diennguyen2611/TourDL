@@ -69,7 +69,7 @@ include('../config/connect.php');
                 </div>
                 <div class="col-md-5">
                     <div class="row">
-                        <a href="tourdetails.php" class="linkdetail">
+                        <a href="tourdetails.php?id=<?php echo $tourId; ?>" class="linkdetail">
                             <?php echo $tourName ?>
                         </a>
                     </div>
