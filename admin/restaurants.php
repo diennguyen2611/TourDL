@@ -5,7 +5,7 @@ include('../config/connect.php');
 ?>
 <div class="container my-main">
 
-    <h2 class="text-uppercase my-title-ad">Thêm một nhà hàng</h2>
+    <h2 class="text-uppercase my-title-ad">Quản lý các nhà hàng</h2>
 
     <a href="add_restaurant.php"><button type="button" class="btn btn-primary">Thêm</button></a>
     <table class="table table-striped">

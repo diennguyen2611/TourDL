@@ -34,7 +34,7 @@ include('../config/connect.php');
 
             <div class="row row-white">
                 <div class="col-md-3">
-                    <a href="hoteldetails.php?id=<?php echo $resID; ?>">
+                    <a href="restaurantdetails.php?id=<?php echo $resID; ?>">
                         <img class="img-moretour" src="<?php echo  $ResImg ?>" alt=" <?php echo $resName ?>">
                     </a>
                 </div>

@@ -5,23 +5,23 @@ include('../config/connect.php');
 ?>
 <div class="container my-main">
 
-    <h2 class="text-uppercase my-title-ad">Thêm một nhà hàng</h2>
-    <form action="process_add_res.php" method="POST">
+    <h2 class="text-uppercase my-title-ad">Thêm một khách sạn</h2>
+    <form action="process_add_hotel.php" method="POST">
         <div class="mb-3">
-            <label for="resName"><b>Tên nhà hàng</b></label>
-            <input type="text" class="form-control" id="hotline" name="resName">
+            <label for="hotelName"><b>Tên khách sạn</b></label>
+            <input type="text" class="form-control" id="hotline" name="hotelName">
         </div>
         <div class="mb-3">
-            <div><label for="resdes"><b>Mô tả</b></label></div>
-           <textarea class="my-textarea" rows="10" name="resdes"></textarea>
+            <div><label for="hoteldes"><b>Mô tả</b></label></div>
+           <textarea class="my-textarea" rows="10" name="hoteldes"></textarea>
         </div>
         <div class="mb-3">
-            <label for="reslocation"><b>Địa chỉ</b></label>
-            <input type="text" class="form-control" id="location" name="reslocation">
+            <label for="hotellocation"><b>Địa chỉ</b></label>
+            <input type="text" class="form-control" id="location" name="hotellocation">
         </div>
         <div class="mb-3">
-            <label for="resphone"><b>Số điện thoại</b></label>
-            <input type="text" class="form-control" id="facebook" name="resphone">
+            <label for="hotelphone"><b>Số điện thoại</b></label>
+            <input type="text" class="form-control" id="facebook" name="hotelphone">
         </div>
         <div class="mb-3">
             <label for="resimg"><b>Ảnh minh họa</b></label>
