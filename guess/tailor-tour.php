@@ -352,8 +352,8 @@
                     </div>
      
                     <div class="mb-3">
-                        <label for="Input-th" class="form-label">Cách bạn trải nghiệm</label>
-                        <input type="text" class="form-control" id="InputRequest" name="request" placeholder="Thời gian, số khách dự kiến, địa điểm yêu thích, loại hình khách sạn...">
+                       <div> <label for="Input-th" class="form-label">Cách bạn trải nghiệm</label></div>
+                        <textarea id="InputRequest" class="my-textarea" rows="10" name="request" placeholder="Thời gian, số khách dự kiến, địa điểm yêu thích, loại hình khách sạn..."></textarea>
                     </div>
                     <button type="submit"  id="sendBtn" name="sendRequest" class="btn btn-primary text-center btn-th" style="width: 100%; max-height: 60px">Gửi yêu cầu 
                         <p style="font-size:13px">Chúng tôi sẽ liên hệ lại sau ít phút</p>
