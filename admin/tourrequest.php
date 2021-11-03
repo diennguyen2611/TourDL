@@ -55,7 +55,7 @@ include('../config/connect.php');
                 </td>
                 <td>
                     <?php 
-                    if($RequestStatus==1){?>
+                    if($RequestStatus==0){?>
                         <a href="process_request.php?RequestID=<?php echo $RequestID; ?>"
                         onclick="return confirm('Bạn đã xử lý xong yêu cầu này?')"><button type="button"
                             class="btn btn-success">Xử lý ngay</button></a>
