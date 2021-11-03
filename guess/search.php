@@ -7,14 +7,12 @@ include('../config/connect.php');
 <?php
  
  if(isset($_POST['search-btn'])){
- $id = $_POST['search-dt'];
+ $id = trim($_POST['search-dt']);
  $title = "";
 
      $sql = "select * from `tours`, `toursgroup` where `tours`.GroupID=`tours`.GroupID and 
         TourName like '%$id%' or TourLocation like '%$id%' or TourDes like '%$id%' or GroupName like '%$id%'";
      $title = 'Tất cả các tìm kiếm liên quan cho từ khóa '.$id;
-
-
 ?>
 
 <div class="my_moretour" style="overflow: hidden">
