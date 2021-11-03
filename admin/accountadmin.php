@@ -19,7 +19,7 @@ include('../config/connect.php');
 
             </tr>
         </thead>
-        <tbody>
+       
             <?php
             $sql = "select * from users_ad";
             $result = mysqli_query($conn,$sql);
@@ -48,17 +48,23 @@ include('../config/connect.php');
             ?>
                 </td>
                 <td>
+                    <?php
+                    if($user_adStatus==0){?>
                     <a href="edit_user_ad.php?user_adID=<?php echo $user_adID; ?>"><button type="button"
                             class="btn btn-success">Update</button></a>
 
                     <a href="del_user_ad.php?user_adID=<?php echo $user_adID; ?>"
                         onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
                             class="btn btn-danger">Delete</button></a>
+                            <?php } ?>
                 </td>
-                <?php       }
-            } else echo $sql;
+                    </tr>
+                <?php       
+                }
+            }
+            else {echo $sql;}
         ?>
-        </tbody>
+        
     </table>
 </div>
 

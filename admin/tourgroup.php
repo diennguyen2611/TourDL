@@ -7,7 +7,8 @@ include('../config/connect.php');
 
     <h2 class="text-uppercase my-title-ad">Quản lý nhóm tours</h2>
     <!-- Button to Add group Tour -->
-    <a href="add_tourgroup.php" class="btn-primary " style="border-radius:4px; padding:8px;text-decoration: none;">Add Tourgroup</a>
+    <a href="add_tourgroup.php" class="btn-primary " style="border-radius:4px; padding:8px;text-decoration: none;">Add
+        Tourgroup</a>
     <br /><br />
     <table class="table table-striped">
         <thead>
@@ -39,28 +40,25 @@ include('../config/connect.php');
             <td><?php echo $groupid; ?></td>
             <td><?php echo  $groupname; ?></td>
             <td>
-                    <?php 
+                <?php 
                 if($groupstatus==0)
                 echo '<p class="text-success">Chưa hủy</p>';
                 else 
                 echo '<p class="text-danger">Đã hủy</p>';
             ?>
-                </td>
-        
-            
+            </td>
+
+
             <td>
-                    <?php
+                <?php
                     if($groupstatus==0){?>
-                        <a href="updategrouptour.php?groupid=<?php echo $groupid; ?>"><button type="button"
-                                class="btn btn-success">Update</button></a>
+                <a href="updategrouptour.php?groupid=<?php echo $groupid; ?>"><button type="button"
+                        class="btn btn-success">Update</button></a>
 
-                        <a href="deletegrouptour.php?groupid=<?php echo $groupid;?>"
-                            onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
-                                class="btn btn-danger">Delete</button></a>
-                    <?php } ?>
-
-               
-                
+                <a href="deletegrouptour.php?groupid=<?php echo $groupid;?>"
+                    onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
+                        class="btn btn-danger">Delete</button></a>
+                <?php } ?>
             </td>
 
         </tr>
