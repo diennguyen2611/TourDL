@@ -212,7 +212,7 @@ DELIMITER ;
 CREATE TABLE `users` (
   `userID` int(11) NOT NULL,
   `userName` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `userPass` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `userPass` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `userEmail` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `userCode` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `userPhone` char(12) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
