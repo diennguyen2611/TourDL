@@ -78,7 +78,6 @@ include('../config/connect.php');?>
                                             <li><a class="dropdown-item" href="hotels.php">Khách sạn</a></li>
                                             <li><a class="dropdown-item" href="restaurant.php">Ăn uống</a></li>
 
-                                           
                                         </ul>
                                     </li>
                                 </ul>
@@ -126,7 +125,6 @@ include('../config/connect.php');?>
                         </ul>
                         <?php } ?>
 
-
                     </div>
                 </div>
             </div>
@@ -135,41 +133,6 @@ include('../config/connect.php');?>
     <!-- End: Nav -->
 
     
-
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
-
-    <!-- Modal login -->
-    <div class="modal fade" id="login-admin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Đăng nhập</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="process_login.php" method="POST">
-                        <div class="mb-3">
-                            <label for="userEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
-                                name="userEmail" placeholder="Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="userPass" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="userPass" name="userPass"
-                                placeholder="Mật khẩu">
-
-                        </div>
-                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
     <!-- -->
     <!-- Modal register -->
     <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -191,6 +154,10 @@ include('../config/connect.php');?>
                             <label for="userEmail" class="form-label">Email </label>
                             <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
                                 name="userEmail" placeholder="Email ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userPhone" class="form-label">Điện thoại </label>
+                            <input type="text" class="form-control" id="userPhone" name="userPhone" placeholder="Điện thoại">
                         </div>
                         <div class="mb-3">
                             <label for="userPass1" class="form-label">Mật khẩu</label>

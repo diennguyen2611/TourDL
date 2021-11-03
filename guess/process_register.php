@@ -4,6 +4,7 @@ include('sendEmail/send.php');
 
 if(isset($_POST['register'])){
 $userName = $_POST['userName'];
+$userPhone = $_POST['userPhone'];
 $userPass1 = $_POST['userPass1'];
 $userPass2 = $_POST['userPass2'];
 $userEmail = $_POST['userEmail'];
@@ -20,7 +21,7 @@ else{
     $pass_hash = password_hash($userPass1, PASSWORD_DEFAULT);
     $userCode = md5(uniqid(rand(), true));
         //Nếu chưa tồn tại, thì chúng ta mới LƯU vào CSDL và GỬI email xác nhận
-    $sql1 = "INSERT INTO users (userName, userEmail, userPass, userCode, userStatus) VALUES ('$userName','$userEmail','$pass_hash','$userCode','0')";
+    $sql1 = "INSERT INTO users (userName, userEmail, userPhone, userPass, userCode, userStatus) VALUES ('$userName','$userEmail', '$userPhone', '$pass_hash','$userCode','0')";
     $result1 = mysqli_query($conn,$sql1);
 
     if($result1 >=1){
