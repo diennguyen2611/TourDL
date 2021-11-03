@@ -42,11 +42,11 @@ include('../config/connect.php');?>
         </div>
         <div class="col-md-4 text-center">
             <i class="far fa-check-circle text-success"></i>
-            Tour chọn lọc <b>chất lượng nhất</b>
+            Giá cả <b>hợp lý nhất</b>
         </div>
         <div class="col-md-4 text-center">
             <i class="far fa-check-circle text-success"></i>
-            Tour chọn lọc <b>chất lượng nhất</b>
+            Dịch vụ <b>vượt trội nhất</b>
         </div>
     </div>
 </div>

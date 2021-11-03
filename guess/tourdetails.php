@@ -67,7 +67,7 @@ include('../config/connect.php');
                         <tbody>
                             <?php 
            
-                $sql1 = "select * from `tourdetails` where TourID = $tourID";
+                $sql1 = "select * from `tourdetails` where TourID = $tourID and TourStatus=0";
                 $result1 = mysqli_query($conn,$sql1);
                 $STT = 1;
                 if(mysqli_num_rows($result1)>0){
@@ -108,25 +108,28 @@ include('../config/connect.php');
                 <p><b>Đặt ngay, chỉ 2 phút. Hoặc gọi <?php echo $Hotline?></b></p>
                 <div class="row mb-3 info">
                     <div class="col-md-7">
-                        <p>Chọn ngày khởi hành:</p>
+                        <p><i class="fas fa-check-circle"></i>Nhanh gọn, tiện lợi</p>
                     </div>
-                    <div class="col-md-5">
+                    <!-- <div class="col-md-5">
                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                            <option selected><?php echo $tourSTDay?></option>
+                            <option selected>
+                                <?php //echo $tourSTDay?>
+                            </option>
                         </select>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div class="row mb-3 info">
                     <div class="col-md-7">
-                        <p>Số lượng x <span id="price"><?php echo $tourPrice?></span></p>
+                        <p><i class="fas fa-clipboard-list"></i>Nhiều lịch trình để lựa chọn</p>
+                        <!-- <p>Số lượng x <span id="price"><?php //echo $tourPrice?></span></p> -->
                     </div>
-                    <div class="col-md-5">
+                    <!-- <div class="col-md-5">
                         <input type="number" class="form-control" id="quantity" min="1" max="40">
-                    </div>
+                    </div> -->
                 </div>
                 <div class="total mb-3">
-                    <h3 class="text-end" id="total"></h3>
+                    <h3 class="text-end" id="total"><?php echo $tourPrice ?></h3>
                 </div>
                 <div class="mb-3 order-btn">
                     <?php 
@@ -135,7 +138,8 @@ include('../config/connect.php');
                    $formRequest = '#order';}
                    else $formRequest = '#register';?>
 
-                    <a class="dropdown-item order text-center" href="<?php echo $formRequest; ?>" data-bs-toggle="modal">Yêu cầu đặt</a>
+                    <a class="dropdown-item order text-center" href="<?php echo $formRequest; ?>"
+                        data-bs-toggle="modal">Yêu cầu đặt</a>
                 </div>
             </form>
 
@@ -273,8 +277,18 @@ else echo $sql4;
 
         </div>
     </div>
-
-
+    <?php
+        $userEmail = $_SESSION['login'];
+       $userID='';
+                                    $sql = "select * from users where userEmail = '$userEmail'";
+                                    $result = mysqli_query($conn, $sql);
+                                    if(mysqli_num_rows($result)>0){
+                                        while($row = mysqli_fetch_assoc($result)){
+                                        $userID = $row['userID'];
+                                        }}
+                                    
+                                  ?>
+    
     <!--form đặt -->
     <div class="modal fade" id="order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -290,7 +304,10 @@ else echo $sql4;
 
                 <div class="modal-body">
                     <p class="">Quý khách vui lòng điền thông tin bên dưới</p>
-                    <form action="#" method="POST">
+                    <form action="process-order.php" method="POST">
+                    <input type="hidden" class="form-control" id="" name="tourPrice" value="<?php echo $tourPrice?>">
+                        <input type="hidden" class="form-control" id="" name="userID" value="<?php echo $userID?>">
+                        <input type="hidden" class="form-control" id="" name="tourID" value="<?php echo $tourID?>">
                         <div class="mb-3">
                             <label for="hoten" class="form-label">Họ và tên</label>
                             <input type="text" class="form-control" id="hoten" name="hoten">
@@ -306,12 +323,27 @@ else echo $sql4;
                                 name="email">
                         </div>
                         <div class="mb-3">
+                            <label for="ngaykh" class="form-label">Chọn ngày khởi hành</label>
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                name="ngaykh">
+                                <option value="<?php echo $tourSTDay?>">
+                                    <?php echo $tourSTDay?>
+                                </option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="solg" class="form-label">Số lượng đặt</label>
+                            <input type="number" class="form-control" id="solg" name="solg">
+
+                        </div>
+                        <div class="mb-3">
                             <label for="khac" class="form-label">Yêu cầu khác</label>
                             <input type="text" class="form-control" id="khac" name="khac">
 
                         </div>
 
-                        <button type="submit" class="btn text-center btn-th" style="width: 100%; max-height: 60px">Gửi
+                        <button type="submit" class="btn text-center btn-th" style="width: 100%; max-height: 60px"
+                            name="order">Gửi
                             yêu cầu
                             <p style="font-size:13px">Chúng tôi sẽ liên hệ lại sau ít phút</p>
                         </button>
