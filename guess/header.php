@@ -133,16 +133,6 @@ include('../config/connect.php');?>
     <!-- End: Nav -->
 
     
-<<<<<<< HEAD
-=======
-
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
-
- 
->>>>>>> 1a3f1854b4b06d2f9b6a9fbf073490b7bc813da6
     <!-- -->
     <!-- Modal register -->
     <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
