@@ -78,7 +78,6 @@ include('../config/connect.php');?>
                                             <li><a class="dropdown-item" href="hotels.php">Khách sạn</a></li>
                                             <li><a class="dropdown-item" href="restaurant.php">Ăn uống</a></li>
 
-                                           
                                         </ul>
                                     </li>
                                 </ul>
@@ -126,7 +125,6 @@ include('../config/connect.php');?>
                         </ul>
                         <?php } ?>
 
-
                     </div>
                 </div>
             </div>
@@ -135,13 +133,6 @@ include('../config/connect.php');?>
     <!-- End: Nav -->
 
     
-
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
-
- 
     <!-- -->
     <!-- Modal register -->
     <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -163,6 +154,10 @@ include('../config/connect.php');?>
                             <label for="userEmail" class="form-label">Email </label>
                             <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
                                 name="userEmail" placeholder="Email ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userPhone" class="form-label">Điện thoại </label>
+                            <input type="text" class="form-control" id="userPhone" name="userPhone" placeholder="Điện thoại">
                         </div>
                         <div class="mb-3">
                             <label for="userPass1" class="form-label">Mật khẩu</label>
