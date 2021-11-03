@@ -5,7 +5,6 @@
         <h2>Thêm tour</h2>
         <form action="process_add_tour.php" method="POST">
 
-            <?php $groupid = $row['GroupID'];?>
 
             <div class="mb-3">
                 <label for="tourname" class="form-label">Tên tour</label>
@@ -42,8 +41,16 @@
             </div>
             <div class="mb-3">
                 <label for="groupid" class="form-label" style="font-weight: bold">Mã nhóm</label>
-                <select type="text" value="<?php echo $groupid; ?>" class="form-control" name="groupid">
+                <select name="groupid" id="groupid">
+                    <?php
+       $sql0 = "select * from `toursgroup`";
+       $result0 = mysqli_query($conn, $sql0);
+       if(mysqli_num_rows($result0)>0){ 
+        while($row=mysqli_fetch_assoc($result0)){
+            echo '<option value = "'.$row['GroupID'].'">'.$row['GroupName'].'</option>';
+        }}?>
                 </select>
+               
             </div>
 
             <div class="mb-3">

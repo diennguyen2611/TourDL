@@ -56,7 +56,14 @@ include('../config/connect.php');
             <td><?php echo $tourdes; ?></td>
             <td><?php echo $tourschedule; ?></td>
             <td><img src="<?php echo $tourimg ?>" alt="<?echo $tourName ?>" width="100px"> </td>
-            <td><?php echo $tourstatus; ?></td>
+            <td>
+                    <?php 
+                if($tourstatus==0)
+                echo '<p class="text-success">Chưa khởi hành</p>';
+                else 
+                echo '<p class="text-danger">Đã khởi hành</p>';
+            ?>
+                </td>
             <td><?php echo $groupid; ?></td>
             <td>
                 <a href="updatetour.php?tourid=<?php echo $tourid; ?>"><button type="button"

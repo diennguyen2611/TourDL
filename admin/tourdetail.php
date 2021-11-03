@@ -46,7 +46,14 @@ include('../config/connect.php');
             <td><?php echo  $tourstday; ?></td>
             <td><?php echo $toureday; ?></td>
             <td><?php echo $tourprice; ?></td>
-            <td><?php echo $tourstatus; ?></td>
+            <td>
+                    <?php 
+                if($tourstatus==0)
+                echo '<p class="text-success">Chưa khởi hành</p>';
+                else 
+                echo '<p class="text-danger">Đã khởi hành</p>';
+            ?>
+                </td>
             <td>
                 <a href="updatetourdetail.php?tourid= <?php echo $tourid; ?>&tourstday=<?php echo $tourstday; ?>"><button
                         type="button" class="btn btn-success">Update</button></a>

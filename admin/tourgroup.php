@@ -38,7 +38,14 @@ include('../config/connect.php');
             <th scope="row"><?php echo $sn++; ?></th>
             <td><?php echo $groupid; ?></td>
             <td><?php echo  $groupname; ?></td>
-            <td><?php echo $groupstatus; ?></td>
+            <td>
+                    <?php 
+                if($groupstatus==0)
+                echo '<p class="text-success">Chưa hủy</p>';
+                else 
+                echo '<p class="text-danger">Đã hủy</p>';
+            ?>
+                </td>
             <td>
                 <a href="updategrouptour.php?groupid=<?php echo $groupid; ?>"><button type="button"
                         class="btn btn-success">Update </button></a>
