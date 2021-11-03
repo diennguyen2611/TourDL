@@ -67,7 +67,7 @@ include('../config/connect.php');?>
                                             <li><a class="dropdown-item" href="tours.php">Các Tour</a></li>
                                             <li><a class="dropdown-item" href="tourdetail.php">Chi tiết lịch trình</a></li>
 
-                                            <li><a class="dropdown-item" href="tourgroup.php" data-bs-toggle="modal">Nhóm Tour</a>
+                                            <li><a class="dropdown-item" href="tourgroup.php">Nhóm Tour</a>
                                             </li>
                                         </ul>
                                     </li>
