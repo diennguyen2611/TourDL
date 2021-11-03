@@ -70,8 +70,8 @@ include('../config/connect.php');?>
                                             aria-expanded="false">More
                                         </a>
                                         <ul class="dropdown-menu my-subnav" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Khách sạn</a></li>
-                                            <li><a class="dropdown-item" href="#">Ăn uống</a></li>
+                                            <li><a class="dropdown-item" href="hotels.php">Khách sạn</a></li>
+                                            <li><a class="dropdown-item" href="restaurant.php">Ăn uống</a></li>
 
                                             <li><a class="dropdown-item" href="#login-guess" data-bs-toggle="modal">Tài
                                                     khoản đặt tour</a></li>
