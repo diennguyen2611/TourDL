@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
  
 $sql = "update `tours` set TourLocation='$tourlocation ', TourVehicle='$tourvehicle',
 TourDes='$tourdes', TourSchedule='$tourschedule' , TourImg='$tourimg' , TourStatus=$tourstatus,
-GroupID=$groupid where TourID='$tourid'";
+GroupID=$groupid where TourID=$tourid";
 
 
 $result = mysqli_query($conn, $sql);

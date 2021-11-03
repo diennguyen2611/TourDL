@@ -56,6 +56,7 @@ include('../config/connect.php');
             <td><?php echo $tourdes; ?></td>
             <td><?php echo $tourschedule; ?></td>
             <td><img src="<?php echo $tourimg ?>" alt="<?echo $tourName ?>" width="100px"> </td>
+            
             <td>
                     <?php 
                 if($tourstatus==0)
@@ -66,11 +67,18 @@ include('../config/connect.php');
                 </td>
             <td><?php echo $groupid; ?></td>
             <td>
-                <a href="updatetour.php?tourid=<?php echo $tourid; ?>"><button type="button"
-                        class="btn btn-success">Update</button></a>
-                <a href="deletetour.php?tourid=<?php echo $tourid; ?>"
-                    onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
-                        class="btn btn-danger">Delete</button></a>
+            <td>
+                    <?php
+                    if($tourstatus==0){?>
+                        <a href="updatetour.php?tourid=<?php echo $tourid; ?>"><button type="button"
+                                class="btn btn-success">Update</button></a>
+
+                        <a href="deletetour.php?tourid=<?php echo $tourid; ?>"
+                            onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
+                                class="btn btn-danger">Delete</button></a>
+                    <?php } ?>
+
+                </td>
                 
             </td>
         </tr>

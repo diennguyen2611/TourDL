@@ -46,13 +46,23 @@ include('../config/connect.php');
                 echo '<p class="text-danger">Đã hủy</p>';
             ?>
                 </td>
+        
+            
             <td>
-                <a href="updategrouptour.php?groupid=<?php echo $groupid; ?>"><button type="button"
-                        class="btn btn-success">Update </button></a>
-                <a href="deletegrouptour.php?groupid=<?php echo $groupid; ?>"
-                    onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
-                        class="btn btn-danger">Delete</button></a>
+                    <?php
+                    if($groupstatus==0){?>
+                        <a href="updategrouptour.php?groupid=<?php echo $groupid; ?>"><button type="button"
+                                class="btn btn-success">Update</button></a>
+
+                        <a href="deletegrouptour.php?groupid=<?php echo $groupid;?>"
+                            onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
+                                class="btn btn-danger">Delete</button></a>
+                    <?php } ?>
+
+               
+                
             </td>
+
         </tr>
         <?php
                         }

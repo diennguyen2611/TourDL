@@ -54,13 +54,24 @@ include('../config/connect.php');
                 echo '<p class="text-danger">Đã khởi hành</p>';
             ?>
                 </td>
+        
+            
             <td>
-                <a href="updatetourdetail.php?tourid= <?php echo $tourid; ?>&tourstday=<?php echo $tourstday; ?>"><button
-                        type="button" class="btn btn-success">Update</button></a>
-                <a href="deletetourdetail.php?tourid=<?php echo $tourid; ?>&tourstday='<?php echo $tourstday;?>'"
-                    onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
-                        class="btn btn-danger">Delete</button></a>
+                    <?php
+                    if($tourstatus==0){?>
+                        <a href="updatetourdetail.php?tourid=<?php echo $tourid; ?>&tourstday=<?php echo $tourstday; ?>"><button type="button"
+                                class="btn btn-success">Update</button></a>
+
+                        <a href="deletetourdetail.php?tourid=<?php echo $tourid; ?>&tourstday=<?php echo $tourstday; ?>"
+                            onclick="return confirm('Bạn chắc chắn muốn xóa?')"><button type="button"
+                                class="btn btn-danger">Delete</button></a>
+                    <?php } ?>
+
+               
+                
             </td>
+
+
         </tr>
         <?php
                         }
