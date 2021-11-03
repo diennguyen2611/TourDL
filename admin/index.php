@@ -28,6 +28,7 @@ if(mysqli_num_rows($result2)>0){
         $tongDon = $row['TongDon'];
     }
 }
+else echo $sql2;
 $sql3 = "select count(*) as TongYC from users_request where  DATE(RequestDay) = CURDATE()";
 $result3 = mysqli_query($conn, $sql3);
 if(mysqli_num_rows($result3)>0){ 

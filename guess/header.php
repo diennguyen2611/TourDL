@@ -1,3 +1,7 @@
+<?php 
+    session_start(); 
+?>
+
 <?php
 include('../config/connect.php');?>
 <?php 
@@ -7,7 +11,7 @@ include('../config/connect.php');?>
         while($row=mysqli_fetch_assoc($result0)){
             $hotline = $row['Hotline'];
            }}?>
-           
+
 <!doctype html>
 <html lang="en">
 
@@ -58,7 +62,8 @@ include('../config/connect.php');?>
                                     </li>
                                     <li class="nav-item hover-th">
 
-                                        <a class="nav-link active text-white" aria-current="page" href="moretour.php?id=0">Tours</a>
+                                        <a class="nav-link active text-white" aria-current="page"
+                                            href="moretour.php?id=0">Tours</a>
                                     </li>
                                     <li class="nav-item hover-th">
                                         <a class="nav-link active text-white" aria-current="page"
@@ -73,11 +78,8 @@ include('../config/connect.php');?>
                                             <li><a class="dropdown-item" href="hotels.php">Khách sạn</a></li>
                                             <li><a class="dropdown-item" href="restaurant.php">Ăn uống</a></li>
 
-                                            <li><a class="dropdown-item" href="#login-guess" data-bs-toggle="modal">Tài
-                                                    khoản đặt tour</a></li>
+                                           
                                         </ul>
-
-
                                     </li>
                                 </ul>
                             </div>
@@ -86,20 +88,45 @@ include('../config/connect.php');?>
                 </div>
 
                 <div class="col-md-5" style="margin-top:15px">
-                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;"><?php echo  $hotline ?></h6>
+                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">
+                        <?php echo  $hotline ?></h6>
 
                     <div class="dropdown float-end">
                         <button style="line-height: 40px" class="btn dropdown-toggle text-white hover-th" type="button"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-user-circle"></i>
-                            Tài khoản
+                            <?php 
+                                if(isset($_SESSION['login'])){
+                                    $userEmail = $_SESSION['login'];
+                                    $sql = "select * from users where userEmail = '$userEmail'";
+                                    $result = mysqli_query($conn, $sql);
+                                    if(mysqli_num_rows($result)>0){
+                                        while($row = mysqli_fetch_assoc($result)){
+                                        $userName = $row['userName'];
+                                        }
+                                    echo $userName;
+                                  ?>
                         </button>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
                             aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#login-admin" style="font-weight:500"
-                                    data-bs-toggle="modal">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="logout.php" style="font-weight:500"
+                                    >Đăng xuất</a></li>
+                            <li><a class="dropdown-item" href="#" style="font-weight:500" >Quản lý
+                                    tài khoản</a></li>
+                        </ul> <?php
+
+                        }}
+                        else { echo 'Tài khoản';
+                        ?>
+                        </button>
+                        <ul style="max-width: 300px" class="dropdown-menu text-center"
+                            aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="login.php" style="font-weight:500">Đăng nhập</a></li>
                             <p>Chưa có tài khoản <a href="#register" data-bs-toggle="modal">Đăng ký</a> ngay</p>
                         </ul>
+                        <?php } ?>
+
+
                     </div>
                 </div>
             </div>
@@ -107,35 +134,7 @@ include('../config/connect.php');?>
     </div>
     <!-- End: Nav -->
 
-    <!-- Giao diện Tài khoản đặt tour -->
-    <div class="modal fade" id="login-guess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Đăng nhập</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="#" method="POST">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                name="email" placeholder="Địa chỉ Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="pass" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Mật khẩu">
-
-                        </div>
-                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- -->
+    
 
     <!-- Button trigger modal -->
     <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -152,15 +151,16 @@ include('../config/connect.php');?>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="#" method="POST">
+                    <form action="process_login.php" method="POST">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email / Số điện thoại</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                name="email" placeholder="Email / Số điện thoại">
+                            <label for="userEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
+                                name="userEmail" placeholder="Email">
                         </div>
                         <div class="mb-3">
-                            <label for="pass" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Mật khẩu">
+                            <label for="userPass" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="userPass" name="userPass"
+                                placeholder="Mật khẩu">
 
                         </div>
                         <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
@@ -181,23 +181,30 @@ include('../config/connect.php');?>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="#" method="POST">
+                    <form action="process_register.php" method="POST">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email </label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                name="email" placeholder="Email ">
+                            <label for="userName" class="form-label">Họ tên </label>
+                            <input type="text" class="form-control" id="userName" name="userName" placeholder="Họ tên ">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label">Email </label>
+                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
+                                name="userEmail" placeholder="Email ">
                         </div>
                         <div class="mb-3">
-                            <label for="pass" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Mật khẩu">
+                            <label for="userPass1" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="userPass1" name="userPass1"
+                                placeholder="Mật khẩu">
 
                         </div>
                         <div class="mb-3">
-                            <label for="pass" class="form-label">Xác nhận mật khẩu</label>
-                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Xác nhận mật khẩu">
+                            <label for="userPass2" class="form-label">Xác nhận mật khẩu</label>
+                            <input type="password" class="form-control" id="userPass2" name="userPass2"
+                                placeholder="Xác nhận mật khẩu">
 
                         </div>
-                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng ký</button>
+                        <button type="submit" class="btn btn-th" name="register" style="width: 100%;">Đăng ký</button>
                     </form>
                 </div>
 
