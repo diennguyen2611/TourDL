@@ -15,6 +15,12 @@ $(document).ready(function(){
             alert('Gửi thành công. Chúng tôi sẽ liên hệ với bạn sớm nhất!');
             return true;
         })
+        
+        $("#quantity").change(function(){
+            var $t = $("#quantity").val()*Number($("#price").html());
+            $("#total").inerHTML =" String($t)";
+        }) 
+        
        }) 
 
        
