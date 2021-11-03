@@ -44,6 +44,7 @@
             // Gửi thư
             if($mail->send()){
                 echo 'Thư đã gửi đi thành công!';
+                header('location: index.php');
             }
 
         }catch(Exception $e){

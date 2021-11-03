@@ -20,7 +20,7 @@ else{
     $pass_hash = password_hash($userPass1, PASSWORD_DEFAULT);
     $userCode = md5(uniqid(rand(), true));
         //Nếu chưa tồn tại, thì chúng ta mới LƯU vào CSDL và GỬI email xác nhận
-    $sql1 = "INSERT INTO users (userName, userEmail, userPass, userCode) VALUES ('$userName','$userEmail','$pass_hash','$userCode')";
+    $sql1 = "INSERT INTO users (userName, userEmail, userPass, userCode, userStatus) VALUES ('$userName','$userEmail','$pass_hash','$userCode','0')";
     $result1 = mysqli_query($conn,$sql1);
 
     if($result1 >=1){
