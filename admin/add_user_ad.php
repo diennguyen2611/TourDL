@@ -2,7 +2,7 @@
 
 <main>
     <div class="container">
-        <h2>Thêm Admin</h2>
+        <h2 class="text-uppercase my-title-ad my-main">Thêm Admin</h2>
         <form action = "process_add_users_ad.php" method="POST">
             <div class="mb-3">
                 <label for="user_adName" class="form-label">Họ và tên</label>

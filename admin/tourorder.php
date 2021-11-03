@@ -15,6 +15,10 @@ include('../config/connect.php');
                 <th scope=col>DateOrder</th>
                 <th scope=col>QuantityOrder</th>
                 <th scope=col>TotalOrder</th>
+                <th scope=col>Name</th>
+                <th scope=col>Phone</th>
+                <th scope=col>Email</th>
+                <th scope=col>Request</th>
                 <th scope=col>StatusOrder</th>
                 <th scope=col>Action</th>
             </tr>
@@ -33,6 +37,10 @@ include('../config/connect.php');
                     $DateOrder=Date($row['DateOrder']);
                     $QuantityOrder=$row['QuantityOrder'];
                     $TotalOrder=Date($row['TotalOrder']);
+                    $name=$row['name'];
+                    $phone=$row['phone'];
+                    $email=$row['email'];
+                    $request=$row['request'];
                     $StatusOrder=$row['StatusOrder'];
             ?>
             <tr>
@@ -43,6 +51,11 @@ include('../config/connect.php');
                 <td><?php echo $DateOrder?></td>
                 <td><?php echo $QuantityOrder?></td>
                 <td><?php echo $TotalOrder?></td>
+                <td><?php echo $name?></td>
+                <td><?php echo $phone?></td>
+                <td><?php echo $email?></td>
+                <td><?php echo $request?></td>
+
                 <td>
                     <?php 
                 if($StatusOrder==0)
@@ -51,10 +64,15 @@ include('../config/connect.php');
                 echo '<p class="text-success">Đã xử lý</p>';
             ?>
                 </td>
+
+
                 <td>
-                    <a href="process_order.php?TourID=<?php echo $TourID; ?>&TourSTDay=<?php echo $TourSTDay;?>&UserID=<?php echo $UserID;?>"
+                    <?php
+                    if($StatusOrder==0){?>
+                        <a href="process_order.php?TourID=<?php echo $TourID; ?>&TourSTDay=<?php echo $TourSTDay;?>&UserID=<?php echo $UserID;?>"
                         onclick="return confirm('Bạn đã xử lý xong yêu cầu này?')"><button type="button"
                             class="btn btn-success">Xử lý ngay</button></a>
+                    <?php } ?>
                 </td>
                 <?php       }
             } else echo $sql;
