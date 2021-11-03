@@ -23,7 +23,7 @@ if(mysqli_num_rows($result)){
             while($row=mysqli_fetch_assoc($result1)){
                 $tourName = $row['TourName'];
             }}
-        else echo $sql;
+        else echo $sql1;
        
 }}
 
@@ -54,8 +54,8 @@ if(mysqli_num_rows($result)){
             <input type="text" class="form-control" id="ins" name="resimg" value="<?php echo $ResImg?>">
         </div>
         <div class="mb-3">
-            <label for="tourid" class="form-label">Tour Liên Quan: <?php echo $tourName ?></label>
-            <label  class="form-label">Thay đổi</label>
+        <div><label for="tourid" class="form-label"><b>Tour Liên Quan: </b><?php echo $tourName ?></label></div>
+            <label  class="form-label"><b>Thay đổi</b></label>
             <select name="tourid" id="tourid">
                 <?php
        $sql0 = "select * from `tours`";

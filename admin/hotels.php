@@ -29,11 +29,11 @@ include('../config/connect.php');
             if(mysqli_num_rows($result)>0){ 
                 while($row=mysqli_fetch_assoc($result)){
                     $hotelID = $row['hotelID'];
-            $hotelName = $row['hotelName'];
-            $hotelLocation = $row['hotelLocation'];
-            $hotelImg = $row['Hotelimg'];
-            $hotelPhone = $row['hotelPhone'];
-            $hotelDes = $row['hotelDes'];
+                    $hotelName = $row['hotelName'];
+                    $hotelLocation = $row['hotelLocation'];
+                    $hotelImg = $row['Hotelimg'];
+                    $hotelPhone = $row['hotelPhone'];
+                    $hotelDes = $row['hotelDes'];
                     $tourID = $row['TourID'];
                     $sql1 = "select TourName from tours where TourID = $tourID";
                     $result1 = mysqli_query($conn, $sql1);
@@ -42,7 +42,7 @@ include('../config/connect.php');
                         while($row=mysqli_fetch_assoc($result1)){
                             $tourName = $row['TourName'];
                         }}
-                    else echo $sql;
+                    else echo $sql1;
 
 
         ?>

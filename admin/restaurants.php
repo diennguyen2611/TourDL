@@ -42,7 +42,7 @@ include('../config/connect.php');
                         while($row=mysqli_fetch_assoc($result1)){
                             $tourName = $row['TourName'];
                         }}
-                    else echo $sql;
+                    else echo $sql1;
 
 
         ?>
