@@ -15,6 +15,7 @@ include('../../config/connect.php');
 
         if($result1 > 0){
             echo 'Tài khoản đã được kích hoạt';
+            header('location: http://localhost/TourDL/guess/index.php');
         }
     }else{
        echo 'Không thể kích hoạt.';

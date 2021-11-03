@@ -78,11 +78,8 @@ include('../config/connect.php');?>
                                             <li><a class="dropdown-item" href="hotels.php">Khách sạn</a></li>
                                             <li><a class="dropdown-item" href="restaurant.php">Ăn uống</a></li>
 
-                                            <li><a class="dropdown-item" href="#login-guess" data-bs-toggle="modal">Tài
-                                                    khoản đặt tour</a></li>
+                                           
                                         </ul>
-
-
                                     </li>
                                 </ul>
                             </div>
@@ -100,30 +97,35 @@ include('../config/connect.php');?>
                             <i class="fas fa-user-circle"></i>
                             <?php 
                                 if(isset($_SESSION['login'])){
-                                    echo $_SESSION['login'];
-                                  ?> 
-                                  </button>
+                                    $userEmail = $_SESSION['login'];
+                                    $sql = "select * from users where userEmail = '$userEmail'";
+                                    $result = mysqli_query($conn, $sql);
+                                    if(mysqli_num_rows($result)>0){
+                                        while($row = mysqli_fetch_assoc($result)){
+                                        $userName = $row['userName'];
+                                        }
+                                    echo $userName;
+                                  ?>
+                        </button>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
                             aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="logout.php" style="font-weight:500"
-                                    data-bs-toggle="modal">Đăng xuất</a></li>
+                                    >Đăng xuất</a></li>
+                            <li><a class="dropdown-item" href="#" style="font-weight:500" >Quản lý
+                                    tài khoản</a></li>
                         </ul> <?php
 
-                        }
+                        }}
                         else { echo 'Tài khoản';
-
                         ?>
                         </button>
                         <ul style="max-width: 300px" class="dropdown-menu text-center"
                             aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#login-admin" style="font-weight:500"
-                                    data-bs-toggle="modal">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="login.php" style="font-weight:500">Đăng nhập</a></li>
                             <p>Chưa có tài khoản <a href="#register" data-bs-toggle="modal">Đăng ký</a> ngay</p>
                         </ul>
                         <?php } ?>
 
-
-    
 
                     </div>
                 </div>
@@ -132,36 +134,7 @@ include('../config/connect.php');?>
     </div>
     <!-- End: Nav -->
 
-    <!-- Giao diện Tài khoản đặt tour -->
-    <div class="modal fade" id="login-guess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Đăng nhập</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="process_login.php" method="POST">
-                        <div class="mb-3">
-                            <label for="userEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
-                                name="userEmail" placeholder="Địa chỉ Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="userPass" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="userPass" name="userPass"
-                                placeholder="Mật khẩu">
-
-                        </div>
-                        <button type="submit" class="btn btn-th" name="login" style="width: 100%;">Đăng nhập</button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- -->
+    
 
     <!-- Button trigger modal -->
     <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
