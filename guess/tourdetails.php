@@ -278,7 +278,10 @@ else echo $sql4;
         </div>
     </div>
     <?php
+        $userEmail='';
+       if(isset($_SESSION['login'])){
         $userEmail = $_SESSION['login'];
+       };
        $userID='';
                                     $sql = "select * from users where userEmail = '$userEmail'";
                                     $result = mysqli_query($conn, $sql);
