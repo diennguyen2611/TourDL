@@ -10,8 +10,9 @@ include('../config/connect.php');
  $id = trim($_POST['search-dt']);
  $title = "";
 
+
      $sql = "select * from `tours`, `toursgroup` where `tours`.GroupID=`tours`.GroupID and 
-        TourName like '%$id%' or TourLocation like '%$id%' or TourDes like '%$id%' or GroupName like '%$id%'";
+        (TourName like '%$id%' or TourLocation like '%$id%')";
      $title = 'Tất cả các tìm kiếm liên quan cho từ khóa '.$id;
 ?>
 
@@ -60,7 +61,7 @@ include('../config/connect.php');
                 </div>
                 <div class="col-md-5">
                     <div class="row">
-                        <a href="tourdetails.php" class="linkdetail">
+                        <a href="tourdetails.php?id=<?php echo $tourId?>" class="linkdetail">
                             <?php echo $tourName ?>
                         </a>
                     </div>

@@ -13,7 +13,7 @@ $groupid = $_POST['groupid'];
 
 
  $sql="INSERT INTO `tours` (TourID,TourName,TourLocation,TourVehicle,TourDes, TourSchedule,TourImg,GroupID,TourStatus) 
- VALUES (NULL, '$tourname', '$tourlocation','$tourvehicle','$tourdes','$tourschedule', '$tourimg',$groupid,1)";
+ VALUES (NULL, '$tourname', '$tourlocation','$tourvehicle','$tourdes','$tourschedule', '$tourimg',$groupid,0)";
 $result = mysqli_query($conn, $sql);
 
 if($result>0){

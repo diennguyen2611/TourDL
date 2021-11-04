@@ -9,7 +9,7 @@ $tourprice = $_POST['tourprice'];
 
 
  $sql="INSERT INTO `tourdetails` (TourID,TourSTDay,TourEDay,TourPrice,TourStatus) 
- VALUES ($tourid, '$tourstday','$toureday',$tourprice,'1')";
+ VALUES ($tourid, '$tourstday','$toureday',$tourprice,'0')";
 $result = mysqli_query($conn, $sql);
 
 if($result>0){

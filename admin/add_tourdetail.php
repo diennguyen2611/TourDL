@@ -2,7 +2,7 @@
 
 <main>
     <div class="container">
-        <h2>Thêm tour</h2>
+        <h2>Thêm chi tiết tour</h2>
         <form action="process_add_tourdetail.php" method="POST">
         <div class="mb-3">
                 <label for="tourid" class="form-label" style="font-weight: bold">Mã tour</label>
