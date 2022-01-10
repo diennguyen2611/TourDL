@@ -28,7 +28,7 @@ if(mysqli_num_rows($result)){
 }}
 
 ?>
-<div class="container my-main">
+<div class="container f-header my-main">
 
     <h2 class="text-uppercase my-title-ad">Sửa thông tin của nhà hàng</h2>
     <form action="process_edit_res.php" method="POST">

@@ -11,12 +11,12 @@ include('../config/connect.php');
  $title = "";
 
 
-     $sql = "select * from `tours`, `toursgroup` where `tours`.GroupID=`tours`.GroupID and 
-        (TourName like '%$id%' or TourLocation like '%$id%')";
+     $sql = "select * from `tours`, `toursgroup` where `tours`.GroupID=`toursgroup`.GroupID and 
+        (TourName like '%$id%' or TourLocation like '%$id%' or GroupName like '%$id%')";
      $title = 'Tất cả các tìm kiếm liên quan cho từ khóa '.$id;
 ?>
 
-<div class="my_moretour" style="overflow: hidden">
+<div class="my_moretour f-header" style="overflow: hidden">
     <div class="container">
 
         <div class="row ">

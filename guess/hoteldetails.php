@@ -3,7 +3,7 @@ include('header.php');
 include('../config/connect.php');
 ?>
 
-<div class="my-tourdetails">
+<div class="my-tourdetails f-header">
     <div class="row my-relative">
 
         <?php

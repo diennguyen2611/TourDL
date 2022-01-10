@@ -11,7 +11,7 @@ include('../config/connect.php');?>
 
 
 ?>
-<div class="my-banner" style="overflow: hidden; background-image: url(<?php echo $banner?>);">
+<div class="my-banner f-header" style="overflow: hidden; background-image: url(<?php echo $banner?>);">
     <div class="row">
         <div class="col-md-1"></div>
         <div class="my-banner-content col-md-6 rounded">
@@ -29,8 +29,6 @@ include('../config/connect.php');?>
                     </form>
                 </div>
             </div>
-            Tailor tour - Trải nghiệm theo cách riêng của bạn -
-            <a href="tailor-tour.php" class="btn btn-outline-light">Đặt tour riêng</a>
         </div>
     </div>
 </div>
@@ -87,17 +85,24 @@ if(mysqli_num_rows($result)>0){
                 $tourId = $row["TourID"];
                 $tourPrice = 0;
                 $sql2 = "select min(TourPrice) as TourPrice from tourdetails where TourID = $tourId and TourStatus=0";
+                
                 $result2 = mysqli_query($conn, $sql2);
                 if(mysqli_num_rows($result2)>0){
                     while($row=mysqli_fetch_assoc($result2)){ $tourPrice = $row['TourPrice']; }}
                 else echo $sql2;
+                
+                $sql21 = "select FORMAT($tourPrice, 0) as TourPriceN";
+                $result21 = mysqli_query($conn, $sql21);
+                if(mysqli_num_rows($result21)>0){
+                    while($row=mysqli_fetch_assoc($result21)){ $tourPriceN = $row['TourPriceN']; }}
+                    else echo $sql21;
                 ?>
 
             <div class="col col-huyen">
                 <a href="tourdetails.php?id=<?php echo $tourId ?>">
                     <div class="card" style="width: 22rem;">
                         <div class="huyen-img">
-                            <img src="<?php echo $tourImg ?>" class="card-img-top" alt="<?echo $tourName ?>">
+                            <img src="<?php echo $tourImg ?>" class="card-img-top" alt="<?echo $tourName ?>" height="182px">
                             <div class="huyen-card">
                                 <i class="fas fa-map-marker-alt "></i>
                                 <?php echo $tourLocation ?>
@@ -117,7 +122,7 @@ if(mysqli_num_rows($result)>0){
                                 <div class="col-md-2"><i class="fas fa-plane"></i></div>
                             </div>
                             </p>
-                            <a href="#" class="col price"><?php echo $tourPrice ?></a>
+                            <a href="#" class="col price"> ₫ <?php echo $tourPriceN ?></a>
                         </div>
 
                     </div>

@@ -1,7 +1,7 @@
 <?php include('header.php') ?>
 
 <main>
-    <div class="container">
+    <div class="container f-header">
         <h2>Thêm nhóm tour</h2>
         <form action="process_add_tourgroup.php" method="POST">
             

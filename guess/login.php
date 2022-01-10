@@ -18,7 +18,7 @@ include('../config/connect.php');
 
     <link rel="stylesheet" href="../css/admin.css">
 
-    <title>Login</title>
+    <title>Đăng nhập</title>
 
 </head>
 
@@ -29,7 +29,7 @@ include('../config/connect.php');
             <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div class="card" style="border-radius: 15px;">
                     <div class="card-body p-5">
-                        <h2 class=" text-center mb-5">Login</h2>
+                        <h2 class=" text-center mb-5">Đăng nhập</h2>
                         <form action= "process_login.php" method="POST">
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="form3Example3cg"> Email</label>
@@ -38,7 +38,7 @@ include('../config/connect.php');
                             </div>
 
                             <div class="form-outline mb-4">
-                                <label class="form-label" for="form3Example4cg">Password</label>
+                                <label class="form-label" for="form3Example4cg">Mật khẩu</label>
                                 <input type="password" id="form3Example4cg" name="userPass"  class="form-control form-control-lg" />
                             </div>
 

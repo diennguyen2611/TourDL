@@ -3,7 +3,7 @@
 include('header.php');
 include('../config/connect.php');
 ?>
-<div class="container my-main">
+<div class="container f-header my-main">
 
     <h2 class="text-uppercase my-title-ad">Quản lý các khách sạn</h2>
 

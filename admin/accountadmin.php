@@ -2,7 +2,7 @@
 include('header.php');
 include('../config/connect.php');
 ?>
-<div class="container my-main">
+<div class="container f-header my-main">
     <h2 class="text-uppercase my-title-ad">Quản lý admin</h2>
     <a href="add_user_ad.php" type="submit" class="btn btn-primary my-title-ad">Thêm admin</a>
 

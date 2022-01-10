@@ -3,7 +3,7 @@
 include('header.php');
 include('../config/connect.php');
 ?>
-<div class="container my-main">
+<div class="container my-main f-header">
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">

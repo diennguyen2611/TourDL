@@ -3,7 +3,7 @@ include('header.php');
 include('../config/connect.php');
 ?>
 
-<div class="my-tourdetails">
+<div class="my-tourdetails f-header">
     <div class="row my-relative">
 
         <?php
@@ -28,7 +28,25 @@ include('../config/connect.php');
 
         <h1 class="text-uppercase"><?php echo $tourName ?></h1>
 
-        <div class="col-md-7">
+        <?php $sql11 = "select * from `tourdetails` where TourID = $tourID and TourStatus=0";
+                $result11 = mysqli_query($conn,$sql11);
+         
+                if(mysqli_num_rows($result11)>0){
+                    while($row=mysqli_fetch_assoc($result11)){
+                        $tourPrice=$row['TourPrice'];
+                    }
+                }
+                else echo $sql11;
+       
+
+                $sql21 = "select FORMAT($tourPrice, 0) as TourPriceN";
+                $result21 = mysqli_query($conn, $sql21);
+                if(mysqli_num_rows($result21)>0){
+                    while($row=mysqli_fetch_assoc($result21)){ $tourPriceN = $row['TourPriceN']; }}
+                    else echo $sql21;
+                    ?>
+
+        <div class="col-md-8">
             <div class="my-tour">
 
                 <div class="bg" style="background-image: url(<?php echo $tourImg?>);">
@@ -37,7 +55,7 @@ include('../config/connect.php');
                     <span class=""><i class="fas fa-map-marker-alt"></i><span><?php echo $tourLocation?></span></span>
                     <span class=""><i class="far fa-clock"></i><span>2 Ngày 1 Đêm</span></span>
                     <span class="">Phương tiện: <span><i class="fas fa-plane"></i></span></span>
-                    <span class="float-end">Mã Tour: <span class="text-primary"><?php echo $tourID?></span></span>
+                    <span class="float-end price-title"> ₫ <?php echo $tourPriceN ?></span>
                 </div>
             </div>
 
@@ -103,13 +121,12 @@ include('../config/connect.php');
                 }
                 else echo $sql2;
         ?>
-        <div class="col-md-5">
+        <div class="col-md-4">
             <form class="my-orderTour">
-                <p><b>Đặt ngay, chỉ 2 phút. Hoặc gọi <?php echo $Hotline?></b></p>
+                <p class="order-title"><b>Đặt ngay, chỉ 2 phút. Hoặc gọi <?php echo $Hotline?></b></p>
                 <div class="row mb-3 info">
-                    <div class="col-md-7">
-                        <p><i class="fas fa-check-circle"></i>Nhanh gọn, tiện lợi</p>
-                    </div>
+                    <p class="title-gt"><i class="fas fa-check-circle"></i>Nhanh gọn, tiện lợi</p>
+
                     <!-- <div class="col-md-5">
                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                             <option selected>
@@ -120,17 +137,15 @@ include('../config/connect.php');
 
                 </div>
                 <div class="row mb-3 info">
-                    <div class="col-md-7">
-                        <p><i class="fas fa-clipboard-list"></i>Nhiều lịch trình để lựa chọn</p>
-                        <!-- <p>Số lượng x <span id="price"><?php //echo $tourPrice?></span></p> -->
-                    </div>
+
+                    <p class="title-gt"><span><i class="fas fa-clipboard-list"></i></span>Nhiều lịch trình để lựa chọn</p>
+                    <!-- <p>Số lượng x <span id="price"><?php //echo $tourPrice?></span></p> -->
+
                     <!-- <div class="col-md-5">
                         <input type="number" class="form-control" id="quantity" min="1" max="40">
                     </div> -->
                 </div>
-                <div class="total mb-3">
-                    <h3 class="text-end" id="total"><?php echo $tourPrice ?></h3>
-                </div>
+
                 <div class="mb-3 order-btn">
                     <?php 
                     $formRequest='#';
@@ -138,7 +153,7 @@ include('../config/connect.php');
                    $formRequest = '#order';}
                    else $formRequest = '#register';?>
 
-                    <a class="dropdown-item order text-center" href="<?php echo $formRequest; ?>"
+                    <a class="dropdown-item order text-center style-hover" href="<?php echo $formRequest; ?>"
                         data-bs-toggle="modal">Yêu cầu đặt</a>
                 </div>
             </form>
@@ -170,7 +185,7 @@ include('../config/connect.php');
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $hotelName ?></h5>
                             <p class="card-text"><i class="fas fa-map-marker-alt"></i><?php echo $hotelLocation ?></p>
-                            <a href="hoteldetails.php?id=<?php echo $hotelID; ?>" class="btn btn-success">Chi tiết</a>
+                            <a href="hoteldetails.php?id=<?php echo $hotelID; ?>" class="btn style-hover text-white float-end">Chi tiết</a>
                         </div>
                     </div>
                     <?php }}
@@ -197,7 +212,7 @@ include('../config/connect.php');
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $resName ?></h5>
                             <p class="card-text"><i class="fas fa-map-marker-alt"></i><?php echo $resLocation ?></p>
-                            <a href="restaurantdetails.php?id=<?php echo $resID ?>" class="btn btn-success">Chi tiết</a>
+                            <a href="restaurantdetails.php?id=<?php echo $resID ?>" class="btn style-hover text-white float-end">Chi tiết</a>
                         </div>
                     </div>
                     <?php }}
@@ -246,8 +261,8 @@ else echo $sql;
             <div class="col-md-4">
                 <a href="tourdetails.php?id=<?php echo $tourId?>">
                     <div class="card">
-                        <img src="<?php echo $tourImg ?>" class="card-img-top" alt="canada">
-                        <div class="card-body">
+                        <img src="<?php echo $tourImg ?>" class="card-img-top" alt="canada" height="200px">
+                        <div class="card-body" style="height:200px">
                             <h6 class="card-title text-uppercase"><?php echo $tourName?></h6>
                             <div class="row">
                                 <div class="col-md-6">
@@ -260,10 +275,15 @@ else echo $sql;
                                     <i class="fas fa-plane float-end"></i>
                                 </div>
                             </div>
+                            <?php
+                            $sql21 = "select FORMAT($tourPrice, 0) as TourPriceN";
+                            $result21 = mysqli_query($conn, $sql21);
+                            if(mysqli_num_rows($result21)>0){
+                                while($row=mysqli_fetch_assoc($result21)){ $tourPriceN = $row['TourPriceN']; }}
+                                else echo $sql21;
+                            ?>
                             <div class="price float-end">
-                                <h6><?php echo $tourPrice?><span>
-                                        VNĐ
-                                    </span></h6>
+                                <h6> ₫ <?php echo $tourPriceN ?></h6>
                             </div>
                         </div>
                     </div>
@@ -291,7 +311,7 @@ else echo $sql4;
                                         }}
                                     
                                   ?>
-    
+
     <!--form đặt -->
     <div class="modal fade" id="order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -307,16 +327,18 @@ else echo $sql4;
 
                 <div class="modal-body">
                     <p class="">Quý khách vui lòng điền thông tin bên dưới</p>
-                    <form action="process-order.php" method="POST">
-                    <input type="hidden" class="form-control" id="" name="tourPrice" value="<?php echo $tourPrice?>">
+                    <form action="process-order.php" method="POST" class="my-form-order" style="font-weight:bold">
+                        <input type="hidden" class="form-control" id="" name="tourPrice"
+                            value="<?php echo $tourPrice?>">
                         <input type="hidden" class="form-control" id="" name="userID" value="<?php echo $userID?>">
                         <input type="hidden" class="form-control" id="" name="tourID" value="<?php echo $tourID?>">
                         <div class="mb-3">
-                            <label for="hoten" class="form-label">Họ và tên</label>
+                            <label for="hoten" class="form-label">Họ và tên<span class="text-danger"> *</span></label>
                             <input type="text" class="form-control" id="hoten" name="hoten">
                         </div>
                         <div class="mb-3">
-                            <label for="dienthoai" class="form-label">Điện thoại</label>
+                            <label for="dienthoai" class="form-label">Điện thoại<span
+                                    class="text-danger"> *</span></label>
                             <input type="text" class="form-control" id="dienthoai" name="dienthoai">
 
                         </div>
@@ -326,26 +348,30 @@ else echo $sql4;
                                 name="email">
                         </div>
                         <div class="mb-3">
-                            <label for="ngaykh" class="form-label">Chọn ngày khởi hành</label>
-                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
-                                name="ngaykh">
-                                <option value="<?php echo $tourSTDay?>">
-                                    <?php echo $tourSTDay?>
-                                </option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="solg" class="form-label">Số lượng đặt</label>
-                            <input type="number" class="form-control" id="solg" name="solg">
-
+                            <div class="row">
+                                <div class="col-md-6">
+                                <label for="ngaykh" class="form-label">Chọn ngày khởi hành<span
+                                        class="text-danger"> *</span></label>
+                                <select class="form-select form-select-lg mb-3 no-margin"
+                                    aria-label=".form-select-lg example" name="ngaykh">
+                                    <option value="<?php echo $tourSTDay?>">
+                                        <?php echo $tourSTDay?>
+                                    </option>
+                                </select></div>
+                                <div class="col-md-6">
+                                <label for="solg" class="form-label">Số lượng đặt<span
+                                        class="text-danger"> *</span></label>
+                                <input type="number" class="form-control" id="solg" name="solg">
+                                    </div>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="khac" class="form-label">Yêu cầu khác</label>
-                            <input type="text" class="form-control" id="khac" name="khac">
+                            <textarea id="InputRequest" class="my-textarea" rows="3" name="khac" placeholder=""></textarea>
 
                         </div>
 
-                        <button type="submit" class="btn text-center btn-th" style="width: 100%; max-height: 60px"
+                        <button type="submit" id="btnOrder" class="btn text-center btn-th" style="width: 100%; max-height: 60px"
                             name="order">Gửi
                             yêu cầu
                             <p style="font-size:13px">Chúng tôi sẽ liên hệ lại sau ít phút</p>

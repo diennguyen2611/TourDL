@@ -46,7 +46,7 @@ include('../config/connect.php');?>
                     </a>
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-7">
                     <nav class="navbar navbar-expand-lg navbar-light my-nav">
                         <div class="container-fluid">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -58,37 +58,41 @@ include('../config/connect.php');?>
                                 <ul class="navbar-nav" style="line-height: 40px">
                                     <li class="nav-item hover-th">
                                         <a class="nav-link active text-white" aria-current="page"
-                                            href="index.php">Home</a>
+                                            href="index.php">Trang chủ</a>
                                     </li>
                                     <li class="nav-item hover-th">
 
                                         <a class="nav-link active text-white" aria-current="page"
-                                            href="moretour.php?id=0">Tours</a>
+                                            href="moretour.php?id=0">Tour</a>
                                     </li>
                                     <li class="nav-item hover-th">
                                         <a class="nav-link active text-white" aria-current="page"
-                                            href="#footer">Contact</a>
+                                            href="tailor-tour.php">Đặt tour riêng</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle text-white hover-th" href="#"
                                             id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">More
+                                            aria-expanded="false">Dịch vụ khác
                                         </a>
                                         <ul class="dropdown-menu my-subnav" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="hotels.php">Khách sạn</a></li>
                                             <li><a class="dropdown-item" href="restaurant.php">Ăn uống</a></li>
-
                                         </ul>
                                     </li>
+                                    <li class="nav-item hover-th">
+                                        <a class="nav-link active text-white" aria-current="page"
+                                            href="#footer">Liên hệ</a>
+                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>
                     </nav>
                 </div>
 
-                <div class="col-md-5" style="margin-top:15px">
-                    <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">
-                        <?php echo  $hotline ?></h6>
+                <div class="col-md-4" style="margin-top:15px">
+                    <!-- <h6 class="float-end text-white" style="line-height:50px; margin-left: 16px;">
+                        <?php echo  $hotline ?></h6> -->
 
                     <div class="dropdown float-end">
                         <button style="line-height: 40px" class="btn dropdown-toggle text-white hover-th" type="button"

@@ -2,7 +2,7 @@
   include('header.php');
 ?>
 
-<div class="tailor-tour" style="overflow: hidden">
+<div class="tailor-tour f-header" style="overflow: hidden">
     <div class="container">
         <div class="banner-content-th col-md-5">
             <h3 class="">Tailor Tour</h3>
@@ -141,97 +141,7 @@
                     <a href="moretour.php?id=0"><span class="float-end">Xem thêm tours ></span></a>
                 </h3>
             </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card " style="width: 22rem;">
-                        <div class="huyen-img">
-                            <img src="../img/NinhThuan.jpg" class="card-img-top " alt="NinhThuan">
-                            <div class="huyen-card">
-                                <i class="fas fa-map-marker-alt "></i>
-                                Ninh Thuận
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Limousine Ninh Chữ 2N2D: TP. HCM - Tanyoli - Hang Rái - Vĩnh Hy
-                            </h5>
-                            <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">10</div>
-                                <div class="col-md-4 score-des">Tuyệt vời</div>
-                                <div class="col-md comment"> | 2 đánh giá</div>
-                            </div>
-                            <div class="row  list_desmap">
-                                <ul>
-                                    <li>Xe Limousine Phục Vụ Suốt Tuyến</li>
-                                    <li>Chinh Phục Mũi Dinh</li>
-                                    <li>Đặc Sản Cơm Niêu</li>
-                                </ul>
-                            </div>
-                            </p>
-                            <a href="#" class="col price-th">1.999.000 </a>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card" style="width: 22rem;">
-                        <div class="huyen-img">
-                            <img src="../img/PhuYen.jpg" class="card-img-top" alt="culao">
-                            <div class="huyen-card">
-                                <i class="fas fa-map-marker-alt "></i>
-                                Phú Yên
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Limousine Phú Yên 3N3D: Điệp Sơn - Cực Đông Tổ Quốc - Cao Nguyên
-                                Vân Hòa</h5>
-                            <p class="card-text">
-
-                            <div class="row  list_desmap">
-                                <ul>
-                                    <li>Phim Trường Tôi Thấy Hoa Vàng Trên Cỏ Xanh</li>
-                                    <li>Văn Hóa Nghệ Thuật Bài Chòi</li>
-                                    <li>Vận Chuyển Xe Limousine Chất Lượng</li>
-                                </ul>
-                            </div>
-                            </p>
-                            <a href="#" class="col price-th">2.990.000</a>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-            <div class="col col-huyen">
-                <a href="">
-                    <div class="card" style="width: 22rem;">
-                        <div class="huyen-img">
-                            <img src="../img/BinhBa.jpg" class="card-img-top" alt="danang">
-                            <div class="huyen-card">
-                                <i class="fas fa-map-marker-alt "></i>
-                                Đà Nẵng
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Limousine Tứ Bình 3N3D: Bình Ba - Bình Hưng - Bình Lập - Bình
-                                Tiên - Ninh Chữ</h5>
-                            <p class="card-text">
-                            <div class="row  list_desmap">
-                                <ul>
-                                    <li>Thưởng Thức Hải Sản</li>
-                                    <li>Làng Nghề Văn Hóa</li>
-                                    <li>Khám Phá Tứ Bình</li>
-                                </ul>
-                            </div>
-                            </p>
-                            <a href="#" class="col price-th">3.160.000</a>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+            
 
         <div class="row huyen_row ">
 
@@ -246,7 +156,7 @@
                             </div>
                         </div>
 
-                        <div class="card-body">
+                        <div class="card-body" style="height:200px">
                             <h5 class="card-title">Tour Limousine Quy Nhơn 3N3D: TP. HCM - Biển Kỳ Co - Eo Gió
                             </h5>
                             <p class="card-text">
@@ -258,7 +168,7 @@
                                 </ul>
                             </div>
                             </p>
-                            <a href="#" class="col price-th">3.299.000 </a>
+                            <a href="#" class="col price-th">₫ 5,390,000 </a>
                         </div>
                     </div>
                 </a>
@@ -273,9 +183,8 @@
                                 Phan Thiết
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Tour Cao Cấp Phan Thiết 2N1D: TP. HCM - Vương Quốc Chăm Pa - Bàu Sen
-                                VIP</h5>
+                        <div class="card-body"  style="height:200px">
+                            <h5 class="card-title">Tour Cao Cấp Phan Thiết 2N1D: TP. HCM </h5>
                             <p class="card-text">
 
                             <div class="row  list_desmap">
@@ -286,7 +195,7 @@
                                 </ul>
                             </div>
                             </p>
-                            <a href="#" class="col price-th">4.700.000</a>
+                            <a href="#" class="col price-th">₫ 3,390,000</a>
                         </div>
                     </div>
                 </a>
@@ -303,22 +212,19 @@
                             </div>
                         </div>
 
-                        <div class="card-body">
+                        <div class="card-body"  style="height:200px">
                             <h5 class="card-title">Tour Limousine Vũng Tàu: 2N1D: Bình Châu - Hồ Cốc</h5>
                             <p class="card-text">
-                            <div class="row">
-                                <div class="col-md-2 score" style="max-width:50px">10</div>
-                                <div class="col-md-4 score-des">Tuyệt vời</div>
-                                <div class="col-md comment"> | 2 đánh giá</div>
-                            </div>
+            
                             <div class="row  list_desmap">
                                 <ul>
                                     <li>Osen Kiểu Nhật Phục Hồi Sức Khỏe</li>
                                     <li>Công Viên Rừng Cây Minera Forest</li>
+                                    <li>Công Viên Rừng Cây</li>
                                 </ul>
                             </div>
                             </p>
-                            <a href="#" class="col price-th">2.390.000</a>
+                            <a href="#" class="col price-th"> ₫ 2,390,000</a>
                         </div>
                     </div>
                 </a>
@@ -339,11 +245,13 @@
                     <h3>Gửi yêu cầu lịch trình</h3>
                     <p>Hãy để chuyên gia du lịch tư vấn miễn phí cho bạn nhé</p>
                     <div class="mb-3">
-                        <label for="InputName" class="form-label">Họ Tên</label>
+                        <label for="InputName" class="form-label">Họ Tên<span
+                                        class="text-danger"> *</span></label>
                         <input type="text" class="form-control" id="InputName" name="name">
                     </div>
                     <div class="mb-3">
-                        <label for="InputMobile" class="form-label">Điện Thoại</label>
+                        <label for="InputMobile" class="form-label">Điện Thoại<span
+                                        class="text-danger"> *</span></label>
                         <input type="text" class="form-control" id="InputMobile" name="mobile">
                     </div>
                     <div class="mb-3">
@@ -352,7 +260,8 @@
                     </div>
      
                     <div class="mb-3">
-                       <div> <label for="Input-th" class="form-label">Cách bạn trải nghiệm</label></div>
+                       <div> <label for="Input-th" class="form-label">Cách bạn trải nghiệm<span
+                                        class="text-danger"> *</span></label></div>
                         <textarea id="InputRequest" class="my-textarea" rows="10" name="request" placeholder="Thời gian, số khách dự kiến, địa điểm yêu thích, loại hình khách sạn..."></textarea>
                     </div>
                     <button type="submit"  id="sendBtn" name="sendRequest" class="btn btn-primary text-center btn-th" style="width: 100%; max-height: 60px">Gửi yêu cầu 

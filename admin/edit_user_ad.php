@@ -20,7 +20,7 @@ if(mysqli_num_rows($result)>0){
 ?>
 
 <main>
-    <div class="container">
+    <div class="container f-header">
         <h2 class="my-main my-title-ad">Cập nhật thông tin Admin</h2>
         <form action="process_update_user.php" method="POST">
             <input type="hidden"  name="user_adID" value="<?php echo $user_adID; ?>"> </input>

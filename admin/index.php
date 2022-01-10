@@ -39,7 +39,7 @@ if(mysqli_num_rows($result3)>0){
 
 ?>
 <div class="index-body">
-    <div class="container my-main">
+    <div class="container f-header my-main">
         <div class="my-section">
             <div>
                 <h3 class="text-uppercase my-title-ad">Tổng Quan</h3>

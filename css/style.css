@@ -1,4 +1,14 @@
 
+.my-header{
+position: fixed;
+width: 100%;
+z-index: 1;
+top: 0;
+}
+
+.f-header{
+    margin-top: 80px;
+}
 
 .my_map{
     font-size: 13px;
@@ -32,7 +42,7 @@
     font-size: 22px;
     font-weight: bold;
     float: right ;
-    color: #00C1DE;
+    color: var(--my-color);
     text-decoration: none;
 }
 .headline{
@@ -73,8 +83,17 @@
     font-size: 13px ;
 }
 
+ .my-intro i{
+    color: var(--my-color);
+} 
+
 :root{
-    --my-color: #0c2461; 
+    --my-color: #0d3291; 
+}
+
+.my-intro .price-title{
+    /* color: #FE9A2E!important; */
+    font-size: 24px!important;
 }
 
 .my-banner{
@@ -100,7 +119,7 @@
     margin-top: 10%;
     margin-left: 10px;
     margin-right: 20px;
-    background-color: rgba(153, 149, 149, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
     padding: 16px;
     
 }
@@ -111,6 +130,15 @@
 
 .my-search input{
    padding: 8px 0 8px 24px;
+}
+
+.my-search button{
+    background-color: #FE9A2E;
+    position: inherit!important;
+}
+
+.style-hover:hover{
+    opacity: 0.8;
 }
 
 .my-description{
@@ -130,14 +158,16 @@
 
 .my-header {
     min-height: 80px;
-    background-color: #0c2461;
+    background-color: var(--my-color);
     
 }
 
-.my-footer {
+.my-footer{
     background-color: #ddd;
     padding: 64px;
+    z-index: 2;
 }
+
 .header-moretour{
     text-align: center;
     font-size: 40px;
@@ -225,6 +255,9 @@
     margin-top: 24px;
 }
 
+.title-gt{
+margin-bottom: 0px!important;
+}
 
 .my-tour .bg{
     background-repeat: no-repeat;
@@ -233,15 +266,16 @@
 }
 
 .my-tour .my-intro{
-    background-color: rgb(223, 219, 219);
+    background-color: #fff;
     position: absolute;
     bottom: 0;
-    padding: 16px 0;
+    padding: 16px 24px;
     width: 100%;
+    
 }
 
 .my-tour .my-intro span{
-    color: rgb(109, 104, 104);
+    color: var(--my-color);
     font-weight: bold;
     font-size: 18px;
     margin: 0 8px;
@@ -266,15 +300,15 @@
 .my-orderTour{
     padding: 24px 18px;
     margin: 24px 24px 0;
-    background-color: #F3E2A9;
+    background-color: #fff;
 }
 
 .my-orderTour .info{
-    padding: 12px;
-    background-color: white;
-    border-radius: 4px;
+    /* padding: 12px;
+    background-color: rgb(172, 140, 36);
+    border-radius: 4px;*/
     margin: 0 8px;
-}
+} 
 
 .my-orderTour input{
     border: none;
@@ -292,12 +326,13 @@
 
 .my-orderTour .order{
     border: none;
-    padding: 12px;
-    margin-top: 24px;
+    padding: 8px;
+    margin-top: 12px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     background-color:#FE9A2E ;
     color: white;
+    border-radius: 4px;
 }
 
 .my-orderTour .order-btn{
@@ -443,7 +478,7 @@
     font-size: 22px;
     font-weight: bold;
     float: right ;
-    color: #00C1DE !important;
+    color: var(--my-color) !important;
     text-decoration: none;
 }
 
@@ -464,6 +499,11 @@
     margin-bottom: 150px;
 }
 
+.no-margin{
+    margin-top: 0;
+    padding: 3px;
+}
+
 .my-tourdetails .des{
     margin-top: 24px;
 }
@@ -471,14 +511,17 @@
 .my-orderTour{
     padding: 24px 18px;
     margin: 24px 24px 0;
-    background-color: #F3E2A9;
+    background-color: #fff;
 }
 
 .my-orderTour .info{
-    padding: 12px;
-    background-color: white;
+    padding: 0px;
     border-radius: 4px;
     margin: 0 8px;
+}
+
+.order-title{
+    border-bottom: 2px solid #000;
 }
 
 .my-orderTour input{
@@ -495,6 +538,11 @@
     margin: 0 8px;
 }
 
+.my-orderTour i{
+    margin: 0 4px;
+    color: #FE9A2E;
+}
+
 .my-orderTour button{
     background-color:#FE9A2E ;
     width: 100%;
@@ -507,6 +555,7 @@
 
 .my-orderTour .order-btn{
     padding: 8px;
+    margin-bottom: 0!important;
 }
 
 .my-list-option{  
@@ -552,8 +601,12 @@
 }
 
 .my-tour-connect .price{
-    color: #339cff;
+    color: var(--my-color);
 }
+.my-tour-connect .price h6{
+    font-size: 20px!important;
+}
+
 
 /*tìm kiếm*/
 .search-form{
@@ -568,4 +621,77 @@
     margin: 32px 0;
 }
 
+/*ql tài khoản*/
+.my-navbar{
+   list-style: none;
+    margin-top: 24px;
+}
 
+.my-manage{
+   padding-top: 24px;
+   padding-bottom: 24px;
+   margin: 0 48px;
+}
+
+.my-manage ul{
+    list-style: none;
+}
+
+.my-manage li{
+    padding: 6px 0;
+}
+
+.my-navbar i{
+    padding: 8px;
+}
+
+.my-navbar a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.my-navbar a:hover{
+ opacity: 0.5;
+}
+
+.manage-bg{
+    background-color: #ecf0f5;
+}
+.active-item{
+    opacity: 0.5!important;
+}
+
+.child-nav{
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.my-title-content{
+    margin-top: 12px;
+}
+
+.my-selected{
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: #ccc solid 1px;
+}
+
+.my-btn-save-infor{
+    padding: 8px 16px;
+    background-color: var(--my-color);
+    color: white;
+    margin: 16px 0;
+}
+
+.my-btn-img{
+    padding: 8px 16px;
+    margin: 16px 0;
+    border: 1px #ccc solid;
+    margin-left: 24px;
+   
+}
+
+.my-avt{
+    border-right: 1px solid #ccc;
+}

@@ -24,7 +24,7 @@ include('../config/connect.php');
      $sql = "select * from `tours` where GroupID=$id and TourStatus=0";
     }?>
 
-<div class="my_moretour" style="overflow: hidden">
+<div class="my_moretour f-header" style="overflow: hidden">
     <div class="container">
 
         <div class="row ">

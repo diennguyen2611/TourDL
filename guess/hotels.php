@@ -9,7 +9,7 @@ include('../config/connect.php');
      $sql = "select * from `hotels`";
      $title = "Tất cả các khách sạn được đề xuất";
 ?>
-<div class="my_moretour" style="overflow: hidden">
+<div class="my_moretour f-header" style="overflow: hidden">
     <div class="container">
 
         <div class="row ">

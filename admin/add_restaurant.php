@@ -3,7 +3,7 @@
 include('header.php');
 include('../config/connect.php');
 ?>
-<div class="container my-main">
+<div class="container f-header my-main">
 
     <h2 class="text-uppercase my-title-ad">Thêm một nhà hàng</h2>
     <form action="process_add_res.php" method="POST">

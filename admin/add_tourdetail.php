@@ -1,7 +1,7 @@
 <?php include('header.php') ?>
 
 <main>
-    <div class="container">
+    <div class="container f-header">
         <h2>Thêm chi tiết tour</h2>
         <form action="process_add_tourdetail.php" method="POST">
         <div class="mb-3">

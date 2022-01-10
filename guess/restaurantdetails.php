@@ -3,7 +3,7 @@ include('header.php');
 include('../config/connect.php');
 ?>
 
-<div class="my-tourdetails">
+<div class="my-tourdetails f-header">
     <div class="row my-relative">
 
         <?php
@@ -34,7 +34,7 @@ include('../config/connect.php');
                 </div>
                 <div class="my-intro">
                     
-                    <span class="float-end">Mã Khách sạn: <span class="text-primary"><?php echo $resID?></span></span>
+                    <span class="float-end">Mã nhà hàng: <span class="text-primary"><?php echo $resID?></span></span>
                 </div>
             </div>
 

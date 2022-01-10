@@ -22,9 +22,9 @@ include('header.php');
                 <p class="active"><i class="fas fa-user-circle"></i><?php echo $userName ?></p>
                 <hr>
                 <ul>
-                    <li><a href="manageAccount.php" class="active-item"><i class="fas fa-clipboard-list"></i>Đơn đặt</a>
+                    <li><a href="manageAccount.php"><i class="fas fa-clipboard-list"></i>Đơn đặt</a>
                         <ul>
-                            <li><a href="manageAccount_notSuccess.php">Chờ xử lý</a></li>
+                            <li><a href="manageAccount_notSuccess.php" class="active-item">Chờ xử lý</a></li>
                             <li><a href="manageAccount_success.php">Đã hoàn thành</a></li>
                         </ul>
                     </li>
@@ -33,7 +33,7 @@ include('header.php');
                 </ul>
             </div>
             <div class="col-md-10 bg-white my-content">
-                <h4 class="my-title-content">Tất cả đơn đặt</h4>
+                <h4 class="my-title-content">Đơn đặt <span class="child-nav">> Chờ xử lý</span></h4>
                 <div class="container">
                     <table class="table">
                         <thead>
@@ -46,7 +46,7 @@ include('header.php');
                             </tr>
                         </thead>
                         <?php 
-            $sql1= "select * from `tourorder`, `tours` where `tourorder`.TourID = `tours`.TourID and UserID=$userID order by DateOrder desc";
+            $sql1= "select * from `tourorder`, `tours` where `tourorder`.TourID = `tours`.TourID and UserID=$userID and StatusOrder=0";
             $result1= mysqli_query($conn, $sql1);
             if(mysqli_num_rows($result1)>0){
                 while($row = mysqli_fetch_assoc($result1)){

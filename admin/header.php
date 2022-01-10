@@ -61,12 +61,12 @@ include('../config/connect.php');?>
                                 <ul class="navbar-nav" style="line-height: 40px">
                                     <li class="nav-item hover-th">
                                         <a class="nav-link active text-white" aria-current="page"
-                                            href="index.php">Home</a>
+                                            href="index.php">Trang chủ</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle text-white hover-th" href="#"
                                             id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">Tours
+                                            aria-expanded="false">Tour
                                         </a>
                                         <ul class="dropdown-menu my-subnav" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="tours.php">Các Tour</a></li>
@@ -113,7 +113,7 @@ include('../config/connect.php');?>
                                     </li>
                                     <li class="nav-item hover-th">
                                         <a class="nav-link active text-white" aria-current="page"
-                                            href="contact.php">Contact</a>
+                                            href="contact.php">Liên hệ</a>
                                     </li>
 
                                 </ul>
@@ -127,7 +127,7 @@ include('../config/connect.php');?>
                     <div class="dropdown float-end">
                         <button style="line-height: 40px" class="btn dropdown-toggle text-white hover-th" type="button"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user-circle"></i><?php 
+                            <i class="fas fa-user-circle"></i> <?php 
                                 if(isset($_SESSION['success'])){
                                     echo $_SESSION['success'];
                                 }
